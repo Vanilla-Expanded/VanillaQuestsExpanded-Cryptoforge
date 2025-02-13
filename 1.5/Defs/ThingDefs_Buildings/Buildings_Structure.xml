@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--========================= Walls =============================-->
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<defName>VQE_FrozenShipHull</defName>
+		<label>frozen ship hull</label>
+		<description>An impassable, indestructible ship hull wall. Capable of holding up a roof.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Structure/FrozenShipHull_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<uiIconPath>Things/Structure/FrozenShipHull_MenuIcon</uiIconPath>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+			<Flammability>0</Flammability>
+			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+		</statBases>
+		<costList>
+			<Plasteel>5</Plasteel>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<holdsRoof>true</holdsRoof>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
+		<building>
+			<supportsWallAttachments>true</supportsWallAttachments>
+			<isInert>true</isInert>
+			<isPlaceOverableWall>true</isPlaceOverableWall>
+			<ai_chillDestination>false</ai_chillDestination>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+		<designationHotKey>Misc3</designationHotKey>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<defName>VQE_FragileFrozenShipHull</defName>
+		<label>fragile frozen ship hull</label>
+		<description>An impassable ship hull wall. The cracks and damage from the crash allow it to be destroyed. Capable of holding up a roof.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Structure/FrozenShipHullFragile_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Structure/FrozenShipHullFragile_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Flammability>0</Flammability>
+			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+		</statBases>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<costList>
+			<Plasteel>5</Plasteel>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<holdsRoof>true</holdsRoof>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
+		<building>
+			<supportsWallAttachments>true</supportsWallAttachments>
+			<isInert>true</isInert>
+			<isPlaceOverableWall>true</isPlaceOverableWall>
+			<ai_chillDestination>false</ai_chillDestination>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>2</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>2</multiplier>
+			</li>
+		</damageMultipliers>
+		<designationHotKey>Misc3</designationHotKey>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase" Name="VQE_CryptoForgeBaseDoor" Abstract="True">
+		<thingClass>Building_Door</thingClass>
+		<altitudeLayer>DoorMoveable</altitudeLayer>
+		<fillPercent>0.75</fillPercent>
+		<useHitPoints>false</useHitPoints>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<selectable>true</selectable>
+		<tickerType>Normal</tickerType>
+		<rotatable>false</rotatable>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<uiOrder>0</uiOrder>
+		<holdsRoof>true</holdsRoof>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<drawerType>RealtimeOnly</drawerType>
+		<building>
+			<isInert>true</isInert>
+			<canPlaceOverWall>true</canPlaceOverWall>
+			<soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
+			<soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
+			<soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+			<soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+			<blueprintClass>Blueprint_Door</blueprintClass>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Door/Door_Blueprint</texPath>
+			</blueprintGraphicData>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<comps>
+			<li Class="CompProperties_Forbiddable">
+				<allowNonPlayer>true</allowNonPlayer>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_DoorLearnOpeningSpeed</li>
+		</placeWorkers>
+		<stealable>false</stealable>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBaseDoor">
+		<defName>VQE_AncientAirlock</defName>
+		<label>ancient airlock</label>
+		<thingClass>Building_MultiTileDoor</thingClass>
+		<description>A heavily reinforced airlock door. It is slow to open but very strong. The door requires walls on either side to function.</description>
+		<statBases>
+			<WorkToBuild>5000</WorkToBuild>
+			<DoorOpenSpeed>0.25</DoorOpenSpeed>
+			<Beauty>0</Beauty>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Structure/LargeAncientAirlock_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Structure/AncientAirlock_MenuIcon_south</uiIconPath>
+		<size>(1, 1)</size>
+		<rotatable>true</rotatable>
+		<building>
+		<paintable>false</paintable>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+			<roamerCanOpen>true</roamerCanOpen>
+			<blueprintClass>Blueprint_Build</blueprintClass>
+			<blueprintGraphicData>
+				<texPath>Things/Structure/AncientAirlock_MenuIcon</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+				<drawSize>2</drawSize>
+			</blueprintGraphicData>
+			<doorTopGraphic>
+				<texPath>Things/Structure/AncientAirlock_Top</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>(2.2, 2.2)</drawSize>
+			</doorTopGraphic>
+		</building>
+		<designationHotKey>Misc3</designationHotKey>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+	
+		<label>jammed ancient airlock</label>
+		<defName>VQE_JammedAncientAirlock</defName>
+		<description>A heavily reinforced airlock door. Due to malfunction or damage, it needs to be forced open. It is slow to open but very strong. The door requires walls on either side to function.</description>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
+		<graphicData>
+			<texPath>Things/Structure/AncientAirlock_Locked</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>2.2</drawSize>
+			
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<paintable>false</paintable>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<comps>
+			<li Class="VanillaQuestsExpandedCryptoforge.CompProperties_JammedAirlock">
+				
+				
+				<!-- Interactable -->
+				<activeTicks>1</activeTicks>
+				<ticksToActivate>3600</ticksToActivate>
+				<activateTexPath>UI/ForceOpenAirlock_Gizmo</activateTexPath>
+				<activateLabelString>Force open...</activateLabelString>
+				<activateDescString>Choose someone to force this ancient airlock open.</activateDescString>
+				<guiLabelString>Choose who should do this</guiLabelString>
+				<jobString>Force this ancient airlock open</jobString>
+				<activatingStringPending>forcing ancient airlock open</activatingStringPending>
+				<activatingString>forcing ancient airlock open: {1}s</activatingString>
+				<messageCompletedString>{PAWN_nameDef} has successfully forced the ancient airlock open.</messageCompletedString>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+	
+		<label>forced ancient airlock</label>
+		<defName>VQE_ForcedAncientAirlock</defName>
+		<description>A heavily reinforced airlock door. It has been forced open and cannot be closed again.</description>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0</fillPercent>
+		<graphicData>
+			<texPath>Things/Structure/AncientAirlock_Top</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>2.2</drawSize>
+			
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<paintable>false</paintable>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		
+	</ThingDef>
+</Defs>

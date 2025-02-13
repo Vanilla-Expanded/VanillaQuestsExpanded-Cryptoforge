@@ -1,0 +1,2 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaQuestsExpanded-TheGenerator\1.5\Source\VanillaQuestsExpanded-TheGenerator\VanillaQuestsExpanded-TheGenerator\obj\Debug\VanillaQuestsExpanded-TheGenerator.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaQuestsExpanded-TheGenerator\1.5\Source\VanillaQuestsExpanded-TheGenerator\VanillaQuestsExpanded-TheGenerator\obj\Debug\VanillaQuestsExpanded-TheGenerator.GeneratedMSBuildEditorConfig.editorconfig

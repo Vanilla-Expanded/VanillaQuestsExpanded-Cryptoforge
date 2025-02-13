@@ -1,0 +1,5 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaQuestsExpanded-Cryptoforge\1.5\Assemblies\VanillaQuestsExpandedCryptoforge.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaQuestsExpanded-Cryptoforge\1.5\Source\VanillaQuestsExpanded-Cryptoforge\VanillaQuestsExpanded-Cryptoforge\obj\Debug\VanillaQuestsExpanded-Cryptoforge.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaQuestsExpanded-Cryptoforge\1.5\Source\VanillaQuestsExpanded-Cryptoforge\VanillaQuestsExpanded-Cryptoforge\obj\Debug\VanillaQuestsExpanded-Cryptoforge.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaQuestsExpanded-Cryptoforge\1.5\Source\VanillaQuestsExpanded-Cryptoforge\VanillaQuestsExpanded-Cryptoforge\obj\Debug\VanillaQuestsExpanded-Cryptoforge.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaQuestsExpanded-Cryptoforge\1.5\Source\VanillaQuestsExpanded-Cryptoforge\VanillaQuestsExpanded-Cryptoforge\obj\Debug\VanillaQuestsExpandedCryptoforge.dll
