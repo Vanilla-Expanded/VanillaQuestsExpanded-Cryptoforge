@@ -4,6 +4,7 @@ using RimWorld;
 using UnityEngine;
 using Verse;
 using Verse.AI;
+using Verse.Noise;
 namespace VanillaQuestsExpandedCryptoforge
 {
     public class CompJammedAirlock : CompInteractable
@@ -12,7 +13,38 @@ namespace VanillaQuestsExpandedCryptoforge
 
         public new CompProperties_JammedAirlock Props => (CompProperties_JammedAirlock)props;
 
-       
+
+        public override void PostSpawnSetup(bool respawningAfterLoad)
+        {
+            base.PostSpawnSetup(respawningAfterLoad);
+
+            if(this.parent.Position.GetThingList(this.parent.Map)?.ContainsAny(x => x.def == InternalDefOf.VQE_FrozenShipHull) == true)
+            {
+                List<Thing> thingsToDespawn = new List<Thing>();
+
+                foreach(IntVec3 tile in this.parent.OccupiedRect().Cells)
+                {
+                    foreach (Thing thing in tile.GetThingList(this.parent.Map))
+                    {
+                        if (thing.def == InternalDefOf.VQE_FrozenShipHull)
+                        {
+                            thingsToDespawn.Add(thing);
+                        }
+                    }
+                }
+               
+                if(thingsToDespawn.Count>0)
+                {
+                    foreach(Thing thing in thingsToDespawn)
+                    {
+                        thing.DeSpawn();
+                    }
+                    
+                }
+
+            }
+
+        }
 
         public override void OrderForceTarget(LocalTargetInfo target)
         {
@@ -58,14 +90,20 @@ namespace VanillaQuestsExpandedCryptoforge
             {
                 parent.Map.fogGrid.FloodUnfogAdjacent(parent.Position, sendLetters: false);
             }
-            
-            Thing thingToMake = GenSpawn.Spawn(ThingMaker.MakeThing(InternalDefOf.VQE_ForcedAncientAirlock), this.parent.PositionHeld, this.parent.Map);
-            thingToMake.Rotation = this.parent.Rotation;
+            IntVec3 pos = this.parent.PositionHeld;
+            Map map = this.parent.Map;
+            Rot4 rot = this.parent.Rotation;
             if (this.parent.Spawned)
             {
-               
+
                 this.parent.DeSpawn();
             }
+
+            GenSpawn.Spawn(ThingMaker.MakeThing(Props.doorToConvertTo), pos, map, rot);
+
+           
+
+            
         }
 
         private void OrderActivation(Pawn pawn)

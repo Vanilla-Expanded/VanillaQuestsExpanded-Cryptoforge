@@ -18,6 +18,8 @@ namespace VanillaQuestsExpandedCryptoforge
 		}
 
 		public static ThingDef VQE_ForcedAncientAirlock;
+		public static ThingDef VQE_AncientAirlock;
+		public static ThingDef VQE_FrozenShipHull;
 
     }
 }

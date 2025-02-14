@@ -157,7 +157,7 @@
 		<drawerType>RealtimeOnly</drawerType>
 		<building>
 			<isInert>true</isInert>
-			<canPlaceOverWall>true</canPlaceOverWall>
+			<canPlaceOverWall>false</canPlaceOverWall>
 			<soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
 			<soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
 			<soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
@@ -183,6 +183,7 @@
 		<label>ancient airlock</label>
 		<thingClass>Building_MultiTileDoor</thingClass>
 		<description>A heavily reinforced airlock door. It is slow to open but very strong. The door requires walls on either side to function.</description>
+		<clearBuildingArea>true</clearBuildingArea>
 		<statBases>
 			<WorkToBuild>5000</WorkToBuild>
 			<DoorOpenSpeed>0.25</DoorOpenSpeed>
@@ -200,11 +201,11 @@
 		<size>(1, 1)</size>
 		<rotatable>true</rotatable>
 		<building>
-		<paintable>false</paintable>
+			<paintable>false</paintable>
 			<deconstructible>false</deconstructible>
 			<claimable>false</claimable>
 			<neverBuildable>true</neverBuildable>
-			<roamerCanOpen>true</roamerCanOpen>
+			<roamerCanOpen>false</roamerCanOpen>
 			<blueprintClass>Blueprint_Build</blueprintClass>
 			<blueprintGraphicData>
 				<texPath>Things/Structure/AncientAirlock_MenuIcon</texPath>
@@ -221,10 +222,10 @@
 		<designationHotKey>Misc3</designationHotKey>
 	</ThingDef>
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
-	
-		<label>jammed ancient airlock</label>
+		<label>stuck ancient airlock</label>
 		<defName>VQE_JammedAncientAirlock</defName>
 		<description>A heavily reinforced airlock door. Due to malfunction or damage, it needs to be forced open. It is slow to open but very strong. The door requires walls on either side to function.</description>
+		<clearBuildingArea>true</clearBuildingArea>
 		<destroyable>false</destroyable>
 		<useHitPoints>false</useHitPoints>
 		<passability>Impassable</passability>
@@ -233,7 +234,6 @@
 			<texPath>Things/Structure/AncientAirlock_Locked</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>2.2</drawSize>
-			
 		</graphicData>
 		<uiIconScale>0.5</uiIconScale>
 		<statBases>
@@ -247,9 +247,8 @@
 		</building>
 		<comps>
 			<li Class="VanillaQuestsExpandedCryptoforge.CompProperties_JammedAirlock">
-				
-				
 				<!-- Interactable -->
+				<doorToConvertTo>VQE_AncientAirlock</doorToConvertTo>
 				<activeTicks>1</activeTicks>
 				<ticksToActivate>3600</ticksToActivate>
 				<activateTexPath>UI/ForceOpenAirlock_Gizmo</activateTexPath>
@@ -269,9 +268,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
-	
 		<label>forced ancient airlock</label>
 		<defName>VQE_ForcedAncientAirlock</defName>
 		<description>A heavily reinforced airlock door. It has been forced open and cannot be closed again.</description>
@@ -284,7 +281,6 @@
 			<texPath>Things/Structure/AncientAirlock_Top</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>2.2</drawSize>
-			
 		</graphicData>
 		<uiIconScale>0.5</uiIconScale>
 		<statBases>
@@ -296,6 +292,122 @@
 			<claimable>false</claimable>
 			<neverBuildable>true</neverBuildable>
 		</building>
-		
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBaseDoor">
+		<defName>VQE_AncientAirlock_Large</defName>
+		<label>ancient large airlock</label>
+		<thingClass>Building_MultiTileDoor</thingClass>
+		<description>A large, heavily reinforced airlock door. It is slow to open but very strong. The door requires walls on either side to function.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<statBases>
+			<WorkToBuild>5000</WorkToBuild>
+			<DoorOpenSpeed>0.25</DoorOpenSpeed>
+			<Beauty>0</Beauty>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Structure/LargeAncientAirlock_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Structure/LargeAncientAirlock_MenuIcon_south</uiIconPath>
+		 <size>(2, 1)</size>
+		<rotatable>true</rotatable>
+		<building>
+			<paintable>false</paintable>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+			<roamerCanOpen>false</roamerCanOpen>
+			<blueprintClass>Blueprint_Build</blueprintClass>
+			<blueprintGraphicData>
+				<texPath>Things/Structure/LargeAncientAirlock_MenuIcon</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+				 <drawSize>(2.6, 3.1)</drawSize>
+			</blueprintGraphicData>
+			<doorTopGraphic>
+				<texPath>Things/Structure/LargeAncientAirlock_Top</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				 <drawSize>(3,2.4)</drawSize>
+			</doorTopGraphic>
+		</building>
+		<designationHotKey>Misc3</designationHotKey>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<label>stuck ancient large airlock</label>
+		<defName>VQE_JammedAncientAirlock_Large</defName>
+		<description>A large, heavily reinforced airlock door. Due to malfunction or damage, it needs to be forced open. It is slow to open but very strong. The door requires walls on either side to function.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
+		 <size>(2, 1)</size>
+		<graphicData>
+			<texPath>Things/Structure/LargeAncientAirlockLocked</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			 <drawSize>(3,2.4)</drawSize>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<paintable>false</paintable>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<comps>
+			<li Class="VanillaQuestsExpandedCryptoforge.CompProperties_JammedAirlock">
+				<!-- Interactable -->
+				<doorToConvertTo>VQE_AncientAirlock_Large</doorToConvertTo>
+				<activeTicks>1</activeTicks>
+				<ticksToActivate>4200</ticksToActivate>
+				<activateTexPath>UI/ForceOpenAirlock_Gizmo</activateTexPath>
+				<activateLabelString>Force open...</activateLabelString>
+				<activateDescString>Choose someone to force this ancient large airlock open.</activateDescString>
+				<guiLabelString>Choose who should do this</guiLabelString>
+				<jobString>Force this ancient large airlock open</jobString>
+				<activatingStringPending>forcing ancient large airlock open</activatingStringPending>
+				<activatingString>forcing ancient large airlock open: {1}s</activatingString>
+				<messageCompletedString>{PAWN_nameDef} has successfully forced the ancient large airlock open.</messageCompletedString>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<label>forced ancient large airlock</label>
+		<defName>VQE_ForcedAncientAirlock_Large</defName>
+		<description>A heavily reinforced large airlock door. It has been forced open and cannot be closed again.</description>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0</fillPercent>
+		 <size>(2, 1)</size>
+		<graphicData>
+			<texPath>Things/Structure/LargeAncientAirlock_Top</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2.4)</drawSize>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<paintable>false</paintable>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
 	</ThingDef>
 </Defs>

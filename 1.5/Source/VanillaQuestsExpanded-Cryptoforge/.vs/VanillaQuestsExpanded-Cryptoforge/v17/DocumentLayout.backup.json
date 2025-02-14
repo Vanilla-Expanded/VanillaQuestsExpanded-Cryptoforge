@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|solutionrelative:vanillaquestsexpanded-cryptoforge\\comps\\compjammedairlock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-cryptoforge\\1.5\\source\\vanillaquestsexpanded-cryptoforge\\vanillaquestsexpanded-cryptoforge\\defofs\\internaldefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|solutionrelative:vanillaquestsexpanded-cryptoforge\\defofs\\internaldefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-cryptoforge\\1.5\\source\\vanillaquestsexpanded-cryptoforge\\vanillaquestsexpanded-cryptoforge\\comps\\properties\\compproperties_jammedairlock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|solutionrelative:vanillaquestsexpanded-cryptoforge\\comps\\properties\\compproperties_jammedairlock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-cryptoforge\\1.5\\source\\vanillaquestsexpanded-cryptoforge\\vanillaquestsexpanded-cryptoforge\\defofs\\internaldefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|solutionrelative:vanillaquestsexpanded-cryptoforge\\defofs\\internaldefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-cryptoforge\\1.5\\source\\vanillaquestsexpanded-cryptoforge\\vanillaquestsexpanded-cryptoforge\\harmony\\harmonyinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -44,20 +44,20 @@
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\Comps\\CompJammedAirlock.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Comps\\CompJammedAirlock.cs*",
               "RelativeToolTip": "VanillaQuestsExpanded-Cryptoforge\\Comps\\CompJammedAirlock.cs*",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAD4AAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T11:32:01.42Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "CompProperties_JammedAirlock.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Comps\\Properties\\CompProperties_JammedAirlock.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\Comps\\Properties\\CompProperties_JammedAirlock.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Comps\\Properties\\CompProperties_JammedAirlock.cs",
               "RelativeToolTip": "VanillaQuestsExpanded-Cryptoforge\\Comps\\Properties\\CompProperties_JammedAirlock.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T11:31:26.989Z",
               "EditorCaption": ""
@@ -72,18 +72,17 @@
               "RelativeToolTip": "VanillaQuestsExpanded-Cryptoforge\\Harmony\\HarmonyInstance.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T11:30:04.797Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-13T11:30:04.797Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "InternalDefOf.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\DefOfs\\InternalDefOf.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\DefOfs\\InternalDefOf.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\DefOfs\\InternalDefOf.cs",
               "RelativeToolTip": "VanillaQuestsExpanded-Cryptoforge\\DefOfs\\InternalDefOf.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAABMAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABUAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T11:29:52.647Z",
               "EditorCaption": ""
@@ -97,8 +96,7 @@
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj",
               "RelativeToolTip": "VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-13T11:28:37.627Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-13T11:28:37.627Z"
             }
           ]
         }
