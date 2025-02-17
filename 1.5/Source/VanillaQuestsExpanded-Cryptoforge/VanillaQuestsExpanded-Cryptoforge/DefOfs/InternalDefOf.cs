@@ -21,5 +21,9 @@ namespace VanillaQuestsExpandedCryptoforge
 		public static ThingDef VQE_AncientAirlock;
 		public static ThingDef VQE_FrozenShipHull;
 
+		public static JobDef VQE_Loot;
+        public static JobDef VQE_StudyBlueprints;
+
+
     }
 }

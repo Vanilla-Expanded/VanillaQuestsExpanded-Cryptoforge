@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "PUbHgKiS56Q=",
+  "dgSpecHash": "FxAKNeIllbIMC6Y0HTKwL36Bs54nB37wsbj43WbGoeS2XVW141TqSFv63dQFLKffRvUc4jrlTxJw9/rcUuZ/Hw==",
   "success": true,
-  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj",
+  "projectFilePath": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Sarg\\.nuget\\packages\\krafs.rimworld.ref\\1.5.4297\\krafs.rimworld.ref.1.5.4297.nupkg.sha512",
-    "C:\\Users\\Sarg\\.nuget\\packages\\lib.harmony\\2.3.5\\lib.harmony.2.3.5.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\krafs.rimworld.ref\\1.5.4297\\krafs.rimworld.ref.1.5.4297.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\lib.harmony\\2.3.5\\lib.harmony.2.3.5.nupkg.sha512"
   ],
   "logs": []
 }

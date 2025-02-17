@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
 	<VQE_AirlockJammed>Airlock jammed shut. Must be forced open.</VQE_AirlockJammed>
-
-
-
+	<VQE_ScavengeDesc>Clean up the {0} while searching for valuable materials.</VQE_ScavengeDesc>
+	<VQE_Scavenge>Scavenge {0}</VQE_Scavenge>
+	<VQE_StudyBlueprints>Study ancient blueprints</VQE_StudyBlueprints>
+	<VQE_StudyBlueprintsDesc>Study the ancient blueprints and diagrams to gain inspiration for the next crafting project.</VQE_StudyBlueprintsDesc>
+	
+	
 </LanguageData>

@@ -410,4 +410,167 @@
 			<neverBuildable>true</neverBuildable>
 		</building>
 	</ThingDef>
+	
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<label>cryptoship hull</label>
+		<defName>VQE_CryptoshipHull1x1Left</defName>
+		<description>A fragment of the exterior hull of the cryptoforge ship.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
+		<graphicData>
+			<texPath>Things/Structure/CryptoShipAngle1x1Left</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<rotatable>true</rotatable>
+		
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<paintable>false</paintable>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<label>cryptoship hull</label>
+		<defName>VQE_CryptoshipHull1x1Right</defName>
+		<description>A fragment of the exterior hull of the cryptoforge ship.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
+		<graphicData>
+			<texPath>Things/Structure/CryptoShipAngle1x1Right</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<rotatable>true</rotatable>
+		
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<paintable>false</paintable>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<label>cryptoship hull</label>
+		<defName>VQE_CryptoshipHull2x1Left</defName>
+		<description>A fragment of the exterior hull of the cryptoforge ship.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
+		<graphicData>
+			<texPath>Things/Structure/CryptoShipAngle2x1Left</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+		<rotatable>true</rotatable>
+		 <size>(1, 2)</size>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<paintable>false</paintable>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<label>cryptoship hull</label>
+		<defName>VQE_CryptoshipHull2x1Right</defName>
+		<description>A fragment of the exterior hull of the cryptoforge ship.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
+		<graphicData>
+			<texPath>Things/Structure/CryptoShipAngle2x1Right</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+		<rotatable>true</rotatable>
+		 <size>(1, 2)</size>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<paintable>false</paintable>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<label>cryptoship hull</label>
+		<defName>VQE_CryptoshipHull3x1Left</defName>
+		<description>A fragment of the exterior hull of the cryptoforge ship.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
+		<graphicData>
+			<texPath>Things/Structure/CryptoShipAngle3x1Left</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,3)</drawSize>
+		</graphicData>
+		<rotatable>true</rotatable>
+		 <size>(1, 3)</size>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<paintable>false</paintable>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<label>cryptoship hull</label>
+		<defName>VQE_CryptoshipHull3x1Right</defName>
+		<description>A fragment of the exterior hull of the cryptoforge ship.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
+		<graphicData>
+			<texPath>Things/Structure/CryptoShipAngle3x1Right</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,3)</drawSize>
+		</graphicData>
+		<rotatable>true</rotatable>
+		 <size>(1, 3)</size>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<paintable>false</paintable>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		
+	</ThingDef>
 </Defs>
