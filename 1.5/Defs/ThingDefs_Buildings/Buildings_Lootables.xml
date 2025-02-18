@@ -26,7 +26,7 @@
 			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<modExtensions>
-			<li Class="VanillaQuestsExpandedCryptoforge.LootableContents">
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
 				<contents>
 					<li>
 						<thing>Steel</thing>
@@ -68,7 +68,7 @@
 			<ChunkSlagSteel>6</ChunkSlagSteel>
 		</costList>
 		<modExtensions>
-			<li Class="VanillaQuestsExpandedCryptoforge.LootableContents">
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
 				<contents>
 					<li>
 						<thing>Steel</thing>
@@ -110,7 +110,7 @@
 			<ChunkSlagSteel>10</ChunkSlagSteel>
 		</costList>
 		<modExtensions>
-			<li Class="VanillaQuestsExpandedCryptoforge.LootableContents">
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
 				<contents>
 					<li>
 						<thing>Steel</thing>
@@ -152,7 +152,7 @@
 			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<modExtensions>
-			<li Class="VanillaQuestsExpandedCryptoforge.LootableContents">
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
 				<contents>
 					<li>
 						<thing>ComponentIndustrial</thing>
@@ -194,7 +194,7 @@
 			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<modExtensions>
-			<li Class="VanillaQuestsExpandedCryptoforge.LootableContents">
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
 				<contents>
 					<li>
 						<thing>ComponentSpacer</thing>
@@ -236,7 +236,7 @@
 			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<modExtensions>
-			<li Class="VanillaQuestsExpandedCryptoforge.LootableContents">
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
 				<contents>
 					<li>
 						<thing>Plasteel</thing>
@@ -278,7 +278,7 @@
 			<Gold>70</Gold>
 		</costList>
 		<modExtensions>
-			<li Class="VanillaQuestsExpandedCryptoforge.LootableContents">
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
 				<contents>
 					<li>
 						<thing>Gold</thing>
@@ -318,6 +318,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
 	</ThingDef>
 	
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
@@ -343,6 +348,11 @@
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
 	</ThingDef>
 	
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
@@ -371,7 +381,7 @@
 			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<modExtensions>
-			<li Class="VanillaQuestsExpandedCryptoforge.LootableContents">
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
 				<contents>
 					<li>
 						<thing>MedicineIndustrial</thing>
@@ -414,7 +424,7 @@
 			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<modExtensions>
-			<li Class="VanillaQuestsExpandedCryptoforge.LootableContents">
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
 				<contents>
 					<li>
 						<thing>MealSurvivalPack</thing>
@@ -454,6 +464,11 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1,2)</drawSize>
 		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
 	</ThingDef>
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
 		<label>ancient blueprints bench</label>
@@ -481,10 +496,12 @@
 			<ChunkSlagSteel>4</ChunkSlagSteel>
 		</costList>
 		<modExtensions>
-			<li Class="VanillaQuestsExpandedCryptoforge.LootableContents">
-				
-			
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+				<gizmoTexture>UI/StudyAncientBlueprints_Gizmo</gizmoTexture>
+				<gizmoText>VQE_StudyBlueprints</gizmoText>
+				<gizmoDesc>VQE_StudyBlueprintsDesc</gizmoDesc>
 				<buildingLeft>VQE_EmptyBlueprintsBench</buildingLeft>
+				<craftingInspiration>true</craftingInspiration>
 			</li>
 		</modExtensions>
 		<building>

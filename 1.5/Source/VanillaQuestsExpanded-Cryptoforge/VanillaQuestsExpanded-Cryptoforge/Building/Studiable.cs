@@ -19,11 +19,13 @@ namespace VanillaQuestsExpandedCryptoforge
 
 
         MapComponent_LootablesInMap comp;
+        CryptoBuildingDetails contentDetails;
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
             comp = Map.GetComponent<MapComponent_LootablesInMap>();
+            contentDetails = this.def.GetModExtension<CryptoBuildingDetails>();
         }
 
         public override IEnumerable<Gizmo> GetGizmos()
@@ -37,10 +39,10 @@ namespace VanillaQuestsExpandedCryptoforge
 
             if (comp?.studiables_InMap.Contains(this) == false)
             {
-                command_Action.defaultDesc = "VQE_StudyBlueprintsDesc".Translate();
+                command_Action.defaultDesc = contentDetails.gizmoDesc.Translate();
 
-                command_Action.defaultLabel = "VQE_StudyBlueprints".Translate();
-                command_Action.icon = ContentFinder<Texture2D>.Get("UI/StudyAncientBlueprints_Gizmo", true);
+                command_Action.defaultLabel = contentDetails.gizmoText.Translate();
+                command_Action.icon = ContentFinder<Texture2D>.Get(contentDetails.gizmoTexture, true);
                 command_Action.hotKey = KeyBindingDefOf.Misc1;
                 command_Action.action = delegate
                 {
@@ -49,10 +51,10 @@ namespace VanillaQuestsExpandedCryptoforge
             }
             else
             {
-                command_Action.defaultDesc = "VQE_StudyBlueprintsDesc".Translate();
+                command_Action.defaultDesc = contentDetails.gizmoDesc.Translate();
 
-                command_Action.defaultLabel = "VQE_StudyBlueprints".Translate();
-                command_Action.icon = ContentFinder<Texture2D>.Get("UI/StudyAncientBlueprints_Gizmo", true);
+                command_Action.defaultLabel = contentDetails.gizmoText.Translate();
+                command_Action.icon = ContentFinder<Texture2D>.Get(contentDetails.gizmoTexture, true);
                 command_Action.Disabled = true;
             }
 
@@ -97,12 +99,9 @@ namespace VanillaQuestsExpandedCryptoforge
             }
         }
 
-
-
-
-        public void Study()
+        public void Study(Pawn pawn)
         {
-            LootableContents contentDetails = this.def.GetModExtension<LootableContents>();
+            
             if (contentDetails != null)
             {
               
@@ -122,9 +121,14 @@ namespace VanillaQuestsExpandedCryptoforge
                     contentDetails.deconstructSound.PlayOneShot(this);
                 }
 
+                if (contentDetails.craftingInspiration)
+                {
+                    pawn.mindState.inspirationHandler.TryStartInspiration(InspirationDefOf.Inspired_Creativity);
+                }
+
                 if (this.Spawned)
                 {
-                    this.Destroy();
+                    this.DeSpawn();
                 }
 
             }
@@ -146,7 +150,7 @@ namespace VanillaQuestsExpandedCryptoforge
                     yield return new FloatMenuOption("CannotUseReason".Translate("NoPath".Translate().CapitalizeFirst()), null);
                 }
                 else {
-                    yield return FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption("VQE_StudyBlueprints".Translate().CapitalizeFirst(), delegate
+                    yield return FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption(contentDetails.gizmoText.Translate().CapitalizeFirst(), delegate
                     {
                         selPawn.jobs.TryTakeOrderedJob(JobMaker.MakeJob(InternalDefOf.VQE_StudyBlueprints, this), JobTag.Misc);
                     }), selPawn, this);

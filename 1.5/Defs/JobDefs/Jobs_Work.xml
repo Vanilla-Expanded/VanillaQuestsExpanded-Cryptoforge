@@ -10,8 +10,15 @@
 	
 	<JobDef>
 		<defName>VQE_StudyBlueprints</defName>
-		<driverClass>VanillaQuestsExpandedCryptoforge.JobDriver_StudyBlueprints</driverClass>
+		<driverClass>VanillaQuestsExpandedCryptoforge.JobDriver_StudyBuilding</driverClass>
 		<reportString>studying TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
+	<JobDef>
+		<defName>VQE_InitiateScan</defName>
+		<driverClass>VanillaQuestsExpandedCryptoforge.JobDriver_InitiateScan</driverClass>
+		<reportString>scanning at TargetA.</reportString>
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
 	

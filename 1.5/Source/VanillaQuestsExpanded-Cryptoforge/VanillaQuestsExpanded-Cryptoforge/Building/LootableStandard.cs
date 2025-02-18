@@ -18,7 +18,7 @@ namespace VanillaQuestsExpandedCryptoforge
 
         public virtual void Open()
         {
-            LootableContents contentDetails = this.def.GetModExtension<LootableContents>();
+            CryptoBuildingDetails contentDetails = this.def.GetModExtension<CryptoBuildingDetails>();
             if (contentDetails != null)
             {
                 foreach (ThingAndCount thingDefCount in contentDetails.contents)

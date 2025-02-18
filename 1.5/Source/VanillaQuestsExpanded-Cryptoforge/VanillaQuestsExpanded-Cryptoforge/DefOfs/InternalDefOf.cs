@@ -23,6 +23,7 @@ namespace VanillaQuestsExpandedCryptoforge
 
 		public static JobDef VQE_Loot;
         public static JobDef VQE_StudyBlueprints;
+        public static JobDef VQE_InitiateScan;
 
 
     }

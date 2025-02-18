@@ -7,7 +7,7 @@ using Verse.AI;
 
 namespace VanillaQuestsExpandedCryptoforge
 {
-    public class WorkGiver_StudyBlueprints : WorkGiver_Scanner
+    public class WorkGiver_StudyBuilding : WorkGiver_Scanner
     {
 
 

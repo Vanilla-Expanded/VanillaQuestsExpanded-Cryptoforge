@@ -14,6 +14,7 @@ namespace VanillaQuestsExpandedCryptoforge
 
         public HashSet<Thing> lootables_InMap = new HashSet<Thing>();
         public HashSet<Thing> studiables_InMap = new HashSet<Thing>();
+        public HashSet<Thing> scannables_InMap = new HashSet<Thing>();
 
 
 
@@ -28,6 +29,7 @@ namespace VanillaQuestsExpandedCryptoforge
             base.ExposeData();
             Scribe_Collections.Look(ref this.lootables_InMap, "lootables_InMap", LookMode.Reference);
             Scribe_Collections.Look(ref this.studiables_InMap, "studiables_InMap", LookMode.Reference);
+            Scribe_Collections.Look(ref this.scannables_InMap, "scannables_InMap", LookMode.Reference);
 
         }
 
@@ -62,6 +64,22 @@ namespace VanillaQuestsExpandedCryptoforge
             if (studiables_InMap.Contains(thing))
             {
                 studiables_InMap.Remove(thing);
+            }
+
+        }
+        public void AddScannablesToMap(Thing thing)
+        {
+            if (!scannables_InMap.Contains(thing))
+            {
+                scannables_InMap.Add(thing);
+            }
+        }
+
+        public void RemoveScannablesFromMap(Thing thing)
+        {
+            if (scannables_InMap.Contains(thing))
+            {
+                scannables_InMap.Remove(thing);
             }
 
         }

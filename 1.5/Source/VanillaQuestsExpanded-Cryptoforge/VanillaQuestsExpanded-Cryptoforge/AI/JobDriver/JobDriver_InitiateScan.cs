@@ -6,17 +6,18 @@ using VFECore;
 
 namespace VanillaQuestsExpandedCryptoforge
 {
-    public class JobDriver_StudyBlueprints : JobDriver
+    public class JobDriver_InitiateScan : JobDriver
     {
+        public const int totalTime = 300; // 5 seconds
 
-        public const int totalTime = 1200; // 20 seconds
+      
         public int totalTimer = 0;
 
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
             return this.pawn.Reserve(this.job.GetTarget(TargetIndex.A).Thing, this.job, 1, -1, null, true);
         }
-        private Studiable Building => (Studiable)job.GetTarget(TargetIndex.A).Thing;
+        private Scannable Building => (Scannable)job.GetTarget(TargetIndex.A).Thing;
 
         protected override IEnumerable<Toil> MakeNewToils()
         {
@@ -55,16 +56,14 @@ namespace VanillaQuestsExpandedCryptoforge
             };
 
             study.FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
-            study.WithEffect(EffecterDefOf.Research, TargetIndex.A);
+          
             study.defaultCompleteMode = ToilCompleteMode.Never;
             study.activeSkill = () => SkillDefOf.Intellectual;
             study.handlingFacing = true;
             study.AddFinishAction(delegate
             {
-              
-                pawn.mindState.inspirationHandler.TryStartInspiration(InspirationDefOf.Inspired_Creativity);
-
-                Building.Study();
+   
+                Building.Notify_BeginScan();
             });
             yield return study;
 

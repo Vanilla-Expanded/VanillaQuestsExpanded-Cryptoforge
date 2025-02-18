@@ -5,6 +5,11 @@
 	<VQE_Scavenge>Scavenge {0}</VQE_Scavenge>
 	<VQE_StudyBlueprints>Study ancient blueprints</VQE_StudyBlueprints>
 	<VQE_StudyBlueprintsDesc>Study the ancient blueprints and diagrams to gain inspiration for the next crafting project.</VQE_StudyBlueprintsDesc>
+	<VQE_StudyBlackBox>Study ancient black box</VQE_StudyBlackBox>
+	<VQE_StudyBlackBoxDesc>Access the data on the black box to find out what transpired.</VQE_StudyBlackBoxDesc>
+	<VQE_InitiateScan>Initiate scan</VQE_InitiateScan>
+	<VQE_InitiateScanDesc>Initiate the proximity scan to find large signatures in the area. The scan is bound to generate enough of an energy signature to attract a mechanoid hive.</VQE_InitiateScanDesc>
+
 	
 	
 </LanguageData>
