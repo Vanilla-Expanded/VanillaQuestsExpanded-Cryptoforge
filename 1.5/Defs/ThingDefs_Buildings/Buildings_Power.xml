@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<defName>VQE_CryptofusionCoil</defName>
+		<label>cryptofusion coil</label>
+		<description>A small coil that converts cryptofuel into power. Despite its age, it still operates at minimal capacity.</description>
+		<size>(1,1)</size>
+		<passability>PassThroughOnly</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<fillPercent>0.05</fillPercent>
+		<pathCost>20</pathCost>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-20</Beauty>
+			<MarketValue>600</MarketValue>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Power/CryptofusionCoil_On</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.6, 0.4, 0.6)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.2, 0.2, 0.6, 0.6)</rect>
+			</damageData>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-250</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusher</compClass>
+				<heatPerSecond>-6</heatPerSecond>
+			</li>
+		</comps>
+		<costList>
+			<Steel>60</Steel>
+		</costList>
+	</ThingDef>
+</Defs>
