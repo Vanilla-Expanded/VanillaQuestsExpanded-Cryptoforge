@@ -38,6 +38,7 @@
 				<gizmoText>VQE_StudyBlackBox</gizmoText>
 				<gizmoDesc>VQE_StudyBlackBoxDesc</gizmoDesc>
 				<buildingLeft>VQE_AncientBlackBox_Off</buildingLeft>
+				<skillForStudying>Intellectual</skillForStudying>
 			</li>
 		</modExtensions>
 	</ThingDef>

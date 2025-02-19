@@ -19,6 +19,7 @@ namespace VanillaQuestsExpandedCryptoforge
         public string gizmoText;
         public string gizmoDesc;
         public bool craftingInspiration;
+        public SkillDef skillForStudying;
 
     }
 

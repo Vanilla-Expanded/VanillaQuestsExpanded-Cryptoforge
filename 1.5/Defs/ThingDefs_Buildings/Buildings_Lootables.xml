@@ -502,6 +502,7 @@
 				<gizmoDesc>VQE_StudyBlueprintsDesc</gizmoDesc>
 				<buildingLeft>VQE_EmptyBlueprintsBench</buildingLeft>
 				<craftingInspiration>true</craftingInspiration>
+				<skillForStudying>Crafting</skillForStudying>
 			</li>
 		</modExtensions>
 		<building>
