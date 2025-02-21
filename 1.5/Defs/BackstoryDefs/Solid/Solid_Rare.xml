@@ -44,7 +44,7 @@
     </spawnCategories>
     <forcedTraits>
         <Industriousness>1</Industriousness>
-        <Tough>1</Tough>
+        <Tough />
     </forcedTraits>
     <shuffleable>False</shuffleable>
 </BackstoryDef>

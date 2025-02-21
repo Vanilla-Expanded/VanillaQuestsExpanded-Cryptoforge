@@ -15,12 +15,12 @@ namespace VanillaQuestsExpandedCryptoforge
     {
 
 
-        MapComponent_LootablesInMap comp;
+        MapComponent_CryptoBuildingsInMap comp;
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
-            comp = Map.GetComponent<MapComponent_LootablesInMap>();
+            comp = Map.GetComponent<MapComponent_CryptoBuildingsInMap>();
         }
 
         public override IEnumerable<Gizmo> GetGizmos()
@@ -41,7 +41,7 @@ namespace VanillaQuestsExpandedCryptoforge
                 command_Action.hotKey = KeyBindingDefOf.Misc1;
                 command_Action.action = delegate
                 {
-                    Map.GetComponent<MapComponent_LootablesInMap>()?.AddLootableToMap(this);
+                    Map.GetComponent<MapComponent_CryptoBuildingsInMap>()?.AddLootableToMap(this);
                 };
             }
             else

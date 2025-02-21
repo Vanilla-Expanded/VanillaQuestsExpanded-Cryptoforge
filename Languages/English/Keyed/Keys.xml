@@ -10,6 +10,7 @@
 	<VQE_InitiateScan>Initiate scan</VQE_InitiateScan>
 	<VQE_InitiateScanDesc>Initiate the proximity scan to find large signatures in the area. The scan is bound to generate enough of an energy signature to attract a mechanoid hive.</VQE_InitiateScanDesc>
 
-	
+	<VQE_Alert_CriticalCryptoGenerators>Cryptogenerator running low</VQE_Alert_CriticalCryptoGenerators>
+	<VQE_Alert_CriticalCryptoGenerators_Desc>A cryptogenerator only has enough fuel left for less than a day. When fuel runs out, it will meltdown, destroying everything in radius.</VQE_Alert_CriticalCryptoGenerators_Desc>
 	
 </LanguageData>

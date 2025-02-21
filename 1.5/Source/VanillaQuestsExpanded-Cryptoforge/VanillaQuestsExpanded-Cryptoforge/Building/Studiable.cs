@@ -18,13 +18,13 @@ namespace VanillaQuestsExpandedCryptoforge
     {
 
 
-        MapComponent_LootablesInMap comp;
+        MapComponent_CryptoBuildingsInMap comp;
         CryptoBuildingDetails contentDetails;
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
-            comp = Map.GetComponent<MapComponent_LootablesInMap>();
+            comp = Map.GetComponent<MapComponent_CryptoBuildingsInMap>();
             contentDetails = this.def.GetModExtension<CryptoBuildingDetails>();
         }
 
@@ -46,7 +46,7 @@ namespace VanillaQuestsExpandedCryptoforge
                 command_Action.hotKey = KeyBindingDefOf.Misc1;
                 command_Action.action = delegate
                 {
-                    Map.GetComponent<MapComponent_LootablesInMap>()?.AddStudiablesToMap(this);
+                    Map.GetComponent<MapComponent_CryptoBuildingsInMap>()?.AddStudiablesToMap(this);
                 };
             }
             else

@@ -40,4 +40,17 @@
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
+	  <WorkGiverDef>
+    <defName>VQE_FightCryptofreeze</defName>
+    <label>fight cryptofreeze</label>
+    <giverClass>VanillaQuestsExpandedCryptoforge.WorkGiver_FightCryptofreeze</giverClass>
+    <workType>Firefighter</workType>
+    <emergency>true</emergency>
+    <verb>extinguish</verb>
+    <gerund>extinguishing</gerund>
+    <canBeDoneWhileDrafted>true</canBeDoneWhileDrafted>
+    <autoTakeablePriorityDrafted>20</autoTakeablePriorityDrafted>
+    <forceFleck>FeedbackExtinguish</forceFleck>
+    <directOrderable>false</directOrderable>
+  </WorkGiverDef>
 </Defs>

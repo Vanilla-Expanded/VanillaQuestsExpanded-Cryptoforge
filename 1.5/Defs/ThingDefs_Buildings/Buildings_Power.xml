@@ -47,4 +47,95 @@
 			<Steel>60</Steel>
 		</costList>
 	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<defName>VQE_FrozenCryptogenerator</defName>
+		<label>frozen cryptogenerator</label>
+		<description>todo.</description>
+		<size>(5,5)</size>
+		<passability>PassThroughOnly</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<fillPercent>0.75</fillPercent>
+		<pathCost>50</pathCost>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>950</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-20</Beauty>
+			<MarketValue>2400</MarketValue>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Power/FrozenCryptogenerator_On</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6.49</glowRadius>
+				<glowColor>(0, 235, 31,0)</glowColor>
+			</li>
+			<li Class="VanillaQuestsExpandedCryptoforge.CompProperties_NonRefuelable">
+				<fuelConsumptionRate>10.0</fuelConsumptionRate>
+				<fuelCapacity>30.0</fuelCapacity>
+				<initialFuelPercent>1</initialFuelPercent>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusher</compClass>
+				<heatPerSecond>-32</heatPerSecond>
+			</li>
+			 <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-12500</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+       
+      </li>
+		</comps>
+		<costList>
+			<Steel>60</Steel>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<defName>VQE_FrozenCryptogenerator_Off</defName>
+		<label>frozen cryptogenerator</label>
+		<description>An advanced generator that once powered cryptotech devices. Now, it hums faintly with dying energy. It can be restarted to once again provide power to the various subsystems, but the permanent damage to the critical component will cause the generator to become more and more unstable, eventually detonating in a devastating cryptoexplosion.</description>
+		<size>(5,5)</size>
+		<passability>PassThroughOnly</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<fillPercent>0.75</fillPercent>
+		<pathCost>50</pathCost>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>950</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-20</Beauty>
+			<MarketValue>2400</MarketValue>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Power/FrozenCryptogenerator_Off</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6.49</glowRadius>
+				<glowColor>(0, 235, 31,0)</glowColor>
+			</li>
+			
+			
+		</comps>
+		<costList>
+			<Steel>60</Steel>
+		</costList>
+	</ThingDef>
 </Defs>

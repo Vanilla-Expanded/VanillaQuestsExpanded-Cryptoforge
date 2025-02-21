@@ -13,7 +13,7 @@ namespace VanillaQuestsExpandedCryptoforge
 
         public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
         {
-            return pawn.Map.GetComponent<MapComponent_LootablesInMap>().studiables_InMap;
+            return pawn.Map.GetComponent<MapComponent_CryptoBuildingsInMap>().studiables_InMap;
         }
 
 
@@ -30,7 +30,7 @@ namespace VanillaQuestsExpandedCryptoforge
 
         public override bool ShouldSkip(Pawn pawn, bool forced = false)
         {
-            return pawn.Map.GetComponent<MapComponent_LootablesInMap>().studiables_InMap.Count == 0;
+            return pawn.Map.GetComponent<MapComponent_CryptoBuildingsInMap>().studiables_InMap.Count == 0;
         }
 
         public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false)

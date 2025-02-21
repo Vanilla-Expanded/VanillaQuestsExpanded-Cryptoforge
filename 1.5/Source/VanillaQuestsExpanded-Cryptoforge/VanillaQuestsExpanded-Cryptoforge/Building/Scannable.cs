@@ -19,7 +19,7 @@ namespace VanillaQuestsExpandedCryptoforge
     public class Scannable : Building
     {
 
-        MapComponent_LootablesInMap comp;
+        MapComponent_CryptoBuildingsInMap comp;
         CryptoBuildingDetails contentDetails;
         public bool scanning = false;
         public int tickCounter = 0;
@@ -42,7 +42,7 @@ namespace VanillaQuestsExpandedCryptoforge
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
-            comp = Map.GetComponent<MapComponent_LootablesInMap>();
+            comp = Map.GetComponent<MapComponent_CryptoBuildingsInMap>();
             contentDetails = this.def.GetModExtension<CryptoBuildingDetails>();
         }
 
@@ -66,7 +66,7 @@ namespace VanillaQuestsExpandedCryptoforge
                     command_Action.hotKey = KeyBindingDefOf.Misc1;
                     command_Action.action = delegate
                     {
-                        Map.GetComponent<MapComponent_LootablesInMap>()?.AddScannablesToMap(this);
+                        Map.GetComponent<MapComponent_CryptoBuildingsInMap>()?.AddScannablesToMap(this);
                     };
                 }
                 else

@@ -9,16 +9,17 @@ using RimWorld.Planet;
 
 namespace VanillaQuestsExpandedCryptoforge
 {
-    public class MapComponent_LootablesInMap : MapComponent
+    public class MapComponent_CryptoBuildingsInMap : MapComponent
     {
 
         public HashSet<Thing> lootables_InMap = new HashSet<Thing>();
         public HashSet<Thing> studiables_InMap = new HashSet<Thing>();
         public HashSet<Thing> scannables_InMap = new HashSet<Thing>();
+        public HashSet<Thing> criticalCryptoGenerators_InMap = new HashSet<Thing>();
 
 
 
-        public MapComponent_LootablesInMap(Map map) : base(map)
+        public MapComponent_CryptoBuildingsInMap(Map map) : base(map)
         {
         }
 
@@ -30,6 +31,7 @@ namespace VanillaQuestsExpandedCryptoforge
             Scribe_Collections.Look(ref this.lootables_InMap, "lootables_InMap", LookMode.Reference);
             Scribe_Collections.Look(ref this.studiables_InMap, "studiables_InMap", LookMode.Reference);
             Scribe_Collections.Look(ref this.scannables_InMap, "scannables_InMap", LookMode.Reference);
+            Scribe_Collections.Look(ref this.criticalCryptoGenerators_InMap, "criticalCryptoGenerators_InMap", LookMode.Reference);
 
         }
 
@@ -80,6 +82,23 @@ namespace VanillaQuestsExpandedCryptoforge
             if (scannables_InMap.Contains(thing))
             {
                 scannables_InMap.Remove(thing);
+            }
+
+        }
+
+        public void AddCriticalCryptoGeneratorsToMap(Thing thing)
+        {
+            if (!criticalCryptoGenerators_InMap.Contains(thing))
+            {
+                criticalCryptoGenerators_InMap.Add(thing);
+            }
+        }
+
+        public void RemoveCriticalCryptoGeneratorsFromMap(Thing thing)
+        {
+            if (criticalCryptoGenerators_InMap.Contains(thing))
+            {
+                criticalCryptoGenerators_InMap.Remove(thing);
             }
 
         }
