@@ -176,15 +176,8 @@ namespace VanillaQuestsExpandedCryptoforge
                 SoundInfo info = SoundInfo.InMap(new TargetInfo(base.Position, base.Map), MaintenanceType.PerTick);
                 sustainer = SustainerAggregatorUtility.AggregateOrSpawnSustainerFor(this, InternalDefOf.VQE_Freezing, info);
             }
-            ticksUntilSmoke--;
-            if (ticksUntilSmoke <= 0)
-            {
-                SpawnSmokeParticles();
-            }
-            if (fireCount < 15 && fireSize > 0.7f && Rand.Value < fireSize * 0.01f)
-            {
-                FleckMaker.ThrowMicroSparks(DrawPos, base.Map);
-            }
+           
+           
             if (fireSize > 1f)
             {
                 ticksSinceSpread++;
@@ -370,7 +363,7 @@ namespace VanillaQuestsExpandedCryptoforge
                 CellRect endRect = CellRect.SingleCell(intVec);
                 if (GenSight.LineOfSight(base.Position, intVec, base.Map, startRect, endRect))
                 {
-                    ((Spark)GenSpawn.Spawn(ThingDefOf.Spark, base.Position, base.Map)).Launch(this, intVec, intVec, ProjectileHitFlags.All);
+                    ((CryptoSpark)GenSpawn.Spawn(InternalDefOf.VQE_CryptoSpark, base.Position, base.Map)).Launch(this, intVec, intVec, ProjectileHitFlags.All);
                 }
             }
             else

@@ -21,7 +21,7 @@
 		<graphicData>
 			<texPath>Things/Misc/FrozenCryptosleepPod_Open</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(1,2)</drawSize>
 		</graphicData>
 		<costList>
 			<ChunkSlagSteel>2</ChunkSlagSteel>
@@ -55,7 +55,7 @@
 		<graphicData>
 			<texPath>Things/Misc/FrozenDeadCryptosleepPod</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(1,2)</drawSize>
 		</graphicData>
 		<costList>
 			<ChunkSlagSteel>2</ChunkSlagSteel>
@@ -89,7 +89,7 @@
 		<graphicData>
 			<texPath>Things/Misc/FrozenCryptosleepPod</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(1,2)</drawSize>
 		</graphicData>
 		<building>
 			<paintable>false</paintable>

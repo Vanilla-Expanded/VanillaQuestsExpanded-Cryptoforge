@@ -22,8 +22,10 @@ namespace VanillaQuestsExpandedCryptoforge
 		public static ThingDef VQE_FrozenShipHull;
 		public static ThingDef VQE_FrozenCryptogenerator_Off;
 		public static ThingDef VQE_Cryptofreeze;
+        public static ThingDef VQE_CryptoSpark;
 
-		public static DamageDef VQE_ExtinguishCryptofreeze;
+
+        public static DamageDef VQE_ExtinguishCryptofreeze;
 
         public static JobDef VQE_Loot;
         public static JobDef VQE_StudyBlueprints;
@@ -33,6 +35,7 @@ namespace VanillaQuestsExpandedCryptoforge
         public static SoundDef VQE_BlaringSiren;
 		public static SoundDef VQE_MeltdownExplosion_Cryo;
 		public static SoundDef VQE_Freezing;
+		public static SoundDef VQE_Freezing_Single;
 
 
         public static RulePackDef VQE_DamageEvent_CryptoFreeze;

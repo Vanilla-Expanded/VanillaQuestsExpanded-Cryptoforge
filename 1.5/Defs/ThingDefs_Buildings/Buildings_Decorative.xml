@@ -56,7 +56,7 @@
 		<graphicData>
 			<texPath>Things/Ruins/BustedShieldedTurret</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
-			<drawSize>(1,1)</drawSize>
+			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<building>
 			<paintable>false</paintable>
@@ -87,7 +87,7 @@
 		<graphicData>
 			<texPath>Things/Ruins/BustedSpaceAutocannon</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<building>
 			<paintable>false</paintable>
@@ -118,7 +118,7 @@
 		<graphicData>
 			<texPath>Things/Ruins/FrozenCryptoRailCannon</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
-			<drawSize>(3,3)</drawSize>
+			<drawSize>(4,4)</drawSize>
 		</graphicData>
 		<building>
 			<paintable>false</paintable>

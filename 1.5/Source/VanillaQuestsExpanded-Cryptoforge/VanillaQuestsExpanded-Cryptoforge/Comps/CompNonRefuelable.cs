@@ -8,6 +8,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using Verse;
 using Verse.Sound;
+using UnityEngine.Analytics;
 namespace VanillaQuestsExpandedCryptoforge
 {
     [StaticConstructorOnStartup]
@@ -149,11 +150,9 @@ namespace VanillaQuestsExpandedCryptoforge
 
                     InternalDefOf.VQE_MeltdownExplosion_Cryo.PlayOneShotOnCamera();
 
-                   
 
                     int radius = 13;
-
-                    CellRect cells = CellRect.CenteredOn(this.parent.PositionHeld, radius);
+                    int numCells = GenRadial.NumCellsInRadius(radius);                               
 
                     Find.CameraDriver.shaker.DoShake(mag: 20f);
 
@@ -163,43 +162,39 @@ namespace VanillaQuestsExpandedCryptoforge
                     GenExplosion.DoExplosion(this.parent.PositionHeld, this.parent.Map, radius, DamageDefOf.Flame, damAmount: 500, applyDamageToExplosionCellsNeighbors: true, chanceToStartFire: 1f, instigator: this.parent);
 
                     int x = 0;
-                    foreach (IntVec3 intVec3 in cells)
+                    for (int i = 0; i < numCells; i++)
                     {
-                        if (intVec3.InBounds(this.parent.Map))
+                        IntVec3 intVec = this.parent.PositionHeld + GenRadial.RadialPattern[i];
+                        if (intVec.InBounds(this.parent.Map))
                         {
                             x++;
                             if (x % 50 == 0)
                             {
                                 moteCount(this.parent.Map.moteCounter) = 0;
-                                Vector3 vc = intVec3.ToVector3();
+                                Vector3 vc = intVec.ToVector3();
                                 FleckMaker.ThrowLightningGlow(vc, this.parent.Map, size: 10f);
                                 FleckMaker.ThrowMetaPuff(vc, this.parent.Map);
                             }
-                            List<Thing> things = this.parent.Map.thingGrid.ThingsListAtFast(intVec3);
+                            List<Thing> things = this.parent.Map.thingGrid.ThingsListAtFast(intVec);
 
-                            for (int i = 0; i < things.Count; i++)
+                            for (int j = 0; j < things.Count; j++)
                             {
-                                Thing thing = things[i];
-                                if (thing.def.filth is null && thing.def != InternalDefOf.VQE_Cryptofreeze &&thing != this.parent && thing.def != InternalDefOf.VQE_FrozenCryptogenerator_Off && !(thing.def.building?.isNaturalRock ?? false))
+                                Thing thing = things[j];
+                                if (thing.def.filth is null && thing.def != InternalDefOf.VQE_Cryptofreeze && thing != this.parent && thing.def != InternalDefOf.VQE_FrozenCryptogenerator_Off && !(thing.def.building?.isNaturalRock ?? false))
                                     thing.TakeDamage(destroyInfo);
                             }
 
                         }
-
                     }
+
+
 
                     FloodFillerFog.FloodUnfog(this.parent.PositionHeld, this.parent.Map);
 
-                    GenExplosion.DoExplosion(this.parent.PositionHeld , this.parent.Map, 25, DamageDefOf.Frostbite, damAmount: 15, applyDamageToExplosionCellsNeighbors: true, chanceToStartFire: 0f, instigator: this.parent, postExplosionSpawnThingDef: InternalDefOf.VQE_Cryptofreeze, postExplosionSpawnChance: 1f);
+                    GenExplosion.DoExplosion(this.parent.PositionHeld , this.parent.Map, 25, DamageDefOf.Frostbite, damAmount: 15, applyDamageToExplosionCellsNeighbors: true, chanceToStartFire: 0f, instigator: this.parent, postExplosionSpawnThingDef: InternalDefOf.VQE_Cryptofreeze, postExplosionSpawnChance: 1f,explosionSound: InternalDefOf.VQE_Freezing_Single);
     
                     comp?.RemoveCriticalCryptoGeneratorsFromMap(this.parent);
-                    Thing buildingToMake = GenSpawn.Spawn(ThingMaker.MakeThing(InternalDefOf.VQE_FrozenCryptogenerator_Off), this.parent.Position, this.parent.Map, this.parent.Rotation);
-
-                   if(this.parent.Faction!= null)
-                    {
-                        buildingToMake.SetFaction(this.parent.Faction);
-
-                    }
+                  
                     if (this.parent.Spawned)
                     {
                         this.parent.DeSpawn();

@@ -253,7 +253,7 @@ namespace VanillaQuestsExpandedCryptoforge
                 {
                     yield return FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption(contentDetails.gizmoText.Translate().CapitalizeFirst(), delegate
                     {
-                        selPawn.jobs.TryTakeOrderedJob(JobMaker.MakeJob(InternalDefOf.VQE_StudyBlueprints, this), JobTag.Misc);
+                        selPawn.jobs.TryTakeOrderedJob(JobMaker.MakeJob(InternalDefOf.VQE_InitiateScan, this), JobTag.Misc);
                     }), selPawn, this);
                 }
 
