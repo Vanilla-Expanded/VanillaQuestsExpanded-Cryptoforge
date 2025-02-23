@@ -66,42 +66,42 @@
                 <customizationTitle>Cryptoaxe Customization</customizationTitle>
                 <graphics>
                     <li>
-                        <name>Shoulder</name>
+                        <name>Handle</name>
                         <texVariants>
                             <li>
-                                <texName>Brimskel</texName>
-                                <outline>Equipment/CryptoAxe/CryptoAxe_Shoulder_Brimskel_Outline</outline>
-                                <texture>Equipment/CryptoAxe/CryptoAxe_Shoulder_Brimskel</texture>
+                                <texName>Drottulgrip</texName>
+                                <outline>Equipment/CryptoAxe/CryptoAxe_Handle_Drottulgrip_Outline</outline>
+                                <texture>Equipment/CryptoAxe/CryptoAxe_Handle_Drottulgrip</texture>
                             </li>
                             <li>
-                                <texName>Gjallarhorn</texName>
-                                <outline>Equipment/CryptoAxe/CryptoAxe_Shoulder_Gjallarhorn_Outline</outline>
-                                <texture>Equipment/CryptoAxe/CryptoAxe_Shoulder_Gjallarhorn</texture>
+                                <texName>Eikthrymr</texName>
+                                <outline>Equipment/CryptoAxe/CryptoAxe_Handle_Eikthrymr_Outline</outline>
+                                <texture>Equipment/CryptoAxe/CryptoAxe_Handle_Eikthrymr</texture>
                             </li>
                             <li>
-                                <texName>Jarnfesti</texName>
-                                <outline>Equipment/CryptoAxe/CryptoAxe_Shoulder_Jarnfesti_Outline</outline>
-                                <texture>Equipment/CryptoAxe/CryptoAxe_Shoulder_Jarnfesti</texture>
+                                <texName>Eldvidr</texName>
+                                <outline>Equipment/CryptoAxe/CryptoAxe_Handle_Eldvidr_Outline</outline>
+                                <texture>Equipment/CryptoAxe/CryptoAxe_Handle_Eldvidr</texture>
                             </li>
                             <li>
-                                <texName>Nidhuggnar</texName>
-                                <outline>Equipment/CryptoAxe/CryptoAxe_Shoulder_Nidhuggnar_Outline</outline>
-                                <texture>Equipment/CryptoAxe/CryptoAxe_Shoulder_Nidhuggnar</texture>
+                                <texName>Fenrisvidr</texName>
+                                <outline>Equipment/CryptoAxe/CryptoAxe_Handle_Fenrisvidr_Outline</outline>
+                                <texture>Equipment/CryptoAxe/CryptoAxe_Handle_Fenrisvidr</texture>
                             </li>
                             <li>
-                                <texName>Styrkrbryggja</texName>
-                                <outline>Equipment/CryptoAxe/CryptoAxe_Shoulder_Styrkrbryggja_Outline</outline>
-                                <texture>Equipment/CryptoAxe/CryptoAxe_Shoulder_Styrkrbryggja</texture>
+                                <texName>Hrafnkraki</texName>
+                                <outline>Equipment/CryptoAxe/CryptoAxe_Handle_Hrafnkraki_Outline</outline>
+                                <texture>Equipment/CryptoAxe/CryptoAxe_Handle_Hrafnkraki</texture>
                             </li>
                             <li>
-                                <texName>Sverdmondull</texName>
-                                <outline>Equipment/CryptoAxe/CryptoAxe_Shoulder_Sverdmondull_Outline</outline>
-                                <texture>Equipment/CryptoAxe/CryptoAxe_Shoulder_Sverdmondull</texture>
+                                <texName>Ormstefna</texName>
+                                <outline>Equipment/CryptoAxe/CryptoAxe_Handle_Ormstefna_Outline</outline>
+                                <texture>Equipment/CryptoAxe/CryptoAxe_Handle_Ormstefna</texture>
                             </li>
                             <li>
-                                <texName>Vebond</texName>
-                                <outline>Equipment/CryptoAxe/CryptoAxe_Shoulder_Vebond_Outline</outline>
-                                <texture>Equipment/CryptoAxe/CryptoAxe_Shoulder_Vebond</texture>
+                                <texName>Tanngnystr</texName>
+                                <outline>Equipment/CryptoAxe/CryptoAxe_Handle_Tanngnystr_Outline</outline>
+                                <texture>Equipment/CryptoAxe/CryptoAxe_Handle_Tanngnystr</texture>
                             </li>
                         </texVariants>
                     </li>
@@ -146,42 +146,42 @@
                         </texVariants>
                     </li>
                     <li>
-                        <name>Handle</name>
+                        <name>Shoulder</name>
                         <texVariants>
                             <li>
-                                <texName>Drottulgrip</texName>
-                                <outline>Equipment/CryptoAxe/CryptoAxe_Handle_Drottulgrip_Outline</outline>
-                                <texture>Equipment/CryptoAxe/CryptoAxe_Handle_Drottulgrip</texture>
+                                <texName>Brimskel</texName>
+                                <outline>Equipment/CryptoAxe/CryptoAxe_Shoulder_Brimskel_Outline</outline>
+                                <texture>Equipment/CryptoAxe/CryptoAxe_Shoulder_Brimskel</texture>
                             </li>
                             <li>
-                                <texName>Eikthrymr</texName>
-                                <outline>Equipment/CryptoAxe/CryptoAxe_Handle_Eikthrymr_Outline</outline>
-                                <texture>Equipment/CryptoAxe/CryptoAxe_Handle_Eikthrymr</texture>
+                                <texName>Gjallarhorn</texName>
+                                <outline>Equipment/CryptoAxe/CryptoAxe_Shoulder_Gjallarhorn_Outline</outline>
+                                <texture>Equipment/CryptoAxe/CryptoAxe_Shoulder_Gjallarhorn</texture>
                             </li>
                             <li>
-                                <texName>Eldvidr</texName>
-                                <outline>Equipment/CryptoAxe/CryptoAxe_Handle_Eldvidr_Outline</outline>
-                                <texture>Equipment/CryptoAxe/CryptoAxe_Handle_Eldvidr</texture>
+                                <texName>Jarnfesti</texName>
+                                <outline>Equipment/CryptoAxe/CryptoAxe_Shoulder_Jarnfesti_Outline</outline>
+                                <texture>Equipment/CryptoAxe/CryptoAxe_Shoulder_Jarnfesti</texture>
                             </li>
                             <li>
-                                <texName>Fenrisvidr</texName>
-                                <outline>Equipment/CryptoAxe/CryptoAxe_Handle_Fenrisvidr_Outline</outline>
-                                <texture>Equipment/CryptoAxe/CryptoAxe_Handle_Fenrisvidr</texture>
+                                <texName>Nidhuggnar</texName>
+                                <outline>Equipment/CryptoAxe/CryptoAxe_Shoulder_Nidhuggnar_Outline</outline>
+                                <texture>Equipment/CryptoAxe/CryptoAxe_Shoulder_Nidhuggnar</texture>
                             </li>
                             <li>
-                                <texName>Hrafnkraki</texName>
-                                <outline>Equipment/CryptoAxe/CryptoAxe_Handle_Hrafnkraki_Outline</outline>
-                                <texture>Equipment/CryptoAxe/CryptoAxe_Handle_Hrafnkraki</texture>
+                                <texName>Styrkrbryggja</texName>
+                                <outline>Equipment/CryptoAxe/CryptoAxe_Shoulder_Styrkrbryggja_Outline</outline>
+                                <texture>Equipment/CryptoAxe/CryptoAxe_Shoulder_Styrkrbryggja</texture>
                             </li>
                             <li>
-                                <texName>Ormstefna</texName>
-                                <outline>Equipment/CryptoAxe/CryptoAxe_Handle_Ormstefna_Outline</outline>
-                                <texture>Equipment/CryptoAxe/CryptoAxe_Handle_Ormstefna</texture>
+                                <texName>Sverdmondull</texName>
+                                <outline>Equipment/CryptoAxe/CryptoAxe_Shoulder_Sverdmondull_Outline</outline>
+                                <texture>Equipment/CryptoAxe/CryptoAxe_Shoulder_Sverdmondull</texture>
                             </li>
                             <li>
-                                <texName>Tanngnystr</texName>
-                                <outline>Equipment/CryptoAxe/CryptoAxe_Handle_Tanngnystr_Outline</outline>
-                                <texture>Equipment/CryptoAxe/CryptoAxe_Handle_Tanngnystr</texture>
+                                <texName>Vebond</texName>
+                                <outline>Equipment/CryptoAxe/CryptoAxe_Shoulder_Vebond_Outline</outline>
+                                <texture>Equipment/CryptoAxe/CryptoAxe_Shoulder_Vebond</texture>
                             </li>
                         </texVariants>
                     </li>
@@ -247,42 +247,42 @@
                 <customizationTitle>Cryptobolter Customization</customizationTitle>
                 <graphics>
                     <li>
-                        <name>Rail</name>
+                        <name>Bow</name>
                         <texVariants>
                             <li>
-                                <texName>Bifrostlin</texName>
-                                <texture>Equipment/CryptoBolter/CryptoBolter_Rail_Bifrostlin</texture>
-                                <outline>Equipment/CryptoBolter/CryptoBolter_Rail_Bifrostlin_Outline</outline>
+                                <texName>Blodstreng</texName>
+                                <texture>Equipment/CryptoBolter/CryptoBolter_Bow_Blodstreng</texture>
+                                <outline>Equipment/CryptoBolter/CryptoBolter_Bow_Blodstreng_Outline</outline>
                             </li>
                             <li>
-                                <texName>Drakkensleif</texName>
-                                <texture>Equipment/CryptoBolter/CryptoBolter_Rail_Drakkensleif</texture>
-                                <outline>Equipment/CryptoBolter/CryptoBolter_Rail_Drakkensleif_Outline</outline>
+                                <texName>Fenrisbogi</texName>
+                                <texture>Equipment/CryptoBolter/CryptoBolter_Bow_Fenrisbogi</texture>
+                                <outline>Equipment/CryptoBolter/CryptoBolter_Bow_Fenrisbogi_Outline</outline>
                             </li>
                             <li>
-                                <texName>Gungnarlaup</texName>
-                                <texture>Equipment/CryptoBolter/CryptoBolter_Rail_Gungnarlaup</texture>
-                                <outline>Equipment/CryptoBolter/CryptoBolter_Rail_Gungnarlaup_Outline</outline>
+                                <texName>Gjallarstrik</texName>
+                                <texture>Equipment/CryptoBolter/CryptoBolter_Bow_Gjallarstrik</texture>
+                                <outline>Equipment/CryptoBolter/CryptoBolter_Bow_Gjallarstrik_Outline</outline>
                             </li>
                             <li>
-                                <texName>Hafgudstigur</texName>
-                                <texture>Equipment/CryptoBolter/CryptoBolter_Rail_Hafgudstigur</texture>
-                                <outline>Equipment/CryptoBolter/CryptoBolter_Rail_Hafgudstigur_Outline</outline>
+                                <texName>Jotunstreng</texName>
+                                <texture>Equipment/CryptoBolter/CryptoBolter_Bow_Jotunstreng</texture>
+                                <outline>Equipment/CryptoBolter/CryptoBolter_Bow_Jotunstreng_Outline</outline>
                             </li>
                             <li>
-                                <texName>Naglfarskena</texName>
-                                <texture>Equipment/CryptoBolter/CryptoBolter_Rail_Naglfarskena</texture>
-                                <outline>Equipment/CryptoBolter/CryptoBolter_Rail_Naglfarskena_Outline</outline>
+                                <texName>Nidhoggsbue</texName>
+                                <texture>Equipment/CryptoBolter/CryptoBolter_Bow_Nidhoggsbue</texture>
+                                <outline>Equipment/CryptoBolter/CryptoBolter_Bow_Nidhoggsbue_Outline</outline>
                             </li>
                             <li>
-                                <texName>Skotarveg</texName>
-                                <texture>Equipment/CryptoBolter/CryptoBolter_Rail_Skotarveg</texture>
-                                <outline>Equipment/CryptoBolter/CryptoBolter_Rail_Skotarveg_Outline</outline>
+                                <texName>Sleipnirband</texName>
+                                <texture>Equipment/CryptoBolter/CryptoBolter_Bow_Sleipnirband</texture>
+                                <outline>Equipment/CryptoBolter/CryptoBolter_Bow_Sleipnirband_Outline</outline>
                             </li>
                             <li>
-                                <texName>Ullrsstigur</texName>
-                                <texture>Equipment/CryptoBolter/CryptoBolter_Rail_Ullrsstigur</texture>
-                                <outline>Equipment/CryptoBolter/CryptoBolter_Rail_Ullrsstigur_Outline</outline>
+                                <texName>Stormgeir</texName>
+                                <texture>Equipment/CryptoBolter/CryptoBolter_Bow_Stormgeir</texture>
+                                <outline>Equipment/CryptoBolter/CryptoBolter_Bow_Stormgeir_Outline</outline>
                             </li>
                         </texVariants>
                     </li>
@@ -327,42 +327,42 @@
                         </texVariants>
                     </li>
                     <li>
-                        <name>Bow</name>
+                        <name>Rail</name>
                         <texVariants>
                             <li>
-                                <texName>Blodstreng</texName>
-                                <texture>Equipment/CryptoBolter/CryptoBolter_Bow_Blodstreng</texture>
-                                <outline>Equipment/CryptoBolter/CryptoBolter_Bow_Blodstreng_Outline</outline>
+                                <texName>Bifrostlin</texName>
+                                <texture>Equipment/CryptoBolter/CryptoBolter_Rail_Bifrostlin</texture>
+                                <outline>Equipment/CryptoBolter/CryptoBolter_Rail_Bifrostlin_Outline</outline>
                             </li>
                             <li>
-                                <texName>Fenrisbogi</texName>
-                                <texture>Equipment/CryptoBolter/CryptoBolter_Bow_Fenrisbogi</texture>
-                                <outline>Equipment/CryptoBolter/CryptoBolter_Bow_Fenrisbogi_Outline</outline>
+                                <texName>Drakkensleif</texName>
+                                <texture>Equipment/CryptoBolter/CryptoBolter_Rail_Drakkensleif</texture>
+                                <outline>Equipment/CryptoBolter/CryptoBolter_Rail_Drakkensleif_Outline</outline>
                             </li>
                             <li>
-                                <texName>Gjallarstrik</texName>
-                                <texture>Equipment/CryptoBolter/CryptoBolter_Bow_Gjallarstrik</texture>
-                                <outline>Equipment/CryptoBolter/CryptoBolter_Bow_Gjallarstrik_Outline</outline>
+                                <texName>Gungnarlaup</texName>
+                                <texture>Equipment/CryptoBolter/CryptoBolter_Rail_Gungnarlaup</texture>
+                                <outline>Equipment/CryptoBolter/CryptoBolter_Rail_Gungnarlaup_Outline</outline>
                             </li>
                             <li>
-                                <texName>Jotunstreng</texName>
-                                <texture>Equipment/CryptoBolter/CryptoBolter_Bow_Jotunstreng</texture>
-                                <outline>Equipment/CryptoBolter/CryptoBolter_Bow_Jotunstreng_Outline</outline>
+                                <texName>Hafgudstigur</texName>
+                                <texture>Equipment/CryptoBolter/CryptoBolter_Rail_Hafgudstigur</texture>
+                                <outline>Equipment/CryptoBolter/CryptoBolter_Rail_Hafgudstigur_Outline</outline>
                             </li>
                             <li>
-                                <texName>Nidhoggsbue</texName>
-                                <texture>Equipment/CryptoBolter/CryptoBolter_Bow_Nidhoggsbue</texture>
-                                <outline>Equipment/CryptoBolter/CryptoBolter_Bow_Nidhoggsbue_Outline</outline>
+                                <texName>Naglfarskena</texName>
+                                <texture>Equipment/CryptoBolter/CryptoBolter_Rail_Naglfarskena</texture>
+                                <outline>Equipment/CryptoBolter/CryptoBolter_Rail_Naglfarskena_Outline</outline>
                             </li>
                             <li>
-                                <texName>Sleipnirband</texName>
-                                <texture>Equipment/CryptoBolter/CryptoBolter_Bow_Sleipnirband</texture>
-                                <outline>Equipment/CryptoBolter/CryptoBolter_Bow_Sleipnirband_Outline</outline>
+                                <texName>Skotarveg</texName>
+                                <texture>Equipment/CryptoBolter/CryptoBolter_Rail_Skotarveg</texture>
+                                <outline>Equipment/CryptoBolter/CryptoBolter_Rail_Skotarveg_Outline</outline>
                             </li>
                             <li>
-                                <texName>Stormgeir</texName>
-                                <texture>Equipment/CryptoBolter/CryptoBolter_Bow_Stormgeir</texture>
-                                <outline>Equipment/CryptoBolter/CryptoBolter_Bow_Stormgeir_Outline</outline>
+                                <texName>Ullrsstigur</texName>
+                                <texture>Equipment/CryptoBolter/CryptoBolter_Rail_Ullrsstigur</texture>
+                                <outline>Equipment/CryptoBolter/CryptoBolter_Rail_Ullrsstigur_Outline</outline>
                             </li>
                         </texVariants>
                     </li>
