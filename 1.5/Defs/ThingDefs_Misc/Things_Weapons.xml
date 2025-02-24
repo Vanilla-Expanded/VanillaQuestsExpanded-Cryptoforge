@@ -10,6 +10,8 @@
             <WorkToMake>45000</WorkToMake>
         </statBases>
         <equippedAngleOffset>-45</equippedAngleOffset>
+    <soundInteract>VQE_Interact_Cryptoaxe</soundInteract>
+    <meleeHitSound>VQE_MeleeHit_Cryptoaxe</meleeHitSound>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <texPath>Equipment/CryptoAxe/CryptoAxe</texPath>
@@ -221,6 +223,7 @@
             <WorkToMake>45000</WorkToMake>
             <RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
         </statBases>
+		<soundInteract>VQE_Interact_Cryptobolter</soundInteract>
         <recipeMaker>
             <recipeUsers Inherit="False">
                 <li>VQE_AncientCryptoforge</li>
@@ -411,6 +414,8 @@
                 <warmupTime>1.7</warmupTime>
                 <range>32.9</range>
                 <burstShotCount>1</burstShotCount>
+				<soundCast>VQE_Shot_Cryptobolter</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
                 <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
@@ -423,7 +428,7 @@
         <thingClass>VanillaQuestsExpandedCryptoforge.Bullet_Cryptobolter</thingClass>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Equipment/CryptoBolter/Projectile_Cryptobolter</texPath>
+            <texPath>Equipment/CryptoBolter/VQE_CryptoBolt</texPath>
             <shaderType>Transparent</shaderType>
         </graphicData>
         <projectile>
