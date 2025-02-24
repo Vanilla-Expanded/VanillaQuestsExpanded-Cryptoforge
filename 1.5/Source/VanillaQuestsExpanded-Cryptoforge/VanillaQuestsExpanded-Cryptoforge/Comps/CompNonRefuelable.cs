@@ -38,7 +38,14 @@ namespace VanillaQuestsExpandedCryptoforge
 
         public float Fuel => fuel;
 
-      
+        public const int firstRaidPeriod = 7500; // 3 hours
+        public const int secondRaidPeriod = 15000; // 6 hours
+        public const int thirdRaidPeriod = 22500; // 9 hours
+
+        public int raidTickCounter = 0;
+
+        public bool inConstantRaids = false;
+
 
         public float FuelPercentOfMax => fuel / Props.fuelCapacity;
 
@@ -75,8 +82,10 @@ namespace VanillaQuestsExpandedCryptoforge
         {
             base.PostExposeData();
             Scribe_Values.Look(ref fuel, "fuel", 0f);
-          
-          
+            Scribe_Values.Look(ref raidTickCounter, "raidTickCounter");
+            Scribe_Values.Look(ref inConstantRaids, "inConstantRaids");
+
+
         }
 
         public override void PostDraw()
@@ -115,7 +124,28 @@ namespace VanillaQuestsExpandedCryptoforge
                 comp = this.parent.Map.GetComponent<MapComponent_CryptoBuildingsInMap>();
 
             }
-          
+            raidTickCounter++;
+
+            if(raidTickCounter == firstRaidPeriod)
+            {
+                Utils.CreateMechRaid(this.parent.Map, 0.25f);
+            }
+            if (raidTickCounter == secondRaidPeriod)
+            {
+                Utils.CreateMechRaid(this.parent.Map, 0.5f);
+            }
+            if (raidTickCounter == thirdRaidPeriod)
+            {
+                Utils.CreateMechRaid(this.parent.Map, 1f);
+                inConstantRaids = true;
+                raidTickCounter++;
+            }
+            if(inConstantRaids && raidTickCounter % 7500 == 0)
+            {
+                Utils.CreateMechRaid(this.parent.Map, 1f);
+            }
+
+
             ConsumeFuel(ConsumptionRatePerTick);
             if(Fuel< Props.fuelCapacity / 3)
             {

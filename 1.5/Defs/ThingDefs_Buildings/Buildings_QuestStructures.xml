@@ -120,6 +120,7 @@
 		<label>disabled frozen scanning relay</label>
 		<description>A long-range scanning relay. Any notifications and data has been removed, and it’s nothing but a big hunk of junk.</description>
 		<thingClass>Building</thingClass>
+
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<selectable>true</selectable>

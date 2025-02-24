@@ -15,28 +15,16 @@ using Verse.AI;
 
 namespace VanillaQuestsExpandedCryptoforge
 {
-    public class Scannable : Building
+    public class Restartable : Building
     {
 
         MapComponent_CryptoBuildingsInMap comp;
         CryptoBuildingDetails contentDetails;
-        public bool scanning = false;
-        public int tickCounter = 0;
-        public const int totalTicks = 7500; // 3 ingame hours
-                                           
       
-        private static readonly Vector2 BarSize = new Vector2(0.55f, 0.1f);
 
 
-        public override void ExposeData()
-        {
-            base.ExposeData();
-            Scribe_Values.Look(ref this.scanning, "scanning");
-            Scribe_Values.Look(ref this.tickCounter, "tickCounter");
+   
 
-        }
-
-     
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
@@ -52,11 +40,10 @@ namespace VanillaQuestsExpandedCryptoforge
             {
                 yield return c;
             }
-            if (!scanning) {
-
+          
                 Command_Action command_Action = new Command_Action();
 
-                if (comp?.scannables_InMap.Contains(this) == false)
+                if (comp?.restartables_InMap.Contains(this) == false)
                 {
                     command_Action.defaultDesc = contentDetails.gizmoDesc.Translate();
 
@@ -65,7 +52,7 @@ namespace VanillaQuestsExpandedCryptoforge
                     command_Action.hotKey = KeyBindingDefOf.Misc1;
                     command_Action.action = delegate
                     {
-                        Map.GetComponent<MapComponent_CryptoBuildingsInMap>()?.AddScannablesToMap(this);
+                        Map.GetComponent<MapComponent_CryptoBuildingsInMap>()?.AddRestartableToMap(this);
                     };
                 }
                 else
@@ -79,8 +66,8 @@ namespace VanillaQuestsExpandedCryptoforge
 
                 yield return command_Action;
 
-            }
-            
+           
+
 
         }
 
@@ -89,7 +76,7 @@ namespace VanillaQuestsExpandedCryptoforge
 
             if (comp != null)
             {
-                comp.RemoveScannablesFromMap(this);
+                comp.RemoveRestartableFromMap(this);
             }
             base.Destroy(mode);
 
@@ -100,7 +87,7 @@ namespace VanillaQuestsExpandedCryptoforge
 
             if (comp != null)
             {
-                comp.RemoveScannablesFromMap(this);
+                comp.RemoveRestartableFromMap(this);
             }
             base.Kill(dinfo, exactCulprit);
 
@@ -110,7 +97,7 @@ namespace VanillaQuestsExpandedCryptoforge
         {
             base.DrawAt(drawLoc, flip);
 
-            if (!scanning && comp?.scannables_InMap.Contains(this) == true)
+            if (  comp?.restartables_InMap.Contains(this) == true)
             {
                 Vector3 drawPos = DrawPos;
                 drawPos.y = AltitudeLayer.MetaOverlays.AltitudeFor() + 0.181818187f;
@@ -119,69 +106,11 @@ namespace VanillaQuestsExpandedCryptoforge
                 Material material = FadedMaterialPool.FadedVersionOf(GraphicsCache.EnableOverlay, num);
                 Graphics.DrawMesh(MeshPool.plane08, drawPos, Quaternion.identity, material, 0);
             }
-            if (scanning)
-            {
-                Vector3 drawPos = this.DrawPos;
-                drawPos.y += 0.0454545468f;
-                drawPos.z += 0.25f;
-                float CalculatedFillPercent = (float)tickCounter/totalTicks;
-
-               
-                GenDraw.DrawFillableBar(new GenDraw.FillableBarRequest
-                {
-                    center = drawPos,
-                    size = BarSize,
-                    fillPercent = CalculatedFillPercent,
-                    filledMat = GraphicsCache.BarFilledMat,
-                    unfilledMat = GraphicsCache.BarUnfilledMat,
-                    margin = 0.1f,
-                    rotation = Rot4.North
-                });
-
-            }
-        }
-
-        public void Notify_BeginScan()
-        {
-            scanning = true;
-            if (comp != null)
-            {
-                comp.RemoveScannablesFromMap(this);
-            }
-        }
-
-        public void Notify_BegingMechRaid()
-        {
-            Utils.CreateMechRaid(this.Map, 1);
-
-        }
-
-        public override void Tick()
-        {
-            base.Tick();
-
-            if (scanning)
-            {
-                if (tickCounter == 0)
-                {
-                    Notify_BegingMechRaid();
-
-                }
-
-                tickCounter++;
-
-
-
-                if(tickCounter >= totalTicks)
-                {
-                    scanning = false;
-                    Notify_EndScan();
-                }
-            }
+            
         }
 
 
-        public void Notify_EndScan()
+        public void Notify_Restarted()
         {
 
             if (contentDetails != null)
@@ -191,18 +120,18 @@ namespace VanillaQuestsExpandedCryptoforge
                 {
 
 
-                    Thing palletToMake = GenSpawn.Spawn(ThingMaker.MakeThing(contentDetails.buildingLeft), Position, Map, Rotation);
+                    Thing buildingToMake = GenSpawn.Spawn(ThingMaker.MakeThing(contentDetails.buildingLeft), Position, Map, Rotation);
 
-                    if (palletToMake.def.CanHaveFaction)
+                    if (buildingToMake.def.CanHaveFaction)
                     {
-                        palletToMake.SetFaction(this.Faction);
+                        buildingToMake.SetFaction(this.Faction);
                     }
                 }
                 if (contentDetails.deconstructSound != null)
                 {
                     contentDetails.deconstructSound.PlayOneShot(this);
                 }
-                          
+
 
                 if (this.Spawned)
                 {
@@ -220,7 +149,7 @@ namespace VanillaQuestsExpandedCryptoforge
             {
                 yield return floatMenuOption;
             }
-            if (!scanning&&selPawn.CanReserve(this) && selPawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation)
+            if (selPawn.CanReserve(this) && selPawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation)
                 && !selPawn.skills.GetSkill(SkillDefOf.Intellectual).TotallyDisabled)
             {
                 if (!selPawn.CanReach(this, PathEndMode.OnCell, Danger.Deadly))
@@ -231,7 +160,7 @@ namespace VanillaQuestsExpandedCryptoforge
                 {
                     yield return FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption(contentDetails.gizmoText.Translate().CapitalizeFirst(), delegate
                     {
-                        selPawn.jobs.TryTakeOrderedJob(JobMaker.MakeJob(InternalDefOf.VQE_InitiateScan, this), JobTag.Misc);
+                        selPawn.jobs.TryTakeOrderedJob(JobMaker.MakeJob(InternalDefOf.VQE_RestartGenerator, this), JobTag.Misc);
                     }), selPawn, this);
                 }
 

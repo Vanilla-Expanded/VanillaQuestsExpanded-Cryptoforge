@@ -31,8 +31,9 @@ namespace VanillaQuestsExpandedCryptoforge
 		public static JobDef VQE_StudyBlueprints;
 		public static JobDef VQE_InitiateScan;
 		public static JobDef VQE_BeatCryptofreeze;
+        public static JobDef VQE_RestartGenerator;
 
-		public static SoundDef VQE_BlaringSiren;
+        public static SoundDef VQE_BlaringSiren;
 		public static SoundDef VQE_MeltdownExplosion_Cryo;
 		public static SoundDef VQE_Freezing;
 		public static SoundDef VQE_Freezing_Single;
@@ -42,5 +43,6 @@ namespace VanillaQuestsExpandedCryptoforge
 
 		public static HediffDef VQE_CryptoSlowdown;
 
-	}
+
+    }
 }

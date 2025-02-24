@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
 	<WorkGiverDef>
 		<defName>VQE_Loot</defName>
 		<label>scavenge objects</label>
@@ -40,17 +39,30 @@
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
-	  <WorkGiverDef>
-    <defName>VQE_FightCryptofreeze</defName>
-    <label>fight cryptofreeze</label>
-    <giverClass>VanillaQuestsExpandedCryptoforge.WorkGiver_FightCryptofreeze</giverClass>
-    <workType>Firefighter</workType>
-    <emergency>true</emergency>
-    <verb>extinguish</verb>
-    <gerund>extinguishing</gerund>
-    <canBeDoneWhileDrafted>true</canBeDoneWhileDrafted>
-    <autoTakeablePriorityDrafted>20</autoTakeablePriorityDrafted>
-    <forceFleck>FeedbackExtinguish</forceFleck>
-    <directOrderable>false</directOrderable>
-  </WorkGiverDef>
+	<WorkGiverDef>
+		<defName>VQE_RestartGenerator</defName>
+		<label>restart</label>
+		<giverClass>VanillaQuestsExpandedCryptoforge.WorkGiver_RestartGenerator</giverClass>
+		<workType>Research</workType>
+		<verb>restart</verb>
+		<gerund>restarting</gerund>
+		<priorityInType>101</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	<WorkGiverDef>
+		<defName>VQE_FightCryptofreeze</defName>
+		<label>fight cryptofreeze</label>
+		<giverClass>VanillaQuestsExpandedCryptoforge.WorkGiver_FightCryptofreeze</giverClass>
+		<workType>Firefighter</workType>
+		<emergency>true</emergency>
+		<verb>extinguish</verb>
+		<gerund>extinguishing</gerund>
+		<canBeDoneWhileDrafted>true</canBeDoneWhileDrafted>
+		<autoTakeablePriorityDrafted>20</autoTakeablePriorityDrafted>
+		<forceFleck>FeedbackExtinguish</forceFleck>
+		<directOrderable>false</directOrderable>
+	</WorkGiverDef>
 </Defs>

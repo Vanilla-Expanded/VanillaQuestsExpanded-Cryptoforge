@@ -19,6 +19,12 @@
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
 	<JobDef>
+		<defName>VQE_RestartGenerator</defName>
+		<driverClass>VanillaQuestsExpandedCryptoforge.JobDriver_RestartGenerator</driverClass>
+		<reportString>restarting TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	<JobDef>
 		<defName>VQE_BeatCryptofreeze</defName>
 		<driverClass>VanillaQuestsExpandedCryptoforge.JobDriver_BeatCryptofreeze</driverClass>
 		<reportString>beating cryptofreeze out.</reportString>
