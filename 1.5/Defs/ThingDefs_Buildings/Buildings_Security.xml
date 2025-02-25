@@ -280,27 +280,22 @@
 				<rect>(0.1,0,0.8,0.3)</rect>
 			</damageData>
 		</graphicData>
-		<uiIconOffset>(0,-0.14)</uiIconOffset>
 		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>false</rotatable>
 		<tickerType>Normal</tickerType>
-		<stealable>false</stealable>
-	
+		<stealable>false</stealable>	
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<selectable>false</selectable>
-		<uiOrder>40</uiOrder>
-	
-		<statBases>
-			
-			<MaxHitPoints>40</MaxHitPoints>
-			
+		<uiOrder>40</uiOrder>	
+		<statBases>			
+			<MaxHitPoints>40</MaxHitPoints>			
 			<Flammability>1</Flammability>
 			<Beauty>-4</Beauty>
 			<TrapSpringChance>1.0</TrapSpringChance>
 		</statBases>
 		<building>
 			<isTrap>true</isTrap>
-			<trapPeacefulWildAnimalsSpringChanceFactor>0.25</trapPeacefulWildAnimalsSpringChanceFactor>
+			<trapPeacefulWildAnimalsSpringChanceFactor>0</trapPeacefulWildAnimalsSpringChanceFactor>
 			<expandHomeArea>false</expandHomeArea>
 			<ai_chillDestination>false</ai_chillDestination>
 			<neverBuildable>true</neverBuildable>
@@ -316,6 +311,7 @@
 		<graphicData>
 			<texPath>UI/Empty</texPath>
 		</graphicData>
+		<uiIconOffset>(0,-0.14)</uiIconOffset>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<uiIconPath>Things/Security/AncientLandmine_Visible</uiIconPath>
 		<thingClass>VanillaQuestsExpandedCryptoforge.Building_InvisibleMine</thingClass>
@@ -332,6 +328,31 @@
 				</startWickOnDamageTaken>
 			</li>
 		</comps>
+		<building>
+		<trapPeacefulWildAnimalsSpringChanceFactor>0.25</trapPeacefulWildAnimalsSpringChanceFactor>
+		</building>
 		<specialDisplayRadius>3.9</specialDisplayRadius>
+	</ThingDef>
+	<ThingDef ParentName="VQE_TrapIEDBase">
+		<defName>VQE_FrozenLancer</defName>
+		<label>frozen lancer</label>
+		<description>A frozen shell containing a lancer.\n\nLong-dormant mechanoids can become encased in ice, preserving them for years. Though inert, they remain alert, scanning for movement. Any disturbance, such as footsteps, explosions, or shifting ice, can trigger a sudden reboot, shattering their frozen shell. Nearby frozen mechanoids may awaken in unison.</description>
+		<graphicData>
+			<texPath>Things/Security/FrozenLancer</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+	
+		<drawerType>MapMeshAndRealTime</drawerType>
+	
+		<thingClass>VanillaQuestsExpandedCryptoforge.Building_FrozenMechanoid</thingClass>
+		
+		
+		<specialDisplayRadius>3.9</specialDisplayRadius>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+				<frozenMechanoid>Mech_Lancer</frozenMechanoid>
+			
+			</li>
+		</modExtensions>
 	</ThingDef>
 </Defs>
