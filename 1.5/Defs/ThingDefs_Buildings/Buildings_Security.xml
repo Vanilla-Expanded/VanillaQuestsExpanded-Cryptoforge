@@ -4,7 +4,7 @@
 		<defName>VQE_AncientShieldedTurret</defName>
 		<label>ancient shielded turret</label>
 		<description>A portable automatic turret. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
-		<thingClass>Building_TurretGun</thingClass>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Building_TurretGun_Armoured</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<texPath>Things/Security/TurretAncientShip_Base</texPath>
@@ -146,5 +146,213 @@
 				<consumeFuelPerShot>1</consumeFuelPerShot>
 			</li>
 		</verbs>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<defName>VQE_AncientSpacerAutocannon</defName>
+		<label>ancient spacer autocannon</label>
+		<description>todo.</description>
+		<uiIconPath>Things/Security/TurretSpaceAutocannon_MenuIcon</uiIconPath>
+		<thingClass>Building_TurretGun</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Security/TurrretLargeAncientShip_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5, 1.5)</drawSize>
+			<drawOffset>(0,0,-0.1)</drawOffset>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(1.5,0.35,1.4)</volume>
+				<offset>(0,0,-0.05)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>false</rotatable>
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>380</MaxHitPoints>
+			<Flammability>0.7</Flammability>
+			<WorkToBuild>15000</WorkToBuild>
+			<Mass>100</Mass>
+			<Beauty>-20</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+			<!-- like level 8 human shooter -->
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.5</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretTopDrawSize>2.7</turretTopDrawSize>
+			<turretTopOffset>(0, 0.05)</turretTopOffset>
+			<neverBuildable>true</neverBuildable>
+			<turretGunDef>VQE_AncientSpacerAutocannon_Gun</turretGunDef>
+			<turretBurstCooldownTime>3.5</turretBurstCooldownTime>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+		<uiIconScale>0.95</uiIconScale>
+		<comps>
+			<li Class="CompProperties_Stunnable">
+				<affectedDamageDefs>
+					<li>Stun</li>
+					<li>EMP</li>
+				</affectedDamageDefs>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>240</wickTicks>
+				<explosiveRadius>5.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>250</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<costList>
+			<Steel>176</Steel>
+			<Plasteel>40</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>VQE_AncientSpacerAutocannon_Bullet</defName>
+		<label>ancient spacer autocannon shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>27</damageAmountBase>
+			<speed>88</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>VQE_AncientSpacerAutocannon_Gun</defName>
+		<label>ancient spacer autocannon</label>
+		<description>todo.</description>
+		<graphicData>
+			<texPath>Things/Security/TurretSpaceAutocannon_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.28</AccuracyTouch>
+			<AccuracyShort>0.72</AccuracyShort>
+			<AccuracyMedium>0.66</AccuracyMedium>
+			<AccuracyLong>0.5</AccuracyLong>
+			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>40</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>VQE_AncientSpacerAutocannon_Bullet</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<minRange>8.9</minRange>
+				<range>32.9</range>
+				<ticksBetweenBurstShots>17</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>Shot_Autocannon</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+			</li>
+		</verbs>
+	</ThingDef>
+	<ThingDef Name="VQE_TrapIEDBase" ParentName="VQE_CryptoForgeBuildingBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<rect>(0.1,0,0.8,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<stealable>false</stealable>	
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<selectable>false</selectable>
+		<uiOrder>40</uiOrder>	
+		<statBases>			
+			<MaxHitPoints>40</MaxHitPoints>			
+			<Flammability>1</Flammability>
+			<Beauty>-4</Beauty>
+			<TrapSpringChance>1.0</TrapSpringChance>
+		</statBases>
+		<building>
+			<isTrap>true</isTrap>
+			<trapPeacefulWildAnimalsSpringChanceFactor>0</trapPeacefulWildAnimalsSpringChanceFactor>
+			<expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_NeverAdjacentTrap</li>
+		</placeWorkers>
+	</ThingDef>
+	<ThingDef ParentName="VQE_TrapIEDBase">
+		<defName>VQE_AncientLandmine</defName>
+		<label>ancient landmine</label>
+		<description>An ancient, high-explosive payload connected to a trigger which detonates on touch or bullet impact. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. It’s impossible to detect it until triggered.</description>
+		<graphicData>
+			<texPath>UI/Empty</texPath>
+		</graphicData>
+		<uiIconOffset>(0,-0.14)</uiIconOffset>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<uiIconPath>Things/Security/AncientLandmine_Visible</uiIconPath>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Building_InvisibleMine</thingClass>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+				<wickTicks>30</wickTicks>
+				<startWickOnDamageTaken>
+					<li>Bullet</li>
+					<li>Arrow</li>
+					<li>ArrowHighVelocity</li>
+				</startWickOnDamageTaken>
+			</li>
+		</comps>
+		<building>
+		<trapPeacefulWildAnimalsSpringChanceFactor>0.25</trapPeacefulWildAnimalsSpringChanceFactor>
+		</building>
+		<specialDisplayRadius>3.9</specialDisplayRadius>
+	</ThingDef>
+	<ThingDef ParentName="VQE_TrapIEDBase">
+		<defName>VQE_FrozenLancer</defName>
+		<label>frozen lancer</label>
+		<description>A frozen shell containing a lancer.\n\nLong-dormant mechanoids can become encased in ice, preserving them for years. Though inert, they remain alert, scanning for movement. Any disturbance, such as footsteps, explosions, or shifting ice, can trigger a sudden reboot, shattering their frozen shell. Nearby frozen mechanoids may awaken in unison.</description>
+		<graphicData>
+			<texPath>Things/Security/FrozenLancer</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+	
+		<drawerType>MapMeshAndRealTime</drawerType>
+	
+		<thingClass>VanillaQuestsExpandedCryptoforge.Building_FrozenMechanoid</thingClass>
+		
+		
+		<specialDisplayRadius>3.9</specialDisplayRadius>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+				<frozenMechanoid>Mech_Lancer</frozenMechanoid>
+			
+			</li>
+		</modExtensions>
 	</ThingDef>
 </Defs>

@@ -50,6 +50,7 @@
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
 		<defName>VQE_FrozenCryptogenerator</defName>
 		<label>frozen cryptogenerator</label>
+		
 		<description>todo.</description>
 		<size>(5,5)</size>
 		<passability>PassThroughOnly</passability>
@@ -103,6 +104,7 @@
 		<defName>VQE_FrozenCryptogenerator_Off</defName>
 		<label>frozen cryptogenerator</label>
 		<description>An advanced generator that once powered cryptotech devices. Now, it hums faintly with dying energy. It can be restarted to once again provide power to the various subsystems, but the permanent damage to the critical component will cause the generator to become more and more unstable, eventually detonating in a devastating cryptoexplosion.</description>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Restartable</thingClass>
 		<size>(5,5)</size>
 		<passability>PassThroughOnly</passability>
 		<drawerType>MapMeshAndRealTime</drawerType>
@@ -137,5 +139,13 @@
 		<costList>
 			<Steel>60</Steel>
 		</costList>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+				<gizmoTexture>UI/EnableGenerator_Gizmo</gizmoTexture>
+				<gizmoText>VQE_RestartGenerator</gizmoText>
+				<gizmoDesc>VQE_RestartGeneratorDesc</gizmoDesc>
+				<buildingLeft>VQE_FrozenCryptogenerator</buildingLeft>
+			</li>
+		</modExtensions>
 	</ThingDef>
 </Defs>

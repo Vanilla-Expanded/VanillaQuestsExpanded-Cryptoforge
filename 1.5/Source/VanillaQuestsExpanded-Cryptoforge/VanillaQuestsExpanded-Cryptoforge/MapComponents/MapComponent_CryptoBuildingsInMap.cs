@@ -15,6 +15,7 @@ namespace VanillaQuestsExpandedCryptoforge
         public HashSet<Thing> lootables_InMap = new HashSet<Thing>();
         public HashSet<Thing> studiables_InMap = new HashSet<Thing>();
         public HashSet<Thing> scannables_InMap = new HashSet<Thing>();
+        public HashSet<Thing> restartables_InMap = new HashSet<Thing>();
         public HashSet<Thing> criticalCryptoGenerators_InMap = new HashSet<Thing>();
 
 
@@ -31,6 +32,8 @@ namespace VanillaQuestsExpandedCryptoforge
             Scribe_Collections.Look(ref this.lootables_InMap, "lootables_InMap", LookMode.Reference);
             Scribe_Collections.Look(ref this.studiables_InMap, "studiables_InMap", LookMode.Reference);
             Scribe_Collections.Look(ref this.scannables_InMap, "scannables_InMap", LookMode.Reference);
+            Scribe_Collections.Look(ref this.restartables_InMap, "restartables_InMap", LookMode.Reference);
+
             Scribe_Collections.Look(ref this.criticalCryptoGenerators_InMap, "criticalCryptoGenerators_InMap", LookMode.Reference);
 
         }
@@ -99,6 +102,23 @@ namespace VanillaQuestsExpandedCryptoforge
             if (criticalCryptoGenerators_InMap.Contains(thing))
             {
                 criticalCryptoGenerators_InMap.Remove(thing);
+            }
+
+        }
+
+        public void AddRestartableToMap(Thing thing)
+        {
+            if (!restartables_InMap.Contains(thing))
+            {
+                restartables_InMap.Add(thing);
+            }
+        }
+
+        public void RemoveRestartableFromMap(Thing thing)
+        {
+            if (restartables_InMap.Contains(thing))
+            {
+                restartables_InMap.Remove(thing);
             }
 
         }
