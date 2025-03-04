@@ -1,33 +1,68 @@
-﻿using Mono.Unix.Native;
-using RimWorld;
+﻿using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using UnityEngine;
 using Verse;
 using Verse.AI.Group;
-using static HarmonyLib.Code;
-using static System.Collections.Specialized.BitVector32;
+using Verse.Sound;
+
 
 namespace VanillaQuestsExpandedCryptoforge
 {
     public class Building_FrozenMechanoid : Building_Trap
     {
-      
+        public bool signalDelete = false;
+        public int deletionCounter = 0;
+
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Values.Look(ref this.signalDelete, "signalDelete");
+           
+        }
+
+        public override void Tick()
+        {
+            base.Tick();
+            if (signalDelete)
+            {
+                deletionCounter++;
+                if (deletionCounter > 10)
+                {
+                    this.Destroy();
+                }
+            }
+        }
+
 
         protected override void SpringSub(Pawn p)
         {
-            IntVec3 pos = this.PositionHeld;
-            Map map = this.Map;
+            if(!this.signalDelete) {
+                signalDelete = true;
+                IntVec3 pos = this.PositionHeld;
+                Map map = this.Map;
 
-            Effecter effecter = EffecterDefOf.Deflect_Metal_Bullet.Spawn();
+                PopUpMechanoid(pos, map);
+                WakeUpOtherTraps(pos, map, 5, p);
+            }
+            
+
+
+        }
+
+        public void PopUpMechanoid(IntVec3 pos, Map map)
+        {
+            Effecter effecter = InternalDefOf.VQE_Effect_IceShatter.Spawn();
             effecter.Trigger(this, this);
+            InternalDefOf.VQE_CrystalShatter.PlayOneShot(this);
 
             CryptoBuildingDetails contentDetails = this.def.GetModExtension<CryptoBuildingDetails>();
             if (contentDetails != null && Find.FactionManager.OfMechanoids != null)
             {
-                Pawn pawn = PawnGenerator.GeneratePawn(contentDetails.frozenMechanoid, Find.FactionManager.OfMechanoids);
+                Pawn pawn = PawnGenerator.GeneratePawn(contentDetails.frozenMechanoids.RandomElement(), Find.FactionManager.OfMechanoids);
                 GenSpawn.Spawn(pawn, CellFinder.RandomClosewalkCellNear(pos, map, 1), map);
                 Lord lord = null;
                 if (pawn.Map.mapPawns.SpawnedPawnsInFaction(pawn.Faction).Any((Pawn p) => p != pawn))
@@ -43,33 +78,41 @@ namespace VanillaQuestsExpandedCryptoforge
                     lord.AddPawn(pawn);
                 }
             }
-            
 
-            this.Destroy();
+        }
 
-
-
-            int radius = 5;
+        public void WakeUpOtherTraps(IntVec3 pos, Map map, int radius, Pawn p)
+        {
+           List<Building_FrozenMechanoid> buildingsToTrigger = new List<Building_FrozenMechanoid>();
             int numCells = GenRadial.NumCellsInRadius(radius);
             for (int i = 0; i < numCells; i++)
             {
                 IntVec3 intVec = pos + GenRadial.RadialPattern[i];
-                if (intVec.InBounds(map) && intVec!=pos)
+                if (intVec.InBounds(map) && intVec != pos)
                 {
                     foreach (Thing thing in intVec.GetThingList(map))
                     {
-                        if (thing != null  && thing is Building_FrozenMechanoid)
+                        if (thing != null && thing is Building_FrozenMechanoid)
                         {
                             Building_FrozenMechanoid mechtrap = (Building_FrozenMechanoid)thing;
-                            mechtrap.SpringSub(p); 
+                            buildingsToTrigger.Add(mechtrap);
                         }
                     }
 
 
                 }
             }
+            if (buildingsToTrigger.Count>0)
+            {
+                foreach(Building_FrozenMechanoid thing in buildingsToTrigger)
+                {
+                    thing.SpringSub(p);
 
+                }
+            }
 
         }
+
+
     }
 }

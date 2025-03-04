@@ -55,6 +55,23 @@
 		</subSounds>
 	</SoundDef>
 	<SoundDef>
+		<defName>VQE_CrystalShatter</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>VQE_CrystalShatter</clipPath>
+					</li>
+				</grains>
+				<volumeRange>42</volumeRange>
+				<pitchRange>0.8516304~1.254348</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
 		<defName>VQE_Freezing</defName>
 		<sustain>True</sustain>
 		<context>MapOnly</context>

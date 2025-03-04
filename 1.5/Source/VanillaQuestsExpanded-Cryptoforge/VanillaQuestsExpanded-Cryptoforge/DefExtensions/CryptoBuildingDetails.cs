@@ -20,7 +20,7 @@ namespace VanillaQuestsExpandedCryptoforge
         public string gizmoDesc;
         public bool craftingInspiration;
         public SkillDef skillForStudying;
-        public PawnKindDef frozenMechanoid;
+        public List<PawnKindDef> frozenMechanoids;
 
     }
 

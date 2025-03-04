@@ -37,9 +37,12 @@ namespace VanillaQuestsExpandedCryptoforge
 		public static SoundDef VQE_MeltdownExplosion_Cryo;
 		public static SoundDef VQE_Freezing;
 		public static SoundDef VQE_Freezing_Single;
+        public static SoundDef VQE_CrystalShatter;
+
+		public static EffecterDef VQE_Effect_IceShatter;
 
 
-		public static RulePackDef VQE_DamageEvent_CryptoFreeze;
+        public static RulePackDef VQE_DamageEvent_CryptoFreeze;
 
 		public static HediffDef VQE_CryptoSlowdown;
 

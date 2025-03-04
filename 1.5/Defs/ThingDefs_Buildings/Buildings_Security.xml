@@ -285,7 +285,7 @@
 		<tickerType>Normal</tickerType>
 		<stealable>false</stealable>	
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<selectable>false</selectable>
+		
 		<uiOrder>40</uiOrder>	
 		<statBases>			
 			<MaxHitPoints>40</MaxHitPoints>			
@@ -311,6 +311,7 @@
 		<graphicData>
 			<texPath>UI/Empty</texPath>
 		</graphicData>
+		<selectable>false</selectable>
 		<uiIconOffset>(0,-0.14)</uiIconOffset>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<uiIconPath>Things/Security/AncientLandmine_Visible</uiIconPath>
@@ -341,7 +342,7 @@
 			<texPath>Things/Security/FrozenLancer</texPath>
 			<drawSize>2</drawSize>
 		</graphicData>
-	
+		<uiIconScale>0.75</uiIconScale>
 		<drawerType>MapMeshAndRealTime</drawerType>
 	
 		<thingClass>VanillaQuestsExpandedCryptoforge.Building_FrozenMechanoid</thingClass>
@@ -350,7 +351,53 @@
 		<specialDisplayRadius>3.9</specialDisplayRadius>
 		<modExtensions>
 			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
-				<frozenMechanoid>Mech_Lancer</frozenMechanoid>
+				<frozenMechanoids><li>Mech_Lancer</li></frozenMechanoids>
+			
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="VQE_TrapIEDBase">
+		<defName>VQE_FrozenCentipede</defName>
+		<label>frozen centipede</label>
+		<description>A frozen shell containing a centipede.\n\nLong-dormant mechanoids can become encased in ice, preserving them for years. Though inert, they remain alert, scanning for movement. Any disturbance, such as footsteps, explosions, or shifting ice, can trigger a sudden reboot, shattering their frozen shell. Nearby frozen mechanoids may awaken in unison.</description>
+		<graphicData>
+			<texPath>Things/Security/FrozenCentipede</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<uiIconScale>0.75</uiIconScale>
+		<drawerType>MapMeshAndRealTime</drawerType>
+	
+		<thingClass>VanillaQuestsExpandedCryptoforge.Building_FrozenMechanoid</thingClass>
+		
+		
+		<specialDisplayRadius>3.9</specialDisplayRadius>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+				<frozenMechanoids><li>Mech_CentipedeBlaster</li><li>Mech_CentipedeGunner</li><li>Mech_CentipedeBurner</li></frozenMechanoids>
+			
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="VQE_TrapIEDBase">
+		<defName>VQE_FrozenScyther</defName>
+		<label>frozen scyther</label>
+		<description>A frozen shell containing a scyther.\n\nLong-dormant mechanoids can become encased in ice, preserving them for years. Though inert, they remain alert, scanning for movement. Any disturbance, such as footsteps, explosions, or shifting ice, can trigger a sudden reboot, shattering their frozen shell. Nearby frozen mechanoids may awaken in unison.</description>
+		<graphicData>
+			<texPath>Things/Security/FrozenScyther</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<uiIconScale>0.75</uiIconScale>
+		<drawerType>MapMeshAndRealTime</drawerType>
+	
+		<thingClass>VanillaQuestsExpandedCryptoforge.Building_FrozenMechanoid</thingClass>
+		
+		
+		<specialDisplayRadius>3.9</specialDisplayRadius>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+				<frozenMechanoids><li>Mech_Scyther</li></frozenMechanoids>
 			
 			</li>
 		</modExtensions>

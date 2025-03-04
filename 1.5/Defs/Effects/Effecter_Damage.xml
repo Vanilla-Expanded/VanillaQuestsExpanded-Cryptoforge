@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  <EffecterDef>
+    <defName>VQE_Effect_IceShatter</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <positionRadius>0.4</positionRadius>
+        <fleckDef>AirPuff</fleckDef>
+        <burstCount>2~3</burstCount>
+        <speed>0.4~0.8</speed>
+        <scale>0.8~1.1</scale>
+        <color>(0.7, 0.8, 1, 0.7)</color>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <positionRadius>0.02</positionRadius>
+        <moteDef>VQE_Mote_Ice</moteDef>
+        <burstCount>7~10</burstCount>
+        <speed>3.3~5</speed>
+        <scale>0.5~0.6</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <positionRadius>0.05</positionRadius>
+        <fleckDef>PlainFlash</fleckDef>
+        <burstCount>1</burstCount>
+        <scale>2.5~3.25</scale>
+        <spawnLocType>OnSource</spawnLocType>
+        <color>(0.7, 0.8, 1.0, 0.6)</color>
+      </li>
+    
+    </children>
+    <offsetTowardsTarget>0.25~0.25</offsetTowardsTarget>
+    <positionRadius>0.1</positionRadius>
+  </EffecterDef>
+  
+    <ThingDef ParentName="MoteBase">
+    <defName>VQE_Mote_Ice</defName>
+    <graphicData>
+      <texPath>Things/Mote/IceCrystal</texPath>
+    </graphicData>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <mote>
+      <fadeInTime>0.03</fadeInTime>
+      <solidTime>0.04</solidTime>
+      <fadeOutTime>0.13</fadeOutTime>
+      <collide>true</collide>
+    </mote>
+  </ThingDef>
+
+ 
+
+</Defs>
