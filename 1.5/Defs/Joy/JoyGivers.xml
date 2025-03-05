@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <JoyGiverDef>
+    <defName>VQE_Play_WargamingTable</defName>
+    <giverClass>VanillaQuestsExpandedCryptoforge.JoyGiver_PlayWargamingTable</giverClass>
+    <baseChance>4</baseChance>
+    <thingDefs>
+      <li>VQE_AncientWargamingTable</li>
+    </thingDefs>
+    <jobDef>VQE_Play_WargamingTable</jobDef>
+    <joyKind>VQE_Gaming_StrategicPlay</joyKind>
+    <requiredCapacities>
+      <li>Talking</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+
+</Defs>

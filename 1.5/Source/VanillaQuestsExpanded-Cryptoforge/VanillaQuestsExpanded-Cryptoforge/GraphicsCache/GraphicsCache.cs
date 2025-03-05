@@ -13,7 +13,9 @@ namespace VanillaQuestsExpandedCryptoforge
         public static readonly Material StudyOverlay = MaterialPool.MatFrom("UI/Study_Overlay", ShaderDatabase.MetaOverlay);
         public static readonly Material EnableOverlay = MaterialPool.MatFrom("UI/Enable_Overlay", ShaderDatabase.MetaOverlay);
         public static readonly Graphic_Single VisibleMine = (Graphic_Single)GraphicDatabase.Get<Graphic_Single>("Things/Security/AncientLandmine_Visible", ShaderDatabase.Cutout,
-                     new Vector2(1,1), Color.white); 
+                     new Vector2(1,1), Color.white);
+        public static readonly Graphic_Single FloorHeater_On = (Graphic_Single)GraphicDatabase.Get<Graphic_Single>("Things/Temperature/FloorHeater_On", ShaderDatabase.Cutout,
+                     new Vector2(2, 2), Color.white);
 
 
         public static readonly Material BarUnfilledMat = SolidColorMaterials.SimpleSolidColorMaterial(new Color(0.3f, 0.3f, 0.3f), false);

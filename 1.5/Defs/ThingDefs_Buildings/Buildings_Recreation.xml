@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<defName>VQE_AncientWargamingTable</defName>
+		<label>ancient wargaming table</label>
+		<description>An ancient, slightly rusted, sturdy table designed for strategic miniature wargames, featuring a spacious surface for terrain, armies, and battle plans. The diplomacy required by the rules trains social skill.</description>
+		<graphicData>
+			<texPath>Things/Recreation/AncientWargamingTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>
+		<castEdgeShadows>True</castEdgeShadows>
+		<altitudeLayer>Building</altitudeLayer>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.40</fillPercent>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<building>
+			<joyKind>VQE_Gaming_StrategicPlay</joyKind>
+			<buildingSizeCategory>Medium</buildingSizeCategory>
+			<paintable>false</paintable>
+			<claimable>true</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>75</Mass>
+			<Flammability>0</Flammability>
+			<Beauty>0</Beauty>
+			<JoyGainFactor>1.4</JoyGainFactor>
+		</statBases>
+		<size>(2,3)</size>
+		<costList>
+			<Steel>80</Steel>
+			<Cloth>80</Cloth>
+			<Plasteel>10</Plasteel>
+		</costList>
+		<pathCost>42</pathCost>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<placeWorkers>
+			<li>PlaceWorker_NeverAdjacentUnstandable</li>
+		</placeWorkers>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

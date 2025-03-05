@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <!--======================= Building use =======================-->
+
+  <!-- horseshoes/hoopstone, billiards -->
+  <JoyKindDef>
+    <defName>VQE_Gaming_StrategicPlay</defName>
+    <label>strategic play</label>
+  </JoyKindDef>
+
+
+</Defs>

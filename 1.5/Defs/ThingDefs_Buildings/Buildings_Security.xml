@@ -363,7 +363,7 @@
 		<description>A frozen shell containing a centipede.\n\nLong-dormant mechanoids can become encased in ice, preserving them for years. Though inert, they remain alert, scanning for movement. Any disturbance, such as footsteps, explosions, or shifting ice, can trigger a sudden reboot, shattering their frozen shell. Nearby frozen mechanoids may awaken in unison.</description>
 		<graphicData>
 			<texPath>Things/Security/FrozenCentipede</texPath>
-			<drawSize>2</drawSize>
+			<drawSize>3</drawSize>
 		</graphicData>
 		<uiIconScale>0.75</uiIconScale>
 		<drawerType>MapMeshAndRealTime</drawerType>

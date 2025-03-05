@@ -31,4 +31,16 @@
 		<neverShowWeapon>true</neverShowWeapon>
 		<casualInterruptible>false</casualInterruptible>
 	</JobDef>
+	<JobDef>
+		<defName>VQE_Play_WargamingTable</defName>
+		<driverClass>VanillaQuestsExpandedCryptoforge.JobDriver_PlayWargamingTable</driverClass>
+		<reportString>playing at wargaming table.</reportString>
+		<joyDuration>4000</joyDuration>
+		<joyMaxParticipants>6</joyMaxParticipants>
+		<joySkill>Social</joySkill>
+		<joyXpPerTick>0.008</joyXpPerTick>
+		<joyKind>VQE_Gaming_StrategicPlay</joyKind>
+		<taleOnCompletion>PlayedGame</taleOnCompletion>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
 </Defs>

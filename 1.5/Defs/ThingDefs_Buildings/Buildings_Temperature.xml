@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<defName>VQE_SmallFlashfreezer</defName>
+		<label>small flashfreezer</label>
+		<description>A floor-mounted vent that continuously releases near-absolute-zero air. It could freeze anything given enough time.</description>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Building_SteamSprayer</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Standable</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.05</fillPercent>
+		<useHitPoints>false</useHitPoints>
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+		<pathCost>0</pathCost>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<Flammability>0</Flammability>
+			<MarketValue>200</MarketValue>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Temperature/SmallFloorFreezer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>125</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>-126</heatPerSecond>
+				<heatPushMinTemperature>-800</heatPushMinTemperature>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<defName>VQE_AncientFloorHeater</defName>
+		<label>ancient floor heater</label>
+		<description>A large, outdated floor heater. If power is restored, it might still provide warmth.</description>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Standable</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.05</fillPercent>
+		<useHitPoints>false</useHitPoints>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<tickerType>Normal</tickerType>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Building_FloorHeater</thingClass>
+		<size>(2,2)</size>
+		<rotatable>false</rotatable>
+		<pathCost>0</pathCost>
+		<statBases>
+			<Flammability>0</Flammability>
+			<MarketValue>280</MarketValue>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Temperature/FloorHeater_Off</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>250</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>21</heatPerSecond>
+				<heatPushMaxTemperature>28</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(255,150,100,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>
