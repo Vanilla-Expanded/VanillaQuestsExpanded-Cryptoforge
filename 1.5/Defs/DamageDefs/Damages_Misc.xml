@@ -17,6 +17,20 @@
     <combatLogRules>Damage_Extinguish</combatLogRules>
     <consideredHelpful>true</consideredHelpful>
   </DamageDef>
+  
+  <DamageDef ParentName="CutBase">
+		<defName>VQE_CryptoCut</defName>
+		<label>crypto cut</label>
+	
+		<additionalHediffs>
+			<li>
+				<hediff>VQE_CryptoSlowdown</hediff>
+				<severityPerDamageDealt>0.0025</severityPerDamageDealt>
+				<victimSeverityScaling>ArmorRating_Heat</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
 
  
   

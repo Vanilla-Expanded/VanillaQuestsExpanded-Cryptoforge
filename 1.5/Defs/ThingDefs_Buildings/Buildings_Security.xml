@@ -365,7 +365,7 @@
 			<texPath>Things/Security/FrozenCentipede</texPath>
 			<drawSize>3</drawSize>
 		</graphicData>
-		<uiIconScale>0.75</uiIconScale>
+		<uiIconScale>0.5</uiIconScale>
 		<drawerType>MapMeshAndRealTime</drawerType>
 	
 		<thingClass>VanillaQuestsExpandedCryptoforge.Building_FrozenMechanoid</thingClass>

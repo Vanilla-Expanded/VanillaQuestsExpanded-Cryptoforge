@@ -45,6 +45,8 @@ namespace VanillaQuestsExpandedCryptoforge
         public static RulePackDef VQE_DamageEvent_CryptoFreeze;
 
 		public static HediffDef VQE_CryptoSlowdown;
+		public static HediffDef VQE_IceCrawlerHediff;
+        public static HediffDef VQE_MegamidgeHediff;
 
 
     }

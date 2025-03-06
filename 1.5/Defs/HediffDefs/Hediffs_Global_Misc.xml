@@ -1,91 +1,183 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <HediffDef>
-        <defName>VQE_CryptoSlowdown</defName>
-        <label>crypto slowdown</label>
-        <description>A chilling affliction caused by exposure to cryptofreeze energy. It weakens the target’s heat armor while simultaneously increasing their minimum comfortable temperature, making them more vulnerable to both extreme cold and heat while significantly reducing movement speed. If crypto slowdown reaches the maximum effect, the target becomes completely engulfed in cryptofreeze, causing severe damage.</description>
-        <hediffClass>VanillaQuestsExpandedCryptoforge.Hediff_CryptoSlowdown</hediffClass>
-        <defaultLabelColor>(1, 0, 1)</defaultLabelColor>
-        <scenarioCanAdd>false</scenarioCanAdd>
-        <initialSeverity>0.01</initialSeverity>
-        <maxSeverity>1.0</maxSeverity>
-        <comps>
-            <li Class="HediffCompProperties_SeverityPerDay">
-                <severityPerDay>-10</severityPerDay>
-            </li>
-        </comps>
-        <stages>
-            <li>
-                <minSeverity>0.04</minSeverity>
-                <label>minor</label>
-                <capMods>
-                    <li>
-                        <capacity>Moving</capacity>
-                        <offset>-0.08</offset>
-                    </li>
-                </capMods>
-                <statOffsets>
-                    <ComfyTemperatureMin>3</ComfyTemperatureMin>
-                    <ArmorRating_Heat>-0.1</ArmorRating_Heat>
-                </statOffsets>
-            </li>
-            <li>
-                <minSeverity>0.2</minSeverity>
-                <label>moderate</label>
-                <capMods>
-                    <li>
-                        <capacity>Moving</capacity>
-                        <offset>-0.2</offset>
-                    </li>
-                </capMods>
-                <statOffsets>
-                    <ComfyTemperatureMin>5</ComfyTemperatureMin>
-                    <ArmorRating_Heat>-0.2</ArmorRating_Heat>
-                </statOffsets>
-            </li>
-            <li>
-                <minSeverity>0.46</minSeverity>
-                <label>major</label>
-                <capMods>
-                    <li>
-                        <capacity>Moving</capacity>
-                        <offset>-0.35</offset>
-                    </li>
-                </capMods>
-                <statOffsets>
-                    <ComfyTemperatureMin>8</ComfyTemperatureMin>
-                    <ArmorRating_Heat>-0.3</ArmorRating_Heat>
-                </statOffsets>
-            </li>
-            <li>
-                <minSeverity>0.68</minSeverity>
-                <label>severe</label>
-                <capMods>
-                    <li>
-                        <capacity>Moving</capacity>
-                        <offset>-0.5</offset>
-                    </li>
-                </capMods>
-                <statOffsets>
-                    <ComfyTemperatureMin>12</ComfyTemperatureMin>
-                    <ArmorRating_Heat>-0.5</ArmorRating_Heat>
-                </statOffsets>
-            </li>
-            <li>
-                <minSeverity>0.88</minSeverity>
-                <label>extreme</label>
-                <capMods>
-                    <li>
-                        <capacity>Moving</capacity>
-                        <offset>-0.7</offset>
-                    </li>
-                </capMods>
-                <statOffsets>
-                    <ComfyTemperatureMin>15</ComfyTemperatureMin>
-                    <ArmorRating_Heat>-0.8</ArmorRating_Heat>
-                </statOffsets>
-            </li>
-        </stages>
-    </HediffDef>
+	<HediffDef>
+		<defName>VQE_CryptoSlowdown</defName>
+		<label>crypto slowdown</label>
+		<description>A chilling affliction caused by exposure to cryptofreeze energy. It weakens the target’s heat armor while simultaneously increasing their minimum comfortable temperature, making them more vulnerable to both extreme cold and heat while significantly reducing movement speed. If crypto slowdown reaches the maximum effect, the target becomes completely engulfed in cryptofreeze, causing severe damage.</description>
+		<hediffClass>VanillaQuestsExpandedCryptoforge.Hediff_CryptoSlowdown</hediffClass>
+		<defaultLabelColor>(1, 0, 1)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<initialSeverity>0.01</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-10</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.04</minSeverity>
+				<label>minor</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.08</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<ComfyTemperatureMin>3</ComfyTemperatureMin>
+					<ArmorRating_Heat>-0.1</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.2</minSeverity>
+				<label>moderate</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<ComfyTemperatureMin>5</ComfyTemperatureMin>
+					<ArmorRating_Heat>-0.2</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.46</minSeverity>
+				<label>major</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.35</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<ComfyTemperatureMin>8</ComfyTemperatureMin>
+					<ArmorRating_Heat>-0.3</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.68</minSeverity>
+				<label>severe</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.5</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<ComfyTemperatureMin>12</ComfyTemperatureMin>
+					<ArmorRating_Heat>-0.5</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.88</minSeverity>
+				<label>extreme</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.7</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<ComfyTemperatureMin>15</ComfyTemperatureMin>
+					<ArmorRating_Heat>-0.8</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>VQE_IceCrawlerHediff</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<description>The Ice crawler becomes more dangerous if it’s exposed to extremely cold temperatures.</description>
+		<label>exposed to extreme cold</label>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<statOffsets>
+					<MoveSpeed>1.2</MoveSpeed>
+					<MeleeDPS>1.3</MeleeDPS>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>VQE_MegamidgeHediff</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<description>The Megamidge becomes more dangerous if it’s exposed to extremely cold temperatures.</description>
+		<label>exposed to extreme cold</label>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<statOffsets>
+					<MoveSpeed>0.65</MoveSpeed>
+				</statOffsets>
+				<statFactors>
+					<MeleeCooldownFactor>0.5</MeleeCooldownFactor>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>head claw</label>
+						<capacities>
+							<li>VQE_CryptoCut</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>1.8</cooldownTime>
+						<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	  <HediffDef Name="VQE_CryptoBleedBase" Abstract="True">
+    <defaultLabelColor>(0, 0.71, 0.93)</defaultLabelColor>
+    <label>Cryptobleed</label>
+    <description>Experimental crypto tech from the armour slows down bleeding.</description>
+  </HediffDef>
+
+
+  <HediffDef ParentName="VQE_CryptoBleedBase">
+    <defName>VQE_BleedrateCrypto_5</defName>
+    <stages>
+      <li>
+        <label>Armour</label>
+        <totalBleedFactor>0.0</totalBleedFactor>
+        <painOffset>-0.1</painOffset>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="VQE_CryptoBleedBase">
+    <defName>VQE_BleedrateCrypto_10</defName>
+    <stages>
+      <li>
+        <label>Armour</label>
+        <totalBleedFactor>0.0</totalBleedFactor>
+        <painOffset>-0.2</painOffset>
+      </li>
+    </stages>
+  </HediffDef>
+   <HediffDef ParentName="VQE_CryptoBleedBase">
+    <defName>VQE_BleedrateCrypto_20</defName>
+    <stages>
+      <li>
+        <label>Armour</label>
+        <totalBleedFactor>0.0</totalBleedFactor>
+        <painOffset>-0.3</painOffset>
+      </li>
+    </stages>
+  </HediffDef>
 
 </Defs>

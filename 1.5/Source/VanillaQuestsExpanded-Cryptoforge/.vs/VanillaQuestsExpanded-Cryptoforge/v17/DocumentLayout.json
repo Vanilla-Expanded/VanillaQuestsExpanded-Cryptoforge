@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-cryptoforge\\1.5\\source\\vanillaquestsexpanded-cryptoforge\\vanillaquestsexpanded-cryptoforge\\things\\constantsprayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|solutionrelative:vanillaquestsexpanded-cryptoforge\\things\\constantsprayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-cryptoforge\\1.5\\source\\vanillaquestsexpanded-cryptoforge\\vanillaquestsexpanded-cryptoforge\\pawnrendernodes\\pawnrendernode_megamidge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|solutionrelative:vanillaquestsexpanded-cryptoforge\\pawnrendernodes\\pawnrendernode_megamidge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-cryptoforge\\1.5\\source\\vanillaquestsexpanded-cryptoforge\\vanillaquestsexpanded-cryptoforge\\defofs\\internaldefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|solutionrelative:vanillaquestsexpanded-cryptoforge\\defofs\\internaldefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-cryptoforge\\1.5\\source\\vanillaquestsexpanded-cryptoforge\\vanillaquestsexpanded-cryptoforge\\graphicscache\\graphicscache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|solutionrelative:vanillaquestsexpanded-cryptoforge\\graphicscache\\graphicscache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-cryptoforge\\1.5\\source\\vanillaquestsexpanded-cryptoforge\\vanillaquestsexpanded-cryptoforge\\pawnrendernodes\\pawnrendernode_icecrawler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|solutionrelative:vanillaquestsexpanded-cryptoforge\\pawnrendernodes\\pawnrendernode_icecrawler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-cryptoforge\\1.5\\source\\vanillaquestsexpanded-cryptoforge\\vanillaquestsexpanded-cryptoforge\\ai\\jobdriver\\jobdriver_playwargamingtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|solutionrelative:vanillaquestsexpanded-cryptoforge\\ai\\jobdriver\\jobdriver_playwargamingtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-cryptoforge\\1.5\\source\\vanillaquestsexpanded-cryptoforge\\vanillaquestsexpanded-cryptoforge\\ai\\joygivers\\joygiver_playwargamingtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|solutionrelative:vanillaquestsexpanded-cryptoforge\\ai\\joygivers\\joygiver_playwargamingtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-cryptoforge\\1.5\\source\\vanillaquestsexpanded-cryptoforge\\vanillaquestsexpanded-cryptoforge\\things\\constantsprayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|solutionrelative:vanillaquestsexpanded-cryptoforge\\things\\constantsprayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-cryptoforge\\1.5\\source\\vanillaquestsexpanded-cryptoforge\\vanillaquestsexpanded-cryptoforge\\graphicscache\\graphicscache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|solutionrelative:vanillaquestsexpanded-cryptoforge\\graphicscache\\graphicscache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-cryptoforge\\1.5\\source\\vanillaquestsexpanded-cryptoforge\\vanillaquestsexpanded-cryptoforge\\ai\\joygivers\\joygiver_playwargamingtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|solutionrelative:vanillaquestsexpanded-cryptoforge\\ai\\joygivers\\joygiver_playwargamingtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-cryptoforge\\1.5\\source\\vanillaquestsexpanded-cryptoforge\\vanillaquestsexpanded-cryptoforge\\building\\building_floorheater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-cryptoforge\\1.5\\source\\vanillaquestsexpanded-cryptoforge\\vanillaquestsexpanded-cryptoforge\\comps\\compnonrefuelable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|solutionrelative:vanillaquestsexpanded-cryptoforge\\comps\\compnonrefuelable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-cryptoforge\\1.5\\source\\vanillaquestsexpanded-cryptoforge\\vanillaquestsexpanded-cryptoforge\\defofs\\internaldefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|solutionrelative:vanillaquestsexpanded-cryptoforge\\defofs\\internaldefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75FA61FE-26EB-4C09-A88E-F60316399A3E}|VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\vanillaquestsexpanded-cryptoforge\\1.5\\source\\vanillaquestsexpanded-cryptoforge\\vanillaquestsexpanded-cryptoforge\\things\\cryptofreeze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -122,11 +130,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Utils.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Utils\\Utils.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\Utils\\Utils.cs",
@@ -135,18 +143,47 @@
               "ViewState": "AgIAABgAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T12:55:43.173Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PawnRenderNode_Megamidge.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\PawnRenderNodes\\PawnRenderNode_Megamidge.cs",
+              "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\PawnRenderNodes\\PawnRenderNode_Megamidge.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\PawnRenderNodes\\PawnRenderNode_Megamidge.cs*",
+              "RelativeToolTip": "VanillaQuestsExpanded-Cryptoforge\\PawnRenderNodes\\PawnRenderNode_Megamidge.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T10:06:41.976Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "PawnRenderNode_IceCrawler.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\PawnRenderNodes\\PawnRenderNode_IceCrawler.cs",
+              "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\PawnRenderNodes\\PawnRenderNode_IceCrawler.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\PawnRenderNodes\\PawnRenderNode_IceCrawler.cs",
+              "RelativeToolTip": "VanillaQuestsExpanded-Cryptoforge\\PawnRenderNodes\\PawnRenderNode_IceCrawler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T09:26:44.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "JobDriver_PlayWargamingTable.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\AI\\JobDriver\\JobDriver_PlayWargamingTable.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\AI\\JobDriver\\JobDriver_PlayWargamingTable.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\AI\\JobDriver\\JobDriver_PlayWargamingTable.cs",
               "RelativeToolTip": "VanillaQuestsExpanded-Cryptoforge\\AI\\JobDriver\\JobDriver_PlayWargamingTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T14:40:12.332Z",
               "EditorCaption": ""
@@ -154,19 +191,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "JoyGiver_PlayWargamingTable.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\AI\\JoyGivers\\JoyGiver_PlayWargamingTable.cs",
-              "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\AI\\JoyGivers\\JoyGiver_PlayWargamingTable.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\AI\\JoyGivers\\JoyGiver_PlayWargamingTable.cs",
-              "RelativeToolTip": "VanillaQuestsExpanded-Cryptoforge\\AI\\JoyGivers\\JoyGiver_PlayWargamingTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T14:37:14.18Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "GraphicsCache.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\GraphicsCache\\GraphicsCache.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\GraphicsCache\\GraphicsCache.cs",
@@ -179,24 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Building_FloorHeater.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Building\\Building_FloorHeater.cs",
-              "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\Building\\Building_FloorHeater.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Building\\Building_FloorHeater.cs",
-              "RelativeToolTip": "VanillaQuestsExpanded-Cryptoforge\\Building\\Building_FloorHeater.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T14:21:27.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Building_SteamSprayer.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Building\\Building_SteamSprayer.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\Building\\Building_SteamSprayer.cs",
@@ -204,17 +211,16 @@
               "RelativeToolTip": "VanillaQuestsExpanded-Cryptoforge\\Building\\Building_SteamSprayer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T12:56:24.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T12:56:24.608Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "ConstantSprayer.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Things\\ConstantSprayer.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\Things\\ConstantSprayer.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Things\\ConstantSprayer.cs*",
-              "RelativeToolTip": "VanillaQuestsExpanded-Cryptoforge\\Things\\ConstantSprayer.cs*",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Things\\ConstantSprayer.cs",
+              "RelativeToolTip": "VanillaQuestsExpanded-Cryptoforge\\Things\\ConstantSprayer.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAACoAAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T12:54:42.564Z",
@@ -222,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Scannable.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Building\\Scannable.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\Building\\Scannable.cs",
@@ -230,12 +236,48 @@
               "RelativeToolTip": "VanillaQuestsExpanded-Cryptoforge\\Building\\Scannable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T14:51:03.336Z",
+              "WhenOpened": "2025-02-22T14:51:03.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InternalDefOf.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\DefOfs\\InternalDefOf.cs",
+              "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\DefOfs\\InternalDefOf.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\DefOfs\\InternalDefOf.cs*",
+              "RelativeToolTip": "VanillaQuestsExpanded-Cryptoforge\\DefOfs\\InternalDefOf.cs*",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAADAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T11:29:52.647Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
+              "Title": "Building_FloorHeater.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Building\\Building_FloorHeater.cs",
+              "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\Building\\Building_FloorHeater.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Building\\Building_FloorHeater.cs",
+              "RelativeToolTip": "VanillaQuestsExpanded-Cryptoforge\\Building\\Building_FloorHeater.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:21:27.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JoyGiver_PlayWargamingTable.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\AI\\JoyGivers\\JoyGiver_PlayWargamingTable.cs",
+              "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\AI\\JoyGivers\\JoyGiver_PlayWargamingTable.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\AI\\JoyGivers\\JoyGiver_PlayWargamingTable.cs",
+              "RelativeToolTip": "VanillaQuestsExpanded-Cryptoforge\\AI\\JoyGivers\\JoyGiver_PlayWargamingTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:37:14.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "JobDriver_InitiateScan.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\AI\\JobDriver\\JobDriver_InitiateScan.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\AI\\JobDriver\\JobDriver_InitiateScan.cs",
@@ -247,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "WorkGiver_InitiateScan.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\AI\\WorkGiver\\WorkGiver_InitiateScan.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\AI\\WorkGiver\\WorkGiver_InitiateScan.cs",
@@ -259,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "CryptoSpark.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Things\\CryptoSpark.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\Things\\CryptoSpark.cs",
@@ -271,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "DamageWorker_ExtinguishCryptofreeze.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\DamageWorkers\\DamageWorker_ExtinguishCryptofreeze.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\DamageWorkers\\DamageWorker_ExtinguishCryptofreeze.cs",
@@ -283,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "JobDriver_BeatCryptofreeze.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\AI\\JobDriver\\JobDriver_BeatCryptofreeze.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\AI\\JobDriver\\JobDriver_BeatCryptofreeze.cs",
@@ -295,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Cryptofreeze.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Things\\Cryptofreeze.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\Things\\Cryptofreeze.cs",
@@ -307,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "CompNonRefuelable.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Comps\\CompNonRefuelable.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\Comps\\CompNonRefuelable.cs",
@@ -315,24 +357,11 @@
               "RelativeToolTip": "VanillaQuestsExpanded-Cryptoforge\\Comps\\CompNonRefuelable.cs",
               "ViewState": "AgIAAJIAAAAAAAAAAAAgwMEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T08:55:33.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-21T08:55:33.835Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "InternalDefOf.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\DefOfs\\InternalDefOf.cs",
-              "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\DefOfs\\InternalDefOf.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\DefOfs\\InternalDefOf.cs",
-              "RelativeToolTip": "VanillaQuestsExpanded-Cryptoforge\\DefOfs\\InternalDefOf.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAACUAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T11:29:52.647Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "MapComponent_CryptoBuildingsInMap.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\MapComponents\\MapComponent_CryptoBuildingsInMap.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\MapComponents\\MapComponent_CryptoBuildingsInMap.cs",
@@ -344,7 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "JobDriver_StudyBuilding.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\AI\\JobDriver\\JobDriver_StudyBuilding.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\AI\\JobDriver\\JobDriver_StudyBuilding.cs",
@@ -356,7 +385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Alert_CriticalCryptoGenerators.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Alerts\\Alert_CriticalCryptoGenerators.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\Alerts\\Alert_CriticalCryptoGenerators.cs",
@@ -368,7 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "WorkGiver_FightCryptofreeze.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\AI\\WorkGiver\\WorkGiver_FightCryptofreeze.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\AI\\WorkGiver\\WorkGiver_FightCryptofreeze.cs",
@@ -380,7 +409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Studiable.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Building\\Studiable.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\Building\\Studiable.cs",
@@ -392,7 +421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "CompProperties_NonRefuelable.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Comps\\Properties\\CompProperties_NonRefuelable.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\Comps\\Properties\\CompProperties_NonRefuelable.cs",
@@ -404,7 +433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "Gizmo_NonRefuelableFuelStatus.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Gizmos\\Gizmo_NonRefuelableFuelStatus.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\Gizmos\\Gizmo_NonRefuelableFuelStatus.cs",
@@ -416,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "CompJammedAirlock.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Comps\\CompJammedAirlock.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\Comps\\CompJammedAirlock.cs",
@@ -428,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "CompProperties_JammedAirlock.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Comps\\Properties\\CompProperties_JammedAirlock.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\Comps\\Properties\\CompProperties_JammedAirlock.cs",
@@ -440,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "CryptoBuildingDetails.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\DefExtensions\\CryptoBuildingDetails.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\DefExtensions\\CryptoBuildingDetails.cs",
@@ -452,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "HarmonyInstance.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\Harmony\\HarmonyInstance.cs",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\Harmony\\HarmonyInstance.cs",
@@ -464,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "VanillaQuestsExpanded-Cryptoforge",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaQuestsExpanded-Cryptoforge\\1.5\\Source\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj",
               "RelativeDocumentMoniker": "VanillaQuestsExpanded-Cryptoforge\\VanillaQuestsExpanded-Cryptoforge.csproj",

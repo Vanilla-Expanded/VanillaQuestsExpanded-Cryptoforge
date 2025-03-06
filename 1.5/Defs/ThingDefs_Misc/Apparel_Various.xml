@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="UnfinishedTechArmor">
+		<defName>VQE_UnfinishedCryptoArmor</defName>
+		<label>unfinished crypto armor</label>
+		<description>An unfinished piece of metal armor.</description>
+		<graphicData>
+			<texPath>Equipment/UnfinishedCryptoArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+	<ThingDef Name="VQE_ApparelArmorCryptoBase" ParentName="ApparelBase" Abstract="True">
+		<techLevel>Ultra</techLevel>
+		<generateCommonality>0</generateCommonality>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<Flammability>0</Flammability>
+			<EquipDelay>16</EquipDelay>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+	</ThingDef>
+	<ThingDef ParentName="VQE_ApparelArmorCryptoBase">
+		<defName>VQE_CryptoArmor</defName>
+		<label>crypto armor</label>
+		<description>Low-powered plasteel carapace armor draped with an unknown but impossibly durable cloth sash affixed over one shoulder, the armor emits a low electrical hum and feels smooth to the touch. The power supply itself features embedded cryptocasket technology and will use a stasis effect to slow one's bleeding.</description>
+		<graphicData>
+			<texPath>Equipment/CryptoLightArmor/CryptoLightArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Equipment/CryptoLightArmor/CryptoLightArmor</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
+			<tags Inherit="False">
+				<li>CryptoLight</li>
+			</tags>
+		</apparel>
+		<costList>
+			<ComponentSpacer>5</ComponentSpacer>
+			<Plasteel>55</Plasteel>
+			<Gold>60</Gold>
+		</costList>
+		<recipeMaker Inherit="False">
+			<unfinishedThingDef>VQE_UnfinishedCryptoArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>VQE_AncientCryptoforge</li>
+			</recipeUsers>
+			<displayPriority>1</displayPriority>
+		</recipeMaker>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<Mass>9</Mass>
+			<ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.36</ArmorRating_Heat>
+			<Insulation_Cold>64</Insulation_Cold>
+			<Insulation_Heat>16</Insulation_Heat>
+			<MarketValue>1540</MarketValue>
+			<WorkToMake>45000</WorkToMake>
+		</statBases>
+		<comps>
+			<li Class="VFECore.CompProperties_ApparelHediffs">
+				<hediffDefnames>
+					<li>VQE_BleedrateCrypto_10</li>
+				</hediffDefnames>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VQE_ApparelArmorCryptoBase">
+		<defName>VQE_CryptoHeavyArmor</defName>
+		<label>heavy crypto armor</label>
+		<description>Heavy, high-powered plasteel plate armor affixed with an unknown but impossibly durable cloth cowl, the armor emits a low electrical hum and feels smooth to the touch. The power supply itself features embedded cryptocasket technology and will use a stasis effect to slow ones bleeding.</description>
+		<graphicData>
+			<texPath>Equipment/CryptoHeavyArmor/CryptoHeavyArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Equipment/CryptoHeavyArmor/CryptoHeavyArmor</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
+			<tags Inherit="False">
+				<li>CryptoHeavy</li>
+			</tags>
+		</apparel>
+		<costList>
+			<ComponentSpacer>8</ComponentSpacer>
+			<Plasteel>160</Plasteel>
+			<Gold>100</Gold>
+		</costList>
+		<recipeMaker Inherit="False">
+			<unfinishedThingDef>VQE_UnfinishedCryptoArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>VQE_AncientCryptoforge</li>
+			</recipeUsers>
+			<displayPriority>2</displayPriority>
+		</recipeMaker>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<Mass>15</Mass>
+			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.48</ArmorRating_Heat>
+			<Insulation_Cold>78</Insulation_Cold>
+			<Insulation_Heat>16</Insulation_Heat>
+			<MarketValue>3540</MarketValue>
+			<WorkToMake>90000</WorkToMake>
+		</statBases>
+		<comps>
+			<li Class="VFECore.CompProperties_ApparelHediffs">
+				<hediffDefnames>
+					<li>VQE_BleedrateCrypto_20</li>
+				</hediffDefnames>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef Name="VQE_ApparelCryptoHelmetPowerBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+		<techLevel>Ultra</techLevel>
+		<recipeMaker Inherit="False"/>
+		<uiIconScale>1.25</uiIconScale>
+		<generateCommonality>0</generateCommonality>
+		<statBases>
+			<Flammability>0</Flammability>
+			<EquipDelay>4</EquipDelay>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<useHitPoints>false</useHitPoints>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+	</ThingDef>
+	<ThingDef ParentName="VQE_ApparelCryptoHelmetPowerBase">
+		<defName>VQE_Apparel_CryptoLightHelmet</defName>
+		<label>crypto helmet</label>
+		<description>A lower-powered helmet with an unknown but impossibly durable cloth hood. It's theorized that either a long-lost or far-advanced civilizations scout troopers would adorn this helmet before recon missions during the mechanoid wars. The helmet itself features embedded cryptocasket technology and will use a stasis effect to slow ones bleeding.</description>
+		<graphicData>
+			<texPath>Equipment/CryptoLightHelmet/CryptoLightHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>1.5</Mass>
+			<ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.98</ArmorRating_Heat>
+			<Insulation_Cold>16</Insulation_Cold>
+			<Insulation_Heat>2</Insulation_Heat>
+			<MarketValue>885</MarketValue>
+			<WorkToMake>28000</WorkToMake>
+		</statBases>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Plasteel>35</Plasteel>
+			<Gold>30</Gold>
+		</costList>
+		<recipeMaker Inherit="False">
+			<unfinishedThingDef>VQE_UnfinishedCryptoArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>VQE_AncientCryptoforge</li>
+			</recipeUsers>
+			<displayPriority>3</displayPriority>
+		</recipeMaker>
+		<apparel>
+			<wornGraphicPath>Equipment/CryptoLightHelmet/CryptoLightHelmet</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
+			<tags Inherit="False">
+				<li>CryptoLight</li>
+			</tags>
+		</apparel>
+		<comps>
+			<li Class="VFECore.CompProperties_ApparelHediffs">
+				<hediffDefnames>
+					<li>VQE_BleedrateCrypto_10</li>
+				</hediffDefnames>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VQE_ApparelCryptoHelmetPowerBase">
+		<defName>VQE_Apparel_CryptoHeavyHelmet</defName>
+		<label>heavy crypto helmet</label>
+		<description>A heavy, high-powered helmet complete with an embedded HUD system and diagnostics display. It's theorized that either a long-lost or far-advanced civilizations shock troopers would adorn this helmet before strike missions during the mechanoid wars. The helmet itself features embedded cryptocasket technology and will use a stasis effect to slow ones bleeding.</description>
+		<graphicData>
+			<texPath>Equipment/CryptoHeavyHelmet/CryptoHeavyHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>2.5</Mass>
+			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.22</ArmorRating_Heat>
+			<Insulation_Cold>16</Insulation_Cold>
+			<Insulation_Heat>2</Insulation_Heat>
+			<MarketValue>1000</MarketValue>
+			<WorkToMake>32000</WorkToMake>
+		</statBases>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Plasteel>50</Plasteel>
+			<Gold>30</Gold>
+		</costList>
+		<recipeMaker Inherit="False">
+			<unfinishedThingDef>VQE_UnfinishedCryptoArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>VQE_AncientCryptoforge</li>
+			</recipeUsers>
+			<displayPriority>4</displayPriority>
+		</recipeMaker>
+		<apparel>
+			<wornGraphicPath>Equipment/CryptoHeavyHelmet/CryptoHeavyHelmet</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
+			<tags Inherit="False">
+				<li>CryptoHeavy</li>
+			</tags>
+		</apparel>
+		<comps>
+			<li Class="VFECore.CompProperties_ApparelHediffs">
+				<hediffDefnames>
+					<li>VQE_BleedrateCrypto_20</li>
+				</hediffDefnames>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>
