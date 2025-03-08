@@ -6,6 +6,7 @@ using System.Text;
 using UnityEngine;
 using Verse;
 using Verse.AI.Group;
+using Verse.Noise;
 using Verse.Sound;
 
 
@@ -35,6 +36,29 @@ namespace VanillaQuestsExpandedCryptoforge
                     this.Destroy();
                 }
             }
+
+            if (this.IsHashIntervalTick(10))
+            {
+                int numCells = GenRadial.NumCellsInRadius(3);
+                for (int i = 0; i < numCells; i++)
+                {
+                    IntVec3 intVec = this.Position + GenRadial.RadialPattern[i];
+                    if (intVec.InBounds(this.Map))
+                    {
+                        foreach (Thing thing in intVec.GetThingList(this.Map))
+                        {
+                            if (thing != null && thing is Pawn detectedPawn && detectedPawn.RaceProps.Humanlike)
+                            {
+                                this.SpringSub(detectedPawn);
+                            }
+                        }
+
+
+                    }
+                }
+            }
+
+
         }
 
 
