@@ -3,7 +3,7 @@
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
 		<defName>VQE_AncientShieldedTurret</defName>
 		<label>ancient shielded turret</label>
-		<description>A portable automatic turret. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+		<description>A portable automatic turret with a ballistic shield in front of it. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire. The ballistic shield is capable of deflecting some shots.</description>
 		<thingClass>VanillaQuestsExpandedCryptoforge.Building_TurretGun_Armoured</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
@@ -150,14 +150,14 @@
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
 		<defName>VQE_AncientSpacerAutocannon</defName>
 		<label>ancient spacer autocannon</label>
-		<description>todo.</description>
+		<description>An ancient autocannon designed for ship-to-ship combat. It still appears to be functional. Its large-caliber shells do heavy damage over significant ranges.</description>
 		<uiIconPath>Things/Security/TurretSpaceAutocannon_MenuIcon</uiIconPath>
 		<thingClass>Building_TurretGun</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<texPath>Things/Security/TurrretLargeAncientShip_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1.5, 1.5)</drawSize>
+			<drawSize>(2, 2)</drawSize>
 			<drawOffset>(0,0,-0.1)</drawOffset>
 			<damageData>
 				<rect>(0.2,0.2,0.6,0.6)</rect>
@@ -188,7 +188,7 @@
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
 			<ai_combatDangerous>true</ai_combatDangerous>
-			<turretTopDrawSize>2.7</turretTopDrawSize>
+			<turretTopDrawSize>3</turretTopDrawSize>
 			<turretTopOffset>(0, 0.05)</turretTopOffset>
 			<neverBuildable>true</neverBuildable>
 			<turretGunDef>VQE_AncientSpacerAutocannon_Gun</turretGunDef>
