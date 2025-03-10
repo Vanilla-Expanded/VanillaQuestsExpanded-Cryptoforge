@@ -157,7 +157,7 @@
 		<graphicData>
 			<texPath>Things/Security/TurrretLargeAncientShip_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(2, 2)</drawSize>
+			<drawSize>(2.2, 2.2)</drawSize>
 			<drawOffset>(0,0,-0.1)</drawOffset>
 			<damageData>
 				<rect>(0.2,0.2,0.6,0.6)</rect>
