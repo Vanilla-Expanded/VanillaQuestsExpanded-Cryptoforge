@@ -301,7 +301,7 @@
 		</building>
 	</ThingDef>
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
-		<defName>AG_RuinedHospitalBed</defName>
+		<defName>VQE_RuinedHospitalBed</defName>
 		<label>rusted ancient bed</label>
 		<description>A rusted-out bedframe, with a decently intact bedsheet. It offers little comfort.</description>
 		<thingClass>Building_Bed</thingClass>
