@@ -2,7 +2,13 @@
 	<ThingDef ParentName="UnfinishedBase">
 		<defName>VQE_UnfinishedCryptoWeapon</defName>
 		<label>unfinished crypto weapon</label>
+		 <useHitPoints>false</useHitPoints>
 		<description>An unfinished crypto weapon.</description>
+		<statBases>
+			<Flammability>0</Flammability>
+			
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
 		<graphicData>
 			<texPath>Equipment/UnfinishedCryptoWeapon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

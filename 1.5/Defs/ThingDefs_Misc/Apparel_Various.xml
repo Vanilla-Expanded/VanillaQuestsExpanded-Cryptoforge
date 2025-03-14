@@ -4,6 +4,12 @@
 		<defName>VQE_UnfinishedCryptoArmor</defName>
 		<label>unfinished crypto armor</label>
 		<description>An unfinished piece of metal armor.</description>
+		 <useHitPoints>false</useHitPoints>
+		 <statBases>
+			<Flammability>0</Flammability>
+			
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
 		<graphicData>
 			<texPath>Equipment/UnfinishedCryptoArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
