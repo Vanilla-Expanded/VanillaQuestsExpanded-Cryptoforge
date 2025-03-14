@@ -48,6 +48,6 @@ namespace VanillaQuestsExpandedCryptoforge
 		public static HediffDef VQE_IceCrawlerHediff;
         public static HediffDef VQE_MegamidgeHediff;
 
-
-    }
+		public static SitePartDef VQE_CryptoforgeChapter1Site;
+	}
 }

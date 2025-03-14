@@ -2,6 +2,9 @@
 <Defs>
 	<KCSG.StructureLayoutDef>
 		<defName>VQE_Cryptoforge_Minefield_Alpha</defName>
+		<tags>
+			<li>VQE_Minefield</li>
+		</tags>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -36,6 +39,9 @@
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
 		<defName>VQE_Cryptoforge_Minefield_Beta</defName>
+		<tags>
+			<li>VQE_Minefield</li>
+		</tags>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -70,6 +76,9 @@
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
 		<defName>VQE_Cryptoforge_Minefield_Gamma</defName>
+		<tags>
+			<li>VQE_Minefield</li>
+		</tags>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -104,6 +113,9 @@
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
 		<defName>VQE_Cryptoforge_Minefield_Delta</defName>
+		<tags>
+			<li>VQE_Minefield</li>
+		</tags>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -138,6 +150,9 @@
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
 		<defName>VQE_Cryptoforge_Minefield_Epsilon</defName>
+		<tags>
+			<li>VQE_Minefield</li>
+		</tags>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -172,6 +187,9 @@
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
 		<defName>VQE_Cryptoforge_Minefield_Zeta</defName>
+		<tags>
+			<li>VQE_Minefield</li>
+		</tags>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -206,6 +224,9 @@
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
 		<defName>VQE_Cryptoforge_Minefield_Eta</defName>
+		<tags>
+			<li>VQE_Minefield</li>
+		</tags>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -240,6 +261,9 @@
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
 		<defName>VQE_Cryptoforge_Minefield_Theta</defName>
+		<tags>
+			<li>VQE_Minefield</li>
+		</tags>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -274,6 +298,9 @@
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
 		<defName>VQE_Cryptoforge_Minefield_Iota</defName>
+		<tags>
+			<li>VQE_Minefield</li>
+		</tags>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -308,6 +335,9 @@
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
 		<defName>VQE_Cryptoforge_Minefield_Kappa</defName>
+		<tags>
+			<li>VQE_Minefield</li>
+		</tags>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -342,6 +372,9 @@
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
 		<defName>VQE_Cryptoforge_Minefield_Lambda</defName>
+		<tags>
+			<li>VQE_Minefield</li>
+		</tags>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -376,6 +409,9 @@
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
 		<defName>VQE_Cryptoforge_Minefield_Mu</defName>
+		<tags>
+			<li>VQE_Minefield</li>
+		</tags>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -410,6 +446,9 @@
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
 		<defName>VQE_Cryptoforge_Minefield_Nu</defName>
+		<tags>
+			<li>VQE_Minefield</li>
+		</tags>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -444,6 +483,9 @@
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
 		<defName>VQE_Cryptoforge_Minefield_Xi</defName>
+		<tags>
+			<li>VQE_Minefield</li>
+		</tags>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>

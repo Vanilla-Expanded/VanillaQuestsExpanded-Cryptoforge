@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <SitePartDef>
+        <defName>VQE_CryptoforgeChapter1Site</defName>
+        <label>Cryptoforge Scanning Site</label>
+        <description>An ancient scanning site used to locate the Cryptoforge.</description>
+        <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+        <expandingIconTexture>UI/MapIcons/AncientRadarInstallation</expandingIconTexture>
+        <tags>
+            <li>VQE_CryptoforgeChapter1Site</li>
+        </tags>
+    </SitePartDef>
+    <GenStepDef>
+        <defName>VQE_CryptoforgeChapter1Site</defName>
+        <linkWithSite>VQE_CryptoforgeChapter1Site</linkWithSite>
+        <order>450</order>
+        <genStep Class="KCSG.GenStep_CustomStructureGen">
+            <settlementLayoutDefs>
+                <li>VQE_Cryptoforge_ScanningLocation</li>
+            </settlementLayoutDefs>
+        </genStep>
+    </GenStepDef>
+</Defs>
