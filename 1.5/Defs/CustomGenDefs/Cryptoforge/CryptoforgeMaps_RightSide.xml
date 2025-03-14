@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_RightSide_Alpha</defName>
+		<defName>VQE_Cryptoforge_RightSide_Alpha</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -286,7 +286,7 @@
 		</modRequirements>
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_RightSide_Beta</defName>
+		<defName>VQE_Cryptoforge_RightSide_Beta</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>

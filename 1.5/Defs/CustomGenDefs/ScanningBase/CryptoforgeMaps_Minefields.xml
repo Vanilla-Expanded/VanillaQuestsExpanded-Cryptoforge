@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_Minefield_Alpha</defName>
+		<defName>VQE_Cryptoforge_Minefield_Alpha</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -35,7 +35,7 @@
 		</modRequirements>
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_Minefield_Beta</defName>
+		<defName>VQE_Cryptoforge_Minefield_Beta</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -69,7 +69,7 @@
 		</modRequirements>
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_Minefield_Gamma</defName>
+		<defName>VQE_Cryptoforge_Minefield_Gamma</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -103,7 +103,7 @@
 		</modRequirements>
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_Minefield_Delta</defName>
+		<defName>VQE_Cryptoforge_Minefield_Delta</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -137,7 +137,7 @@
 		</modRequirements>
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_Minefield_Epsilon</defName>
+		<defName>VQE_Cryptoforge_Minefield_Epsilon</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -171,7 +171,7 @@
 		</modRequirements>
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_Minefield_Zeta</defName>
+		<defName>VQE_Cryptoforge_Minefield_Zeta</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -205,7 +205,7 @@
 		</modRequirements>
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_Minefield_Eta</defName>
+		<defName>VQE_Cryptoforge_Minefield_Eta</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -239,7 +239,7 @@
 		</modRequirements>
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_Minefield_Theta</defName>
+		<defName>VQE_Cryptoforge_Minefield_Theta</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -273,7 +273,7 @@
 		</modRequirements>
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_Minefield_Iota</defName>
+		<defName>VQE_Cryptoforge_Minefield_Iota</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -307,7 +307,7 @@
 		</modRequirements>
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_Minefield_Kappa</defName>
+		<defName>VQE_Cryptoforge_Minefield_Kappa</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -341,7 +341,7 @@
 		</modRequirements>
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_Minefield_Lambda</defName>
+		<defName>VQE_Cryptoforge_Minefield_Lambda</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -375,7 +375,7 @@
 		</modRequirements>
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_Minefield_Mu</defName>
+		<defName>VQE_Cryptoforge_Minefield_Mu</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -409,7 +409,7 @@
 		</modRequirements>
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_Minefield_Nu</defName>
+		<defName>VQE_Cryptoforge_Minefield_Nu</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -443,7 +443,7 @@
 		</modRequirements>
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_Minefield_Xi</defName>
+		<defName>VQE_Cryptoforge_Minefield_Xi</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>

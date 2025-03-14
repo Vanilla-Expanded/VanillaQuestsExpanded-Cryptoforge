@@ -2,7 +2,7 @@
 <Defs>
 
 <KCSG.StructureLayoutDef>
-  <defName>VQE_Crptoforge_Center_Alpha</defName>
+  <defName>VQE_Cryptoforge_Center_Alpha</defName>
   <spawnConduits>false</spawnConduits>
   <layouts>
     <li>
@@ -288,7 +288,7 @@
 </KCSG.StructureLayoutDef>
 
 <KCSG.StructureLayoutDef>
-  <defName>VQE_Crptoforge_Center_Beta</defName>
+  <defName>VQE_Cryptoforge_Center_Beta</defName>
   <spawnConduits>false</spawnConduits>
   <layouts>
     <li>

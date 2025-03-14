@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_ScanningBase_Alpha</defName>
+		<defName>VQE_Cryptoforge_ScanningBase_Alpha</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -110,7 +110,7 @@
 		</modRequirements>
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_ScanningBase_Beta</defName>
+		<defName>VQE_Cryptoforge_ScanningBase_Beta</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -219,7 +219,7 @@
 		</modRequirements>
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_ScanningBase_Gamma</defName>
+		<defName>VQE_Cryptoforge_ScanningBase_Gamma</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -328,7 +328,7 @@
 		</modRequirements>
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_ScanningBase_Delta</defName>
+		<defName>VQE_Cryptoforge_ScanningBase_Delta</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -437,7 +437,7 @@
 		</modRequirements>
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_ScanningBase_Epsilon</defName>
+		<defName>VQE_Cryptoforge_ScanningBase_Epsilon</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
@@ -546,7 +546,7 @@
 		</modRequirements>
 	</KCSG.StructureLayoutDef>
 	<KCSG.StructureLayoutDef>
-		<defName>VQE_Crptoforge_ScanningBase_Zeta</defName>
+		<defName>VQE_Cryptoforge_ScanningBase_Zeta</defName>
 		<spawnConduits>false</spawnConduits>
 		<layouts>
 			<li>
