@@ -15,11 +15,11 @@
 				<li>.,.,.,Barricade_Steel,Barricade_Steel,Barricade_Steel,Wall_Steel,WallLamp_North,.,VQE_CryptoAncientTerminal_South,.,VQE_CryptoAncientTerminalBank_South,.,VQE_CryptoAncientTerminal_South,.,VQE_EmptyFrozenCrate_Small,Wall_Steel,.,.,.,.,.,.</li>
 				<li>.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Door_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Door_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.</li>
 				<li>.,.,Wall_Steel,.,.,VQE_CryptoAncientTerminalBank_North,.,WallLamp_South,.,.,.,.,.,VQE_AncientTransmitterBeacon,.,.,Wall_Steel,.,Battery_West,.,EndTable_Steel_West,Wall_Steel,.</li>
-				<li>.,.,Wall_Steel,.,.,.,.,.,.,VQE_FrozenMachinery,.,.,VQE_FrozenMachinery,.,.,.,Door_Steel,.,.,.,AG_RuinedHospitalBed_West,Wall_Steel,.</li>
+				<li>.,.,Wall_Steel,.,.,.,.,.,.,VQE_FrozenMachinery,.,.,VQE_FrozenMachinery,.,.,.,Door_Steel,.,.,.,VQE_RuinedHospitalBed_West,Wall_Steel,.</li>
 				<li>.,.,Wall_Steel,VQE_CryptoAncientTerminalBank_East,.,.,.,.,.,.,.,VQE_FrozenCapacitor_East,.,.,.,.,Wall_Steel,Stool_Steel_North,.,.,.,Wall_Steel,.</li>
 				<li>Barricade_Steel,Barricade_Steel,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,VQE_CryptoAncientTerminal_West,Wall_Steel,Table1x2c_Steel_North,Stool_Steel_West,.,VQE_EmptyFrozenCrate_Small,Wall_Steel,.</li>
 				<li>Barricade_Steel,VQE_BustedShieldedTurret,Wall_Steel,Battery_North,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,EndTable_Steel_West,Wall_Steel,.</li>
-				<li>Barricade_Steel,Barricade_Steel,Wall_Steel,.,.,.,VQE_FrozenScanningRelay_Off,.,.,Wall_Steel,.,.,VQE_FrozenScanningRelay_Off,.,.,.,Door_Steel,.,.,.,AG_RuinedHospitalBed_West,Wall_Steel,.</li>
+				<li>Barricade_Steel,Barricade_Steel,Wall_Steel,.,.,.,VQE_FrozenScanningRelay_Off,.,.,Wall_Steel,.,.,VQE_FrozenScanningRelay_Off,.,.,.,Door_Steel,.,.,.,VQE_RuinedHospitalBed_West,Wall_Steel,.</li>
 				<li>.,.,Wall_Steel,.,.,.,.,.,.,Battery_North,.,.,.,.,.,.,Wall_Steel,.,WallLamp_North,.,VQE_EmptyFrozenCrate_Small,Wall_Steel,.</li>
 				<li>.,.,Wall_Steel,Battery_North,.,.,.,.,.,.,.,.,.,.,.,VQE_CryptoAncientTerminal_West,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.</li>
 				<li>.,.,Wall_Steel,.,.,.,.,.,.,PowerConduit,.,.,.,.,.,WallLamp_East,Wall_Steel,.,Barricade_Steel,VQE_AncientShieldedTurret,Barricade_Steel,.,.</li>
@@ -141,7 +141,7 @@
 				<li>.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Door_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Door_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel</li>
 				<li>.,.,.,.,Barricade_Steel,VQE_BustedShieldedTurret,Barricade_Steel,.,Wall_Steel,.,.,.,.,.,WallLamp_South,.,.,.,Wall_Steel,Barricade_Steel,VQE_AncientShieldedTurret,Barricade_Steel,.</li>
 				<li>.,.,.,.,Barricade_Steel,Barricade_Steel,Barricade_Steel,.,Wall_Steel,.,.,.,.,.,.,.,Stool_Steel_West,Table1x2c_Steel_North,Wall_Steel,Barricade_Steel,Barricade_Steel,Barricade_Steel,.</li>
-				<li>.,.,.,.,.,.,.,.,Wall_Steel,AG_RuinedHospitalBed_East,.,.,EndTable_Steel_South,AG_RuinedHospitalBed_East,.,.,Stool_Steel_West,.,Wall_Steel,.,.,.,.</li>
+				<li>.,.,.,.,.,.,.,.,Wall_Steel,VQE_RuinedHospitalBed_East,.,.,EndTable_Steel_South,VQE_RuinedHospitalBed_East,.,.,Stool_Steel_West,.,Wall_Steel,.,.,.,.</li>
 				<li>.,.,.,.,.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,.</li>
 			</li>
 			<li>
@@ -251,7 +251,7 @@
 				<li>.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,Stool_Steel_East,Wall_Steel,.</li>
 				<li>.,.,.,.,Door_Steel,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,Wall_Steel,.</li>
 				<li>.,.,.,.,Wall_Steel,.,VQE_FrozenMachinery,.,VQE_FrozenMachinery,.,.,VQE_FrozenMachinery,.,.,Wall_Steel,.,.,.,.,.,.,Wall_Steel,.</li>
-				<li>.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,AG_RuinedHospitalBed_South,EndTable_Steel_South,.,AG_RuinedHospitalBed_South,Wall_Steel,.</li>
+				<li>.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,VQE_RuinedHospitalBed_South,EndTable_Steel_South,.,VQE_RuinedHospitalBed_South,Wall_Steel,.</li>
 				<li>.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.</li>
 				<li>.,.,.,.,.,.,.,.,.,.,.,Barricade_Steel,VQE_AncientShieldedTurret,Barricade_Steel,.,.,.,.,.,.,.,.,.</li>
 				<li>.,.,.,.,.,.,.,.,.,.,.,Barricade_Steel,Barricade_Steel,Barricade_Steel,.,.,.,.,.,.,.,.,.</li>
@@ -352,10 +352,10 @@
 				<li>.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.</li>
 				<li>.,.,Wall_Steel,.,.,.,.,.,VQE_CryptoAncientTerminal_North,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,Wall_Steel,.</li>
 				<li>Barricade_Steel,Barricade_Steel,Wall_Steel,.,.,.,.,.,PowerConduit,.,.,.,.,WallLamp_East,Wall_Steel,VQE_EmptyFrozenCrate_Small,.,.,.,.,Battery_South,Wall_Steel,.</li>
-				<li>Barricade_Steel,VQE_AncientShieldedTurret,Wall_Steel,VQE_AncientTransmitterBeacon,.,VQE_CryptoAncientTerminalBank_West,VQE_CryptoAncientTerminalBank_East,.,PowerConduit,.,VQE_CryptoAncientTerminalBank_West,VQE_CryptoAncientTerminalBank_East,.,.,Wall_Steel,VQE_EmptyFrozenCrate_Small,.,AG_RuinedHospitalBed_North,EndTable_Steel_North,.,.,Wall_Steel,.</li>
+				<li>Barricade_Steel,VQE_AncientShieldedTurret,Wall_Steel,VQE_AncientTransmitterBeacon,.,VQE_CryptoAncientTerminalBank_West,VQE_CryptoAncientTerminalBank_East,.,PowerConduit,.,VQE_CryptoAncientTerminalBank_West,VQE_CryptoAncientTerminalBank_East,.,.,Wall_Steel,VQE_EmptyFrozenCrate_Small,.,VQE_RuinedHospitalBed_North,EndTable_Steel_North,.,.,Wall_Steel,.</li>
 				<li>Barricade_Steel,Barricade_Steel,Wall_Steel,.,.,.,.,.,Battery_North,.,.,.,.,.,Wall_Steel,VQE_EmptyFrozenCrate_Small,.,.,.,.,Battery_South,Wall_Steel,.</li>
 				<li>.,.,Wall_Steel,VQE_CryptoAncientTerminal_East,.,.,.,.,.,.,.,.,.,VQE_CryptoAncientTerminal_West,Wall_Steel,.,.,.,.,.,.,Wall_Steel,.</li>
-				<li>.,.,Wall_Steel,.,.,.,.,.,PowerConduit,.,.,.,.,.,Wall_Steel,VQE_EmptyFrozenCrate_Small,.,EndTable_Steel_North,AG_RuinedHospitalBed_North,.,Battery_South,Wall_Steel,.</li>
+				<li>.,.,Wall_Steel,.,.,.,.,.,PowerConduit,.,.,.,.,.,Wall_Steel,VQE_EmptyFrozenCrate_Small,.,EndTable_Steel_North,VQE_RuinedHospitalBed_North,.,Battery_South,Wall_Steel,.</li>
 				<li>.,.,Wall_Steel,.,.,VQE_CryptoAncientTerminalBank_West,VQE_CryptoAncientTerminalBank_East,.,Battery_North,.,VQE_CryptoAncientTerminalBank_West,VQE_CryptoAncientTerminalBank_East,.,.,Wall_Steel,.,.,.,.,.,.,Wall_Steel,.</li>
 				<li>.,.,Wall_Steel,VQE_AncientTransmitterBeacon,.,.,.,.,.,.,.,.,.,WallLamp_East,Wall_Steel,.,.,.,.,.,.,Wall_Steel,.</li>
 				<li>.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,Stool_Steel_East,Table1x2c_Steel_East,.,Stool_Steel_East,.,Wall_Steel,.</li>
@@ -469,11 +469,11 @@
 				<li>.,.,.,Wall_Steel,.,VQE_CryptoAncientTerminal_South,VQE_CryptoAncientTerminal_South,WallLamp_North,.,.,VQE_CryptoAncientTerminal_South,.,.,WallLamp_North,.,VQE_CryptoAncientTerminalBank_South,.,.,Wall_Steel,Barricade_Steel,Barricade_Steel,Barricade_Steel,.</li>
 				<li>.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Door_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Door_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.</li>
 				<li>.,Wall_Steel,.,Battery_West,.,Battery_West,.,Battery_West,.,.,Wall_Steel,WallLamp_South,.,.,VQE_CryptoAncientTerminalBank_North,.,.,VQE_CryptoAncientTerminalBank_North,.,.,Wall_Steel,.,.</li>
-				<li>.,Wall_Steel,AG_RuinedHospitalBed_North,EndTable_Steel_North,.,.,.,.,.,VQE_EmptyFrozenCrate_Small,Wall_Steel,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.</li>
+				<li>.,Wall_Steel,VQE_RuinedHospitalBed_North,EndTable_Steel_North,.,.,.,.,.,VQE_EmptyFrozenCrate_Small,Wall_Steel,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.</li>
 				<li>.,Wall_Steel,.,.,.,.,.,.,.,VQE_EmptyFrozenCrate_Small,Wall_Steel,.,.,.,.,.,.,.,.,VQE_CryptoAncientTerminalBank_West,Wall_Steel,.,.</li>
 				<li>.,Wall_Steel,WallLamp_West,.,.,.,Stool_Steel_South,.,.,WallLamp_East,Wall_Steel,Battery_South,.,.,.,.,.,.,.,.,Wall_Steel,.,.</li>
 				<li>.,Wall_Steel,.,.,.,.,.,.,.,Stool_Steel_West,Wall_Steel,.,.,.,.,VQE_FrozenScanningRelay,.,.,.,.,Wall_Steel,.,.</li>
-				<li>.,Wall_Steel,AG_RuinedHospitalBed_North,EndTable_Steel_North,.,.,.,Table3x3c_Steel,.,Stool_Steel_West,Wall_Steel,Battery_South,.,.,.,.,.,.,.,VQE_CryptoAncientTerminalBank_West,Wall_Steel,.,.</li>
+				<li>.,Wall_Steel,VQE_RuinedHospitalBed_North,EndTable_Steel_North,.,.,.,Table3x3c_Steel,.,Stool_Steel_West,Wall_Steel,Battery_South,.,.,.,.,.,.,.,VQE_CryptoAncientTerminalBank_West,Wall_Steel,.,.</li>
 				<li>.,Wall_Steel,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.</li>
 				<li>.,Wall_Steel,.,.,.,.,.,Stool_Steel_North,.,.,Wall_Steel,.,.,VQE_CryptoAncientTerminalBank_South,.,.,.,VQE_CryptoAncientTerminalBank_South,.,.,Wall_Steel,.,.</li>
 				<li>.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.</li>
@@ -578,9 +578,9 @@
 				<li>.,.,.,Wall_Steel,VQE_AncientTransmitterBeacon,.,.,VQE_CryptoAncientTerminalBank_North,.,.,.,.,.,.,WallLamp_East,Wall_Steel,.,Stool_Steel_East,.,Wall_Steel,.,.,.</li>
 				<li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,VQE_CryptoAncientTerminal_West,Wall_Steel,.,.,.,Wall_Steel,.,.,.</li>
 				<li>.,.,.,Wall_Steel,VQE_AncientTransmitterBeacon,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,EndTable_Steel_West,Wall_Steel,.,.,.</li>
-				<li>.,.,.,Wall_Steel,.,.,.,VQE_FrozenScanningRelay,.,.,.,VQE_FrozenScanningRelay,.,.,.,Wall_Steel,WallLamp_West,.,AG_RuinedHospitalBed_West,Wall_Steel,.,.,.</li>
+				<li>.,.,.,Wall_Steel,.,.,.,VQE_FrozenScanningRelay,.,.,.,VQE_FrozenScanningRelay,.,.,.,Wall_Steel,WallLamp_West,.,VQE_RuinedHospitalBed_West,Wall_Steel,.,.,.</li>
 				<li>.,.,.,Wall_Steel,VQE_AncientTransmitterBeacon,.,.,.,.,.,.,.,.,.,VQE_CryptoAncientTerminalBank_West,Wall_Steel,.,.,EndTable_Steel_West,Wall_Steel,Barricade_Steel,Barricade_Steel,Barricade_Steel</li>
-				<li>.,Barricade_Steel,Barricade_Steel,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,AG_RuinedHospitalBed_West,Wall_Steel,Barricade_Steel,VQE_AncientShieldedTurret,Barricade_Steel</li>
+				<li>.,Barricade_Steel,Barricade_Steel,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,VQE_RuinedHospitalBed_West,Wall_Steel,Barricade_Steel,VQE_AncientShieldedTurret,Barricade_Steel</li>
 				<li>.,Barricade_Steel,VQE_AncientShieldedTurret,Wall_Steel,VQE_AncientTransmitterBeacon,.,.,WallLamp_North,.,VQE_CryptoAncientTerminalBank_South,.,.,VQE_CryptoAncientTerminalBank_South,.,.,Wall_Steel,.,.,.,Wall_Steel,Barricade_Steel,Barricade_Steel,Barricade_Steel</li>
 				<li>.,Barricade_Steel,Barricade_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Door_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Door_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.</li>
 				<li>.,.,.,.,Wall_Steel,.,.,WallLamp_South,.,.,.,.,.,.,.,Wall_Steel,.,.,.,VQE_EmptyFrozenCrate_Small,.,Wall_Steel,.</li>
