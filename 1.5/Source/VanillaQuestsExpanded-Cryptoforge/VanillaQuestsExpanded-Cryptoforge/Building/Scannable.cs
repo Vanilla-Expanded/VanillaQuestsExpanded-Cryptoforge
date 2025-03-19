@@ -183,7 +183,9 @@ namespace VanillaQuestsExpandedCryptoforge
 
         public void Notify_EndScan()
         {
-
+            var site = Map.Parent;
+            Find.SignalManager.SendSignal(new Signal("ScannedRelay", site.Named("SUBJECT")));
+            QuestUtility.SendQuestTargetSignals(site.questTags, "ScannedRelay", site.Named("SUBJECT"));
             if (contentDetails != null)
             {
 
@@ -202,7 +204,6 @@ namespace VanillaQuestsExpandedCryptoforge
                 {
                     contentDetails.deconstructSound.PlayOneShot(this);
                 }
-                          
 
                 if (this.Spawned)
                 {

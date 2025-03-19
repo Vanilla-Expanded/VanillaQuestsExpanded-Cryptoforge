@@ -23,7 +23,13 @@ namespace VanillaQuestsExpandedCryptoforge
                 Log.Error("Failed to find a suitable site tile for the Cryptoforge Chapter1 quest.");
                 return;
             }
-            Site site = GenerateSite(quest, slate, points, tile, null, out string siteMapGeneratedSignal);
+            var hostileFaction = Faction.OfMechanoids ?? Find.FactionManager.RandomEnemyFaction(allowNonHumanlike: false);
+            var site = GenerateSite(quest, slate, points, tile, hostileFaction, 
+            out string siteMapGeneratedSignal, failWhenMapRemoved: false);
+            QuestPart_RelayScanners questPart_ScanSignalsCounter = new QuestPart_RelayScanners();
+            questPart_ScanSignalsCounter.site = site;
+            questPart_ScanSignalsCounter.inSignal = QuestGenUtility.HardcodedSignalWithQuestID("site.ScannedRelay");
+            quest.AddPart(questPart_ScanSignalsCounter);
         }
 
         protected override bool TestRunInt(Slate slate)

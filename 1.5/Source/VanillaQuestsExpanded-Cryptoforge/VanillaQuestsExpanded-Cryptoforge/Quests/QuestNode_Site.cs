@@ -53,7 +53,7 @@ namespace VanillaQuestsExpandedCryptoforge
         }
 
         protected Site GenerateSite(Quest quest, Slate slate, float points,
-            int tile, Faction parentFaction, out string siteMapGeneratedSignal)
+            int tile, Faction parentFaction, out string siteMapGeneratedSignal, bool failWhenMapRemoved = true)
         {
             SitePartParams sitePartParams = new SitePartParams
             {
@@ -73,11 +73,13 @@ namespace VanillaQuestsExpandedCryptoforge
             string siteMapRemovedSignal = QuestGenUtility.HardcodedSignalWithQuestID("site.MapRemoved");
             siteMapGeneratedSignal = QuestGenUtility.HardcodedSignalWithQuestID("site.MapGenerated");
 
-            quest.SignalPassActivable(delegate
+            if (failWhenMapRemoved)
             {
-                quest.End(QuestEndOutcome.Fail, 0, null, null, QuestPart.SignalListenMode.OngoingOnly, sendStandardLetter: true);
-            }, siteMapGeneratedSignal, siteMapRemovedSignal);
-
+                quest.SignalPassActivable(delegate
+                {
+                    quest.End(QuestEndOutcome.Fail, 0, null, null, QuestPart.SignalListenMode.OngoingOnly, sendStandardLetter: true);
+                }, siteMapGeneratedSignal, siteMapRemovedSignal);
+            }
             return site;
         }
 
