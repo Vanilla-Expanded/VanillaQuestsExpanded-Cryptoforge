@@ -10,12 +10,12 @@ namespace VanillaQuestsExpandedCryptoforge
         public override SitePartDef QuestSite => InternalDefOf.VQE_CryptoforgeChapter1Site;
         protected override void RunInt()
         {
-            bool seaIcePresent = Find.WorldGrid.tiles.Any(x => x.biome == BiomeDefOf.SeaIce);
+            bool seaIcePresent = Find.WorldGrid.tiles.Any(x => x.biome == BiomeDefOf.SeaIce || x.biome == BiomeDefOf.IceSheet);
             if (!PrepareQuest(out Quest quest, out Slate slate, out Map map, out float points, out int tile, delegate (int x)
             {
                 if (seaIcePresent)
                 {
-                    return Find.WorldGrid[x].biome == BiomeDefOf.SeaIce;
+                    return Find.WorldGrid[x].biome == BiomeDefOf.SeaIce || Find.WorldGrid[x].biome == BiomeDefOf.IceSheet;
                 }
                 return true;
             }))

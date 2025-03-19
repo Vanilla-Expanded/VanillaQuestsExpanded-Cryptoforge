@@ -17,12 +17,24 @@ namespace VanillaQuestsExpandedCryptoforge
             float points = StorytellerUtility.DefaultThreatPointsNow(map);
 
             Faction faction = Find.FactionManager.OfMechanoids;
-
-            StorytellerComp storytellerComp = Find.Storyteller.storytellerComps.First((StorytellerComp x) => x is StorytellerComp_OnOffCycle || x is StorytellerComp_RandomMain);
-            IncidentParms parms = storytellerComp.GenerateParms(IncidentCategoryDefOf.ThreatBig, map);
+            IncidentParms parms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.ThreatBig, map);
             parms.forced = true;
             parms.target = map;
             parms.points = points * pointMultiplier;
+            var pawnGroupMakerParms = new PawnGroupMakerParms
+            {
+                groupKind = PawnGroupKindDefOf.Combat,
+                tile = map.Tile,
+                faction = faction,
+                points = points,
+                raidStrategy = RaidStrategyDefOf.ImmediateAttack
+            };
+            var minPoints = faction.def.MinPointsToGeneratePawnGroup(pawnGroupMakerParms.groupKind, pawnGroupMakerParms);
+            if (minPoints > parms.points && minPoints < float.MaxValue)
+            {
+                parms.points = minPoints;
+            }
+            
             parms.faction = faction;
 
             List<RaidStrategyDef> source = DefDatabase<RaidStrategyDef>.AllDefs.Where((RaidStrategyDef s) => s.Worker.CanUseWith(parms, PawnGroupKindDefOf.Combat)).ToList();
@@ -37,7 +49,6 @@ namespace VanillaQuestsExpandedCryptoforge
             IncidentDefOf.RaidEnemy.Worker.TryExecute(parms);
 
         }
-
 
         public static void ThrowExtendedAirPuffUp(Vector3 loc, Map map, float size, float speedMultiplier)
         {
