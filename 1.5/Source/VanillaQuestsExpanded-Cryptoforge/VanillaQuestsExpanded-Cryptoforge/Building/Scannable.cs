@@ -222,7 +222,7 @@ namespace VanillaQuestsExpandedCryptoforge
                 yield return floatMenuOption;
             }
             if (!scanning&&selPawn.CanReserve(this) && selPawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation)
-                && !selPawn.skills.GetSkill(SkillDefOf.Intellectual).TotallyDisabled)
+                )
             {
                 if (!selPawn.CanReach(this, PathEndMode.OnCell, Danger.Deadly))
                 {

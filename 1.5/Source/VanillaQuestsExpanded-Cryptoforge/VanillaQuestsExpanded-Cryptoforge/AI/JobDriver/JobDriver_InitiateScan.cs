@@ -38,10 +38,7 @@ namespace VanillaQuestsExpandedCryptoforge
             study.tickAction = delegate
             {
                 Pawn actor = study.actor;
-                if (actor.skills != null)
-                {
-                    actor.skills.Learn(SkillDefOf.Intellectual, 0.025f);
-                }
+               
 
                 actor.rotationTracker.FaceTarget(actor.CurJob.GetTarget(TargetIndex.A));
 
@@ -58,7 +55,7 @@ namespace VanillaQuestsExpandedCryptoforge
             study.FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
           
             study.defaultCompleteMode = ToilCompleteMode.Never;
-            study.activeSkill = () => SkillDefOf.Intellectual;
+          
             study.handlingFacing = true;
             study.AddFinishAction(delegate
             {
