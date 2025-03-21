@@ -16,6 +16,7 @@ namespace VanillaQuestsExpandedCryptoforge
         protected override string RightDefNamePrefix => "VQE_Cryptoforge_Stern";
         protected override void PostGenerate(Map map, GenStepParams parms, CellRect leftRect, CellRect centerRect, CellRect rightRect)
         {
+            base.PostGenerate(map, parms, leftRect, centerRect, rightRect);
             QuestPart_CryptoforgeStern questPart = null;
             foreach (var quest in Find.QuestManager.QuestsListForReading)
             {
@@ -44,17 +45,11 @@ namespace VanillaQuestsExpandedCryptoforge
                         GenSpawn.Spawn(enemyPawn, spawnCell, map);
                     }
                 }
-                LordMaker.MakeNewLord(questPart.siteFaction, new LordJob_DefendBaseNoEat(questPart.siteFaction, mapCenter), map, enemyPawns);
+                LordMaker.MakeNewLord(questPart.siteFaction, new LordJob_DefendBaseNoEat(questPart.siteFaction, centerRect.CenterCell), map, enemyPawns);
             }
+
         }
 
-        private List<IntVec3> GetCombinedRectCells(CellRect leftRect, CellRect centerRect, CellRect rightRect)
-        {
-            var combinedCells = new List<IntVec3>();
-            combinedCells.AddRange(leftRect.Cells);
-            combinedCells.AddRange(centerRect.Cells);
-            combinedCells.AddRange(rightRect.Cells);
-            return combinedCells;
-        }
+
     }
 }

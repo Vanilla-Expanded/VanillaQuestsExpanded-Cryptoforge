@@ -5,6 +5,7 @@ using VFECore;
 using System.Collections.Generic;
 using System.Linq;
 using Verse.AI.Group;
+using UnityEngine;
 
 namespace VanillaQuestsExpandedCryptoforge
 {
@@ -15,9 +16,6 @@ namespace VanillaQuestsExpandedCryptoforge
         protected abstract string LeftDefNamePrefix { get; }
         protected abstract string CenterDefNamePrefix { get; }
         protected abstract string RightDefNamePrefix { get; }
-
-        protected IntVec3 mapCenter; // Added protected mapCenter field
-
         public override void Generate(Map map, GenStepParams parms)
         {
             string leftDefName = LeftDefNamePrefix + "_LeftSide_" + (Rand.Bool ? "Alpha" : "Beta");
@@ -33,35 +31,70 @@ namespace VanillaQuestsExpandedCryptoforge
                 return;
             }
             var siteFaction = map.ParentFaction;
-            mapCenter = map.Center; // Initialize protected mapCenter field
+            var mapCenter = map.Center; // Initialize protected mapCenter field
             var structureSize = leftDef.Sizes;
             var currentPos = mapCenter + new IntVec3(-structureSize.x, 0, 0);
             CellRect leftRect = CellRect.CenteredOn(currentPos, structureSize);
             GenOption.GetAllMineableIn(leftRect, map);
-            GenerateLayout(leftDef, leftRect, map, siteFaction);
+            leftDef.Generate(leftRect, map, siteFaction);
             currentPos += new IntVec3(leftRect.Width, 0, 0);
 
             structureSize = centerDef.Sizes;
             CellRect centerRect = CellRect.CenteredOn(currentPos, structureSize);
             GenOption.GetAllMineableIn(centerRect, map);
-            GenerateLayout(centerDef, centerRect, map, siteFaction);
+            centerDef.Generate(centerRect, map, siteFaction);
             currentPos += new IntVec3(centerRect.Width, 0, 0);
 
             structureSize = rightDef.Sizes;
             CellRect rightRect = CellRect.CenteredOn(currentPos, structureSize);
             GenOption.GetAllMineableIn(rightRect, map);
-            GenerateLayout(rightDef, rightRect, map, siteFaction);
+            rightDef.Generate(rightRect, map, siteFaction);
 
             PostGenerate(map, parms, leftRect, centerRect, rightRect);
         }
 
         protected virtual void PostGenerate(Map map, GenStepParams parms, CellRect leftRect, CellRect centerRect, CellRect rightRect)
         {
+            ScatterScrap(map, leftRect, centerRect, rightRect);
         }
-
-        private void GenerateLayout(StructureLayoutDef structureDef, CellRect rect, Map map, Faction faction)
+        
+        private void ScatterScrap(Map map, CellRect leftRect, CellRect centerRect, CellRect rightRect)
         {
-            structureDef.Generate(rect, map, faction);
+            var mapCells = map.AllCells.Where(x => x.GetThingList(map).Count(x => x is not Filth or Plant) <= 0).ToList();
+            var shipCells = GetCombinedRectCells(leftRect, centerRect, rightRect);
+            var validCells = mapCells.Except(shipCells).ToList();
+
+            var thingsToScatter = new List<ThingDef>()
+            {
+                ThingDefOf.ChunkSlagSteel,
+                ThingDefOf.ChunkSlagSteel,
+                ThingDefOf.ChunkSlagSteel,
+                InternalDefOf.VQE_TwistedMetal,
+                InternalDefOf.VQE_LargeTwistedMetal,
+                InternalDefOf.VQE_HugeTwistedMetal
+            };
+
+            var countToScatter = Mathf.RoundToInt(validCells.Count * 0.03f);
+            for (int i = 0; i < countToScatter; i++)
+            {
+                if (!validCells.TryRandomElement(out var cell))
+                {
+                    break;
+                }
+                validCells.Remove(cell);
+
+                var thingDef = thingsToScatter.RandomElement();
+                GenPlace.TryPlaceThing(ThingMaker.MakeThing(thingDef), cell, map, ThingPlaceMode.Near);
+            }
+        }
+        
+        protected List<IntVec3> GetCombinedRectCells(CellRect leftRect, CellRect centerRect, CellRect rightRect)
+        {
+            var combinedCells = new List<IntVec3>();
+            combinedCells.AddRange(leftRect.Cells);
+            combinedCells.AddRange(centerRect.Cells);
+            combinedCells.AddRange(rightRect.Cells);
+            return combinedCells;
         }
     }
 }
