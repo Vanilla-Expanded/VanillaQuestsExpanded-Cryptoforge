@@ -3,6 +3,8 @@ using RimWorld.Planet;
 using RimWorld.QuestGen;
 using Verse;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 
 namespace VanillaQuestsExpandedCryptoforge
 {
@@ -11,7 +13,7 @@ namespace VanillaQuestsExpandedCryptoforge
         public override SitePartDef QuestSite => InternalDefOf.VQE_CryptoforgeChapter3Site;
         protected override void RunInt()
         {
-            var allowedBiomes = new List<BiomeDef>() { BiomeDefOf.IceSheet, BiomeDefOf.SeaIce};
+            var allowedBiomes = new List<BiomeDef>() { BiomeDefOf.IceSheet, BiomeDefOf.SeaIce };
             if (!PrepareQuest(out Quest quest, out Slate slate, out Map map, out float points, out int tile, (int x) =>
             {
                 return true;
@@ -22,7 +24,21 @@ namespace VanillaQuestsExpandedCryptoforge
             }
             var hostileFaction = Faction.OfInsects;
             var site = GenerateSite(quest, slate, points, tile, hostileFaction, out string siteMapGeneratedSignal, failWhenMapRemoved: false);
-            List<PawnKindDef> enemyUnitPawns = GeneratePawnKindList(hostileFaction, points, site);
+            List<PawnKindDef> enemyUnitPawns = new List<PawnKindDef>();
+            var insectPawnKinds = Hive.spawnablePawnKinds;
+            points = Mathf.Max(points, insectPawnKinds.Min(x => x.combatPower));
+            float pointsLeft = points;
+            int num = 0;
+            while (pointsLeft > 0f)
+            {
+                num++;
+                if (!insectPawnKinds.Where(x => x.combatPower <= pointsLeft).TryRandomElement(out var result))
+                {
+                    break;
+                }
+                enemyUnitPawns.Add(result);
+                pointsLeft -= result.combatPower;
+            }
             slate.Set("ListOfEnemies", FormatPawnListToString(enemyUnitPawns));
             QuestPart_CryptoforgeBow questPart = new QuestPart_CryptoforgeBow();
             questPart.site = site;

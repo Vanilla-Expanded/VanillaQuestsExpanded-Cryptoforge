@@ -76,6 +76,10 @@ namespace VanillaQuestsExpandedCryptoforge
             }, tile, parentFaction);
 
             site.doorsAlwaysOpenForPlayerPawns = true;
+            if (parentFaction != null && site.Faction != parentFaction)
+            {
+                site.SetFaction(parentFaction);
+            }
             slate.Set("site", site);
             quest.SpawnWorldObject(site);
 
