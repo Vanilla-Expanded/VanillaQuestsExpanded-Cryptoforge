@@ -5,18 +5,16 @@ using RimWorld.Planet;
 
 namespace VanillaQuestsExpandedCryptoforge
 {
-    public class QuestPart_RelayScanners : QuestPart
+    public class QuestPart_RelayScanners : QuestPart_SiteKeepWhileQuestActive
     {
         [NoTranslate]
         public string inSignal;
         private int scanSignalsCount = 0;
-        public Site site;
         public Map siteMap;
         public override void ExposeData()
         {
             base.ExposeData();
             Scribe_Values.Look(ref scanSignalsCount, "scanSignalsCount", 0);
-            Scribe_References.Look(ref site, "site");
             Scribe_References.Look(ref siteMap, "siteMap");
             Scribe_Values.Look(ref inSignal, "inSignal");
         }

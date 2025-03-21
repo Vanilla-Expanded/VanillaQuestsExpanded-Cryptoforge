@@ -2,7 +2,7 @@
 <Defs>
     <SitePartDef>
         <defName>VQE_CryptoforgeChapter1Site</defName>
-        <label>Cryptoforge Scanning Site</label>
+        <label>cryptoforge scanning site</label>
         <description>An ancient scanning site used to locate the Cryptoforge.</description>
         <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
         <expandingIconTexture>UI/MapIcons/AncientRadarInstallation</expandingIconTexture>
@@ -18,6 +18,24 @@
             <settlementLayoutDefs>
                 <li>VQE_Cryptoforge_ScanningLocation</li>
             </settlementLayoutDefs>
+        </genStep>
+    </GenStepDef>
+
+    <SitePartDef>
+        <defName>VQE_CryptoforgeChapter2Site</defName>
+        <label>cryptoforge stern wreckage</label>
+        <description>The crash site of the Cryptoforge stern, containing the ship's black box.</description>
+        <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+        <expandingIconTexture>UI/MapIcons/Cryptoforge_Stern</expandingIconTexture>
+        <tags>
+            <li>VQE_CryptoforgeChapter2Site</li>
+        </tags>
+    </SitePartDef>
+    <GenStepDef>
+        <defName>VQE_CryptoforgeChapter2Site</defName>
+        <linkWithSite>VQE_CryptoforgeChapter2Site</linkWithSite>
+        <order>450</order>
+        <genStep Class="VanillaQuestsExpandedCryptoforge.GenStep_CryptoforgeStern">
         </genStep>
     </GenStepDef>
 </Defs>

@@ -2,6 +2,7 @@ using RimWorld;
 using RimWorld.Planet;
 using RimWorld.QuestGen;
 using Verse;
+using System.Collections.Generic;
 
 namespace VanillaQuestsExpandedCryptoforge
 {
@@ -10,21 +11,17 @@ namespace VanillaQuestsExpandedCryptoforge
         public override SitePartDef QuestSite => InternalDefOf.VQE_CryptoforgeChapter1Site;
         protected override void RunInt()
         {
-            bool seaIcePresent = Find.WorldGrid.tiles.Any(x => x.biome == BiomeDefOf.SeaIce || x.biome == BiomeDefOf.IceSheet);
+            var allowedBiomes = new List<BiomeDef>() { BiomeDefOf.IceSheet, BiomeDefOf.SeaIce, BiomeDefOf.Tundra, BiomeDefOf.BorealForest };
             if (!PrepareQuest(out Quest quest, out Slate slate, out Map map, out float points, out int tile, delegate (int x)
             {
-                if (seaIcePresent)
-                {
-                    return Find.WorldGrid[x].biome == BiomeDefOf.SeaIce || Find.WorldGrid[x].biome == BiomeDefOf.IceSheet;
-                }
                 return true;
-            }))
+            }, allowedBiomes))
             {
                 Log.Error("Failed to find a suitable site tile for the Cryptoforge Chapter1 quest.");
                 return;
             }
             var hostileFaction = Faction.OfMechanoids ?? Find.FactionManager.RandomEnemyFaction(allowNonHumanlike: false);
-            var site = GenerateSite(quest, slate, points, tile, hostileFaction, 
+            var site = GenerateSite(quest, slate, points, tile, hostileFaction,
             out string siteMapGeneratedSignal, failWhenMapRemoved: false);
             QuestPart_RelayScanners questPart_ScanSignalsCounter = new QuestPart_RelayScanners();
             questPart_ScanSignalsCounter.site = site;

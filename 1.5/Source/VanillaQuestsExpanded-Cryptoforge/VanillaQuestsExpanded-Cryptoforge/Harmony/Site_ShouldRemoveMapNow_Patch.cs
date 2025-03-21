@@ -19,8 +19,8 @@ namespace VanillaQuestsExpandedCryptoforge
                     List<QuestPart> questParts = quest.PartsListForReading;
                     for (var i = 0; i < questParts.Count; i++)
                     {
-                        if (questParts[i] is QuestPart_RelayScanners relayScannersPart
-                            && relayScannersPart.site == __instance)
+                        if (questParts[i] is QuestPart_SiteKeepWhileQuestActive questSite
+                            && questSite.site == __instance)
                         {
                             alsoRemoveWorldObject = false;
                             break;
