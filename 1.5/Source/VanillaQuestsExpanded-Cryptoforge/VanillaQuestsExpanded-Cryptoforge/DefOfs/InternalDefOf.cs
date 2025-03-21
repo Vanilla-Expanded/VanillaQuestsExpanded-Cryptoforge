@@ -19,6 +19,7 @@ namespace VanillaQuestsExpandedCryptoforge
 		public static ThingDef VQE_ForcedAncientAirlock;
 		public static ThingDef VQE_AncientAirlock;
 		public static ThingDef VQE_FrozenShipHull;
+		public static ThingDef VQE_FrozenCryptogenerator;
 		public static ThingDef VQE_FrozenCryptogenerator_Off;
 		public static ThingDef VQE_Cryptofreeze;
 		public static ThingDef VQE_CryptoSpark;
@@ -45,9 +46,10 @@ namespace VanillaQuestsExpandedCryptoforge
 		public static SitePartDef VQE_CryptoforgeChapter1Site;
 		public static SitePartDef VQE_CryptoforgeChapter2Site;
 		public static SitePartDef VQE_CryptoforgeChapter3Site;
-		public static ThingDef VQE_AncientBlackBox, VQE_FrozenScanningRelay;
+		public static SitePartDef VQE_CryptoforgeChapter4Site;
+		public static ThingDef VQE_AncientCryptoforge, VQE_AncientBlackBox, VQE_FrozenScanningRelay;
 		public static ThingDef VQE_TwistedMetal;
 		public static ThingDef VQE_LargeTwistedMetal;
 		public static ThingDef VQE_HugeTwistedMetal;
-    }
+	}
 }

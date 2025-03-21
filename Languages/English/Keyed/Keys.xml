@@ -16,5 +16,5 @@
 
 	<VQE_Alert_CriticalCryptoGenerators>Cryptogenerator running low</VQE_Alert_CriticalCryptoGenerators>
 	<VQE_Alert_CriticalCryptoGenerators_Desc>A cryptogenerator only has enough fuel left for less than a day. When fuel runs out, it will meltdown, destroying everything in radius.</VQE_Alert_CriticalCryptoGenerators_Desc>
-	
+	<VQE_QuestCompletedMessage>This could be a good opportunity to craft more legendary crypto gear, provided you have the resources to do so. There might not be another opportunity to do that.</VQE_QuestCompletedMessage>
 </LanguageData>

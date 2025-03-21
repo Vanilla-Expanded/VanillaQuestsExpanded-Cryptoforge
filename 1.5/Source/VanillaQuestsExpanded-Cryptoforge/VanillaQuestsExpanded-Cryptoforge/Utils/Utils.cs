@@ -36,13 +36,8 @@ namespace VanillaQuestsExpandedCryptoforge
             }
             parms.faction = faction;
             parms.raidStrategy = RaidStrategyDefOf.ImmediateAttack;
-            if (parms.raidStrategy != null)
-            {
-                List<PawnsArrivalModeDef> source2 = DefDatabase<PawnsArrivalModeDef>.AllDefs.Where((PawnsArrivalModeDef a) => a.Worker.CanUseWith(parms) && parms.raidStrategy.arriveModes.Contains(a)).ToList();
-                parms.raidArrivalMode = source2.RandomElement();
-            }
+            parms.raidArrivalMode = PawnsArrivalModeDefOf.EdgeWalkIn;
             IncidentDefOf.RaidEnemy.Worker.TryExecute(parms);
-
         }
 
         public static void ThrowExtendedAirPuffUp(Vector3 loc, Map map, float size, float speedMultiplier)

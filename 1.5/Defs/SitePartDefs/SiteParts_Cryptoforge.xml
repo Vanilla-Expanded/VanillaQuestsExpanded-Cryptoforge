@@ -56,4 +56,22 @@
         <genStep Class="VanillaQuestsExpandedCryptoforge.GenStep_CryptoforgeBow">
         </genStep>
     </GenStepDef>
+
+    <SitePartDef>
+        <defName>VQE_CryptoforgeChapter4Site</defName>
+        <label>legendary cryptoforge</label>
+        <description>The crash site of the legendary cryptoforge, an ancient ultratech workshop.</description>
+        <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+        <expandingIconTexture>UI/MapIcons/Cryptoforge_Middle</expandingIconTexture>
+        <tags>
+            <li>VQE_CryptoforgeChapter4Site</li>
+        </tags>
+    </SitePartDef>
+    <GenStepDef>
+        <defName>VQE_CryptoforgeChapter4Site</defName>
+        <linkWithSite>VQE_CryptoforgeChapter4Site</linkWithSite>
+        <order>450</order>
+        <genStep Class="VanillaQuestsExpandedCryptoforge.GenStep_LegendaryCryptoforge">
+        </genStep>
+    </GenStepDef>
 </Defs>

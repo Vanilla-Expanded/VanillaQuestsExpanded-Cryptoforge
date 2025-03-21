@@ -18,9 +18,9 @@ namespace VanillaQuestsExpandedCryptoforge
         protected abstract string RightDefNamePrefix { get; }
         public override void Generate(Map map, GenStepParams parms)
         {
-            string leftDefName = LeftDefNamePrefix + "_LeftSide_" + (Rand.Bool ? "Alpha" : "Beta");
-            string centerDefName = CenterDefNamePrefix + "_Center_" + (Rand.Bool ? "Alpha" : "Beta");
-            string rightDefName = RightDefNamePrefix + "_RightSide_" + (Rand.Bool ? "Alpha" : "Beta");
+            string leftDefName = LeftDefNamePrefix + "_" + (Rand.Bool ? "Alpha" : "Beta");
+            string centerDefName = CenterDefNamePrefix + "_" + (Rand.Bool ? "Alpha" : "Beta");
+            string rightDefName = RightDefNamePrefix + "_" + (Rand.Bool ? "Alpha" : "Beta");
             StructureLayoutDef leftDef = DefDatabase<StructureLayoutDef>.GetNamed(leftDefName);
             StructureLayoutDef centerDef = DefDatabase<StructureLayoutDef>.GetNamed(centerDefName);
             StructureLayoutDef rightDef = DefDatabase<StructureLayoutDef>.GetNamed(rightDefName);
@@ -31,7 +31,7 @@ namespace VanillaQuestsExpandedCryptoforge
                 return;
             }
             var siteFaction = map.ParentFaction;
-            var mapCenter = map.Center; // Initialize protected mapCenter field
+            var mapCenter = map.Center;
             var structureSize = leftDef.Sizes;
             var currentPos = mapCenter + new IntVec3(-structureSize.x, 0, 0);
             CellRect leftRect = CellRect.CenteredOn(currentPos, structureSize);
@@ -57,7 +57,7 @@ namespace VanillaQuestsExpandedCryptoforge
         {
             ScatterScrap(map, leftRect, centerRect, rightRect);
         }
-        
+
         private void ScatterScrap(Map map, CellRect leftRect, CellRect centerRect, CellRect rightRect)
         {
             var mapCells = map.AllCells.Where(x => x.GetThingList(map).Count(x => x is not Filth or Plant) <= 0).ToList();
@@ -87,7 +87,7 @@ namespace VanillaQuestsExpandedCryptoforge
                 GenPlace.TryPlaceThing(ThingMaker.MakeThing(thingDef), cell, map, ThingPlaceMode.Near);
             }
         }
-        
+
         protected List<IntVec3> GetCombinedRectCells(CellRect leftRect, CellRect centerRect, CellRect rightRect)
         {
             var combinedCells = new List<IntVec3>();

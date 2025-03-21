@@ -11,9 +11,9 @@ namespace VanillaQuestsExpandedCryptoforge
     [HotSwappable]
     public class GenStep_CryptoforgeStern : GenStep_CryptoforgeStructureBase
     {
-        protected override string LeftDefNamePrefix => "VQE_Cryptoforge_Stern";
-        protected override string CenterDefNamePrefix => "VQE_Cryptoforge_Stern";
-        protected override string RightDefNamePrefix => "VQE_Cryptoforge_Stern";
+        protected override string LeftDefNamePrefix => "VQE_Cryptoforge_Stern_LeftSide";
+        protected override string CenterDefNamePrefix => "VQE_Cryptoforge_Stern_Center";
+        protected override string RightDefNamePrefix => "VQE_Cryptoforge_Stern_RightSide";
         protected override void PostGenerate(Map map, GenStepParams parms, CellRect leftRect, CellRect centerRect, CellRect rightRect)
         {
             base.PostGenerate(map, parms, leftRect, centerRect, rightRect);
