@@ -39,12 +39,6 @@ namespace VanillaQuestsExpandedCryptoforge
                 enemyUnitPawns.Add(result);
                 pointsLeft -= result.combatPower;
             }
-            slate.Set("ListOfEnemies", FormatPawnListToString(enemyUnitPawns));
-            QuestPart_CryptoforgeBow questPart = new QuestPart_CryptoforgeBow();
-            questPart.site = site;
-            questPart.enemyUnitPawns = enemyUnitPawns;
-            questPart.siteFaction = hostileFaction;
-            quest.AddPart(questPart);
 
             QuestPart_EndQuestOnScanSignals questPart_ScanSignalsCounter = new QuestPart_EndQuestOnScanSignals();
             questPart_ScanSignalsCounter.site = site;
