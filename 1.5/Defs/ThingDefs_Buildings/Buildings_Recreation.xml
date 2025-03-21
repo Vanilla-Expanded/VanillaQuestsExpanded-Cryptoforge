@@ -16,6 +16,10 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsJoy</li>
+		</thingCategories>
 		<staticSunShadowHeight>0.2</staticSunShadowHeight>
 		<castEdgeShadows>True</castEdgeShadows>
 		<altitudeLayer>Building</altitudeLayer>
