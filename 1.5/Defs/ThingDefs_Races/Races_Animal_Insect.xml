@@ -101,7 +101,7 @@
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_HediffByTemperature">
 				<doTemperatureBelow>true</doTemperatureBelow>
-				<temperatureBelow>-20</temperatureBelow>
+				<temperatureBelow>0</temperatureBelow>
 				<tickInterval>60</tickInterval>
 				<hediffBelow>VQE_IceCrawlerHediff</hediffBelow>
 				<severity>1</severity>
@@ -220,7 +220,7 @@
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_HediffByTemperature">
 				<doTemperatureBelow>true</doTemperatureBelow>
-				<temperatureBelow>-20</temperatureBelow>
+				<temperatureBelow>0</temperatureBelow>
 				<tickInterval>60</tickInterval>
 				<hediffBelow>VQE_MegamidgeHediff</hediffBelow>
 				<severity>1</severity>
