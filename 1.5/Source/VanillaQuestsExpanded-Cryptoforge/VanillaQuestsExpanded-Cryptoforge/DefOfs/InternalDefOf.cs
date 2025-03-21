@@ -44,5 +44,6 @@ namespace VanillaQuestsExpandedCryptoforge
 
 		public static SitePartDef VQE_CryptoforgeChapter1Site;
 		public static SitePartDef VQE_CryptoforgeChapter2Site;
+		public static ThingDef VQE_AncientBlackBox, VQE_FrozenScanningRelay;
 	}
 }

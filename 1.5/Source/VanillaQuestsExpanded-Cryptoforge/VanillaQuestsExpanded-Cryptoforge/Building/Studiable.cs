@@ -101,7 +101,10 @@ namespace VanillaQuestsExpandedCryptoforge
 
         public void Study(Pawn pawn)
         {
-            
+            var site = Map.Parent;
+            var signal = "Studied_" + this.def.defName;
+            Find.SignalManager.SendSignal(new Signal(signal, site.Named("SUBJECT")));
+            QuestUtility.SendQuestTargetSignals(site.questTags, signal, site.Named("SUBJECT"));
             if (contentDetails != null)
             {
               

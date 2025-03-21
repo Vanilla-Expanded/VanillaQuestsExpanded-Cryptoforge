@@ -23,9 +23,12 @@ namespace VanillaQuestsExpandedCryptoforge
             var hostileFaction = Faction.OfMechanoids ?? Find.FactionManager.RandomEnemyFaction(allowNonHumanlike: false);
             var site = GenerateSite(quest, slate, points, tile, hostileFaction,
             out string siteMapGeneratedSignal, failWhenMapRemoved: false);
-            QuestPart_RelayScanners questPart_ScanSignalsCounter = new QuestPart_RelayScanners();
+            QuestPart_EndQuestOnScanSignals questPart_ScanSignalsCounter = new QuestPart_EndQuestOnScanSignals();
             questPart_ScanSignalsCounter.site = site;
-            questPart_ScanSignalsCounter.inSignal = QuestGenUtility.HardcodedSignalWithQuestID("site.ScannedRelay");
+            questPart_ScanSignalsCounter.inSignalEnable = siteMapGeneratedSignal;
+            questPart_ScanSignalsCounter.scanningBuilding = InternalDefOf.VQE_FrozenScanningRelay;
+            questPart_ScanSignalsCounter.maxSignalsCount = 2;
+            questPart_ScanSignalsCounter.inSignal = QuestGenUtility.HardcodedSignalWithQuestID("site.Scanned_" + InternalDefOf.VQE_FrozenScanningRelay.defName);
             quest.AddPart(questPart_ScanSignalsCounter);
         }
 

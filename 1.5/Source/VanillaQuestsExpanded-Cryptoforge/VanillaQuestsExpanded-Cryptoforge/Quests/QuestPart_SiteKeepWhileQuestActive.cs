@@ -4,11 +4,10 @@ using Verse;
 
 namespace VanillaQuestsExpandedCryptoforge
 {
-    public class QuestPart_SiteKeepWhileQuestActive : QuestPart
+    public class QuestPart_SiteKeepWhileQuestActive : QuestPartActivable
     {
         public Site site;
         public Faction siteFaction;
-
         public override void ExposeData()
         {
             base.ExposeData();

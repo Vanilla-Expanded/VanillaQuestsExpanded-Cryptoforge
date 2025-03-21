@@ -14,13 +14,13 @@ namespace VanillaQuestsExpandedCryptoforge
         public override int SeedPart => 46515475;
         public override void Generate(Map map, GenStepParams parms)
         {
-            QuestPart_CryptoforgeSternEnemies questPart = null;
+            QuestPart_CryptoforgeStern questPart = null;
             foreach (var quest in Find.QuestManager.QuestsListForReading)
             {
                 List<QuestPart> questParts = quest.PartsListForReading;
                 for (int i = 0; i < questParts.Count; i++)
                 {
-                    if (questParts[i] is QuestPart_CryptoforgeSternEnemies sternEnemiesPart && sternEnemiesPart.site == parms.sitePart.site)
+                    if (questParts[i] is QuestPart_CryptoforgeStern sternEnemiesPart && sternEnemiesPart.site == parms.sitePart.site)
                     {
                         questPart = sternEnemiesPart;
                         break;
@@ -74,14 +74,11 @@ namespace VanillaQuestsExpandedCryptoforge
                     Pawn enemyPawn = PawnGenerator.GeneratePawn(pawnKindDef, siteFaction);
                     enemyPawns.Add(enemyPawn);
                     IntVec3 spawnCell = mapCenter;
-                    if (combinedRectCells.TryRandomElement(out var randomCell))
+                    if (combinedRectCells.Where(x => x.Walkable(map)).TryRandomElement(out var randomCell))
                     {
-                        if (CellFinder.TryRandomClosewalkCellNear(randomCell, map, 5, out var walkableCell))
-                        {
-                            spawnCell = walkableCell;
-                        }
+                        spawnCell = randomCell;
+                        GenSpawn.Spawn(enemyPawn, spawnCell, map);
                     }
-                    GenSpawn.Spawn(enemyPawn, spawnCell, map);
                 }
                 LordMaker.MakeNewLord(siteFaction, new LordJob_DefendBaseNoEat(siteFaction, mapCenter), map, enemyPawns);
             }
