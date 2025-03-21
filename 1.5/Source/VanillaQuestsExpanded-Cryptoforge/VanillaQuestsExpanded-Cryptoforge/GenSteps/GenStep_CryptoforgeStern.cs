@@ -9,10 +9,12 @@ using Verse.AI.Group;
 namespace VanillaQuestsExpandedCryptoforge
 {
     [HotSwappable]
-    public class GenStep_CryptoforgeStern : GenStep
+    public class GenStep_CryptoforgeStern : GenStep_CryptoforgeStructureBase
     {
-        public override int SeedPart => 46515475;
-        public override void Generate(Map map, GenStepParams parms)
+        protected override string LeftDefNamePrefix => "VQE_Cryptoforge_Stern";
+        protected override string CenterDefNamePrefix => "VQE_Cryptoforge_Stern";
+        protected override string RightDefNamePrefix => "VQE_Cryptoforge_Stern";
+        protected override void PostGenerate(Map map, GenStepParams parms, CellRect leftRect, CellRect centerRect, CellRect rightRect)
         {
             QuestPart_CryptoforgeStern questPart = null;
             foreach (var quest in Find.QuestManager.QuestsListForReading)
@@ -28,59 +30,21 @@ namespace VanillaQuestsExpandedCryptoforge
                 }
             }
 
-            if (questPart is null)
-            {
-                Log.Error("CryptoforgeStern quest generated without corresponding quest part.");
-                return;
-            }
-
-            string leftSternDefName = "VQE_Cryptoforge_Stern_LeftSide_" + (Rand.Bool ? "Alpha" : "Beta");
-            string centerSternDefName = "VQE_Cryptoforge_Stern_Center_" + (Rand.Bool ? "Alpha" : "Beta");
-            string rightSternDefName = "VQE_Cryptoforge_Stern_RightSide_" + (Rand.Bool ? "Alpha" : "Beta");
-            StructureLayoutDef leftSternDef = DefDatabase<StructureLayoutDef>.GetNamed(leftSternDefName);
-            StructureLayoutDef centerSternDef = DefDatabase<StructureLayoutDef>.GetNamed(centerSternDefName);
-            StructureLayoutDef rightSternDef = DefDatabase<StructureLayoutDef>.GetNamed(rightSternDefName);
-
-            if (leftSternDef == null || centerSternDef == null || rightSternDef == null)
-            {
-                Log.Error("Failed to load Cryptoforge Stern StructureLayoutDefs.");
-                return;
-            }
-            var siteFaction = questPart.siteFaction;
-            var mapCenter = map.Center;
-            var structureSize = leftSternDef.Sizes;
-            var currentPos = mapCenter + new IntVec3(-structureSize.x, 0, 0);
-            CellRect leftRect = CellRect.CenteredOn(currentPos, structureSize);
-            GenOption.GetAllMineableIn(leftRect, map);
-            leftSternDef.Generate(leftRect, map, siteFaction);
-            currentPos += new IntVec3(leftRect.Width, 0, 0);
-
-            structureSize = centerSternDef.Sizes;
-            CellRect centerRect = CellRect.CenteredOn(currentPos, structureSize);
-            GenOption.GetAllMineableIn(centerRect, map);
-            centerSternDef.Generate(centerRect, map, siteFaction);
-            currentPos += new IntVec3(centerRect.Width, 0, 0);
-
-            structureSize = rightSternDef.Sizes;
-            CellRect rightRect = CellRect.CenteredOn(currentPos, structureSize);
-            GenOption.GetAllMineableIn(rightRect, map);
-            rightSternDef.Generate(rightRect, map, siteFaction);
-            List<IntVec3> combinedRectCells = GetCombinedRectCells(leftRect, centerRect, rightRect);
             if (questPart.enemyUnitPawns != null && questPart.enemyUnitPawns.Any())
             {
                 List<Pawn> enemyPawns = new List<Pawn>();
                 foreach (var pawnKindDef in questPart.enemyUnitPawns)
                 {
-                    Pawn enemyPawn = PawnGenerator.GeneratePawn(pawnKindDef, siteFaction);
+                    Pawn enemyPawn = PawnGenerator.GeneratePawn(pawnKindDef, questPart.siteFaction);
                     enemyPawns.Add(enemyPawn);
-                    IntVec3 spawnCell = mapCenter;
-                    if (combinedRectCells.Where(x => x.Walkable(map)).TryRandomElement(out var randomCell))
+                    IntVec3 spawnCell = map.Center;
+                    if (GetCombinedRectCells(leftRect, centerRect, rightRect).Where(x => x.Walkable(map)).TryRandomElement(out var randomCell))
                     {
                         spawnCell = randomCell;
                         GenSpawn.Spawn(enemyPawn, spawnCell, map);
                     }
                 }
-                LordMaker.MakeNewLord(siteFaction, new LordJob_DefendBaseNoEat(siteFaction, mapCenter), map, enemyPawns);
+                LordMaker.MakeNewLord(questPart.siteFaction, new LordJob_DefendBaseNoEat(questPart.siteFaction, mapCenter), map, enemyPawns);
             }
         }
 
