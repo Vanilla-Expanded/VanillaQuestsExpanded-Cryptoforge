@@ -38,4 +38,22 @@
         <genStep Class="VanillaQuestsExpandedCryptoforge.GenStep_CryptoforgeStern">
         </genStep>
     </GenStepDef>
+
+    <SitePartDef>
+        <defName>VQE_CryptoforgeChapter3Site</defName>
+        <label>cryptoforge bow wreckage</label>
+        <description>The crash site of the Cryptoforge bow, containing the ship's black box.</description>
+        <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+        <expandingIconTexture>UI/MapIcons/Cryptoforge_Bow</expandingIconTexture>
+        <tags>
+            <li>VQE_CryptoforgeChapter3Site</li>
+        </tags>
+    </SitePartDef>
+    <GenStepDef>
+        <defName>VQE_CryptoforgeChapter3Site</defName>
+        <linkWithSite>VQE_CryptoforgeChapter3Site</linkWithSite>
+        <order>450</order>
+        <genStep Class="VanillaQuestsExpandedCryptoforge.GenStep_CryptoforgeBow">
+        </genStep>
+    </GenStepDef>
 </Defs>

@@ -34,18 +34,13 @@ namespace VanillaQuestsExpandedCryptoforge
             {
                 parms.points = minPoints;
             }
-            
             parms.faction = faction;
-
-            List<RaidStrategyDef> source = DefDatabase<RaidStrategyDef>.AllDefs.Where((RaidStrategyDef s) => s.Worker.CanUseWith(parms, PawnGroupKindDefOf.Combat)).ToList();
-            parms.raidStrategy = source.RandomElement();
+            parms.raidStrategy = RaidStrategyDefOf.ImmediateAttack;
             if (parms.raidStrategy != null)
             {
                 List<PawnsArrivalModeDef> source2 = DefDatabase<PawnsArrivalModeDef>.AllDefs.Where((PawnsArrivalModeDef a) => a.Worker.CanUseWith(parms) && parms.raidStrategy.arriveModes.Contains(a)).ToList();
                 parms.raidArrivalMode = source2.RandomElement();
             }
-
-
             IncidentDefOf.RaidEnemy.Worker.TryExecute(parms);
 
         }
