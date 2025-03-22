@@ -7,7 +7,7 @@
         <hediffClass>VanillaQuestsExpandedCryptoforge.Hediff_Guilt</hediffClass>
         <isBad>False</isBad>
         <everCurableByItem>false</everCurableByItem>
-        <minSeverity>0.01</minSeverity>
+        <initialSeverity>0.01</initialSeverity>
         <stages>
             <li>
                 <minSeverity>0.01</minSeverity>

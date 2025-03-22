@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RulePackDef>
+        <defName>VQE_HeroNameUtility</defName>
+        <rulePack>
+            <rulesFiles>
+                <li>HeroNameFirstMale->Names/Hero_First_Male</li>
+                <li>HeroNameFirstFemale->Names/Hero_First_Female</li>
+                <li>HeroNameLast->Names/Hero_Last</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>VQE_HeroMaleNames</defName>
+        <include>
+            <li>VQE_HeroNameUtility</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_first_name->[HeroNameFirstMale]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>VQE_HeroFemaleNames</defName>
+        <include>
+            <li>VQE_HeroNameUtility</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_first_name->[HeroNameFirstFemale]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>VQE_HeroLastNames</defName>
+        <include>
+            <li>VQE_HeroNameUtility</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_last_name->[HeroNameLast]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>

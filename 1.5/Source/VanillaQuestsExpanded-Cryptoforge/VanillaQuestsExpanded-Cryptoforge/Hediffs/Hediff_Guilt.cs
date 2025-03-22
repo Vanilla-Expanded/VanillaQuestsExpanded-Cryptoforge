@@ -5,6 +5,18 @@ using Verse;
 using UnityEngine;
 namespace VanillaQuestsExpandedCryptoforge
 {
+    public class ThoughtWorker_GuiltHediff : ThoughtWorker
+    {
+        protected override ThoughtState CurrentStateInternal(Pawn p)
+        {
+            Hediff firstHediffOfDef = p.health.hediffSet.GetFirstHediffOfDef(def.hediff);
+            if (firstHediffOfDef?.def.stages == null)
+            {
+                return ThoughtState.Inactive;
+            }
+            return ThoughtState.ActiveAtStage(Mathf.Min(firstHediffOfDef.CurStageIndex, firstHediffOfDef.def.stages.Count - 1, def.stages.Count - 1));
+        }
+    }
     public class Hediff_Guilt : HediffWithComps
     {
         private const float GuiltSeverityIncreasePerDay = 0.005f;
@@ -13,6 +25,7 @@ namespace VanillaQuestsExpandedCryptoforge
         private const float AcceptanceSeverityThreshold = 1.0f;
         private bool acceptanceStage;
         public override Color LabelColor => acceptanceStage ? Color.yellow : base.LabelColor;
+        public override bool ShouldRemove => acceptanceStage && Severity <= 0;
         public override void Tick()
         {
             base.Tick();
@@ -27,10 +40,6 @@ namespace VanillaQuestsExpandedCryptoforge
             else
             {
                 Severity -= GuiltRecoveryPerDay / GenDate.TicksPerDay;
-                if (Severity <= 0f)
-                {
-                    pawn.health.RemoveHediff(this);
-                }
             }
         }
 

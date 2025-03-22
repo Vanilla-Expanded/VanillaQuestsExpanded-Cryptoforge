@@ -2,7 +2,7 @@
 <Defs>
     <ThoughtDef>
         <defName>VQE_Guilt</defName>
-        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <workerClass>VanillaQuestsExpandedCryptoforge.ThoughtWorker_GuiltHediff</workerClass>
         <hediff>VQE_Guilt</hediff>
         <validWhileDespawned>true</validWhileDespawned>
         <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>

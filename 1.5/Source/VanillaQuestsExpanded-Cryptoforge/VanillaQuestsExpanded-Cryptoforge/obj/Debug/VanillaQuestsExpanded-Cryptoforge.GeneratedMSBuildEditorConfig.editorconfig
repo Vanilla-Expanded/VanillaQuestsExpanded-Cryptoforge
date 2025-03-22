@@ -3,3 +3,6 @@ build_property.RootNamespace = VanillaQuestsExpandedCryptoforge
 build_property.ProjectDir = C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaQuestsExpanded-Cryptoforge\1.5\Source\VanillaQuestsExpanded-Cryptoforge\VanillaQuestsExpanded-Cryptoforge\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 

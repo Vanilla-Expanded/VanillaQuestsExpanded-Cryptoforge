@@ -72,7 +72,7 @@
 		<defName>VQE_FrozenFadingCryptosleepPod</defName>
 		<label>fading cryptosleep pod</label>
 		<description>A heavily damaged cryptosleep pod that is barely functioning. The occupant inside is still alive but in danger.</description>
-		<thingClass>Building</thingClass>
+		<thingClass>VanillaQuestsExpandedCryptoforge.FrozenFadingCryptosleepPod</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<selectable>true</selectable>
