@@ -133,8 +133,9 @@
 				<glowRadius>6.49</glowRadius>
 				<glowColor>(235, 31, 31,0)</glowColor>
 			</li>
-			
-			
+			<li>
+				<compClass>VFECore.CompBouncingArrow</compClass>
+			</li>
 		</comps>
 		<costList>
 			<Steel>60</Steel>

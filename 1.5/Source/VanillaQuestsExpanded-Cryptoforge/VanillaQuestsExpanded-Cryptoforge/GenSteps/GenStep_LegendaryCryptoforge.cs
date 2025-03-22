@@ -17,6 +17,9 @@ namespace VanillaQuestsExpandedCryptoforge
         protected override void PostGenerate(Map map, GenStepParams parms, CellRect leftRect, CellRect centerRect, CellRect rightRect)
         {
             base.PostGenerate(map, parms, leftRect, centerRect, rightRect);
+            map.Parent.SetFaction(Faction.OfMechanoids);
+            var cryptoGenerator = map.listerThings.ThingsOfDef(InternalDefOf.VQE_FrozenCryptogenerator_Off).FirstOrDefault();
+            cryptoGenerator.TryGetComp<CompBouncingArrow>().doBouncingArrow = true;
         }
     }
 }

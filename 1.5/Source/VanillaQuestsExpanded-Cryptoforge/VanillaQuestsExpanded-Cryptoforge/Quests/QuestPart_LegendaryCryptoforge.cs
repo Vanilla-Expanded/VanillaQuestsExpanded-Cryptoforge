@@ -25,7 +25,7 @@ namespace VanillaQuestsExpandedCryptoforge
             {
                 this.quest.End(QuestEndOutcome.Success, sendLetter: false, playSound: false);
                 var key2 = "LetterQuestCompletedLabel";
-                var key = "LetterQuestCompletedSuccess" + "\n" + "VQE_QuestCompletedMessage".Translate().ToString();
+                var key = "LetterQuestCompletedSuccess" + "\n" + "VQE_QuestCompletedMessage";
                 var textLetterDef = LetterDefOf.PositiveEvent;
                 SoundDefOf.Quest_Succeded.PlayOneShotOnCamera();
                 Find.LetterStack.ReceiveLetter(key2.Translate(), 

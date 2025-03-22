@@ -51,5 +51,6 @@ namespace VanillaQuestsExpandedCryptoforge
 		public static ThingDef VQE_TwistedMetal;
 		public static ThingDef VQE_LargeTwistedMetal;
 		public static ThingDef VQE_HugeTwistedMetal;
-	}
+		public static RaidStrategyDef ImmediateAttackBreaching;
+    }
 }

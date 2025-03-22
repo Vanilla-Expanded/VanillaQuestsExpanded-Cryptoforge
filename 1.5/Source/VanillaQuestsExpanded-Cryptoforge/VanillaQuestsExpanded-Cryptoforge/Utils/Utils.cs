@@ -21,21 +21,28 @@ namespace VanillaQuestsExpandedCryptoforge
             parms.forced = true;
             parms.target = map;
             parms.points = points * pointMultiplier;
+            var raidStragegy = InternalDefOf.ImmediateAttackBreaching;
             var pawnGroupMakerParms = new PawnGroupMakerParms
             {
                 groupKind = PawnGroupKindDefOf.Combat,
                 tile = map.Tile,
                 faction = faction,
                 points = points,
-                raidStrategy = RaidStrategyDefOf.ImmediateAttack
+                raidStrategy = raidStragegy
             };
+            parms.faction = faction;
             var minPoints = faction.def.MinPointsToGeneratePawnGroup(pawnGroupMakerParms.groupKind, pawnGroupMakerParms);
+            parms.raidStrategy = raidStragegy;
             if (minPoints > parms.points && minPoints < float.MaxValue)
             {
                 parms.points = minPoints;
             }
-            parms.faction = faction;
-            parms.raidStrategy = RaidStrategyDefOf.ImmediateAttack;
+            
+            while (parms.points < 9999 &&
+                (parms.raidStrategy.Worker.CanUseWith(parms, PawnGroupKindDefOf.Combat) is false))
+            {
+                parms.points += 50f;
+            }
             parms.raidArrivalMode = PawnsArrivalModeDefOf.EdgeWalkIn;
             IncidentDefOf.RaidEnemy.Worker.TryExecute(parms);
         }
