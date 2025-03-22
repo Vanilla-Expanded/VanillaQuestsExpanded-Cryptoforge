@@ -2,7 +2,6 @@ using HarmonyLib;
 using RimWorld;
 using RimWorld.Planet;
 using Verse;
-using System.Collections.Generic;
 
 namespace VanillaQuestsExpandedCryptoforge
 {
