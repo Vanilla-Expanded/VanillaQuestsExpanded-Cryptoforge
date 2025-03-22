@@ -221,7 +221,7 @@ namespace VanillaQuestsExpandedCryptoforge
 
                     FloodFillerFog.FloodUnfog(this.parent.PositionHeld, this.parent.Map);
 
-                    GenExplosion.DoExplosion(this.parent.PositionHeld , this.parent.Map, 25, DamageDefOf.Frostbite, damAmount: 15, applyDamageToExplosionCellsNeighbors: true, chanceToStartFire: 0f, instigator: this.parent, postExplosionSpawnThingDef: InternalDefOf.VQE_Cryptofreeze, postExplosionSpawnChance: 1f,explosionSound: InternalDefOf.VQE_Freezing_Single);
+                    GenExplosion.DoExplosion(this.parent.PositionHeld , this.parent.Map, 50, DamageDefOf.Frostbite, damAmount: 15, applyDamageToExplosionCellsNeighbors: true, chanceToStartFire: 0f, instigator: this.parent, postExplosionSpawnThingDef: InternalDefOf.VQE_Cryptofreeze, postExplosionSpawnChance: 1f,explosionSound: InternalDefOf.VQE_Freezing_Single);
     
                     comp?.RemoveCriticalCryptoGeneratorsFromMap(this.parent);
                   

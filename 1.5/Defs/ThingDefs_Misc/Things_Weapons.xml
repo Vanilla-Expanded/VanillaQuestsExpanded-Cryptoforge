@@ -1,18 +1,40 @@
 <Defs>
-	<ThingDef ParentName="UnfinishedBase">
+
+	<ThingDef>
 		<defName>VQE_UnfinishedCryptoWeapon</defName>
 		<label>unfinished crypto weapon</label>
-		 <useHitPoints>false</useHitPoints>
+		<thingClass>UnfinishedThing</thingClass>
+		<useHitPoints>false</useHitPoints>
+		<category>Item</category>
 		<description>An unfinished crypto weapon.</description>
 		<statBases>
 			<Flammability>0</Flammability>
-			
 			<DeteriorationRate>0</DeteriorationRate>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Beauty>-8</Beauty>
+			<Mass>1</Mass>
+			<!-- ingredients are added to this value -->
 		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<isUnfinishedThing>true</isUnfinishedThing>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<selectable>true</selectable>
+		<tradeability>None</tradeability>
+		<drawerType>MapMeshOnly</drawerType>
 		<graphicData>
 			<texPath>Equipment/UnfinishedCryptoWeapon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<thingCategories>
+			<li>Unfinished</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+		</comps>
+		<alwaysHaulable>true</alwaysHaulable>
+		<rotatable>false</rotatable>
+		<pathCost>14</pathCost>
 	</ThingDef>
 	<ThingDef ParentName="BaseWeapon">
 		<defName>VQE_MeleeWeapon_Cryptoaxe</defName>
@@ -71,6 +93,7 @@
 			</skillRequirements>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workAmount>45000</workAmount>
+			<workSkill>Crafting</workSkill>
 		</recipeMaker>
 		<weaponTags>
 			<li>Cryptoaxe</li>
@@ -224,7 +247,7 @@
 		<combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
 		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
 	</ManeuverDef>
-	<ThingDef ParentName="BaseMakeableGun">
+	<ThingDef ParentName="BaseGun">
 		<defName>VQE_Weapon_Cryptobolter</defName>
 		<label>cryptobolter</label>
 		<description>A high-tech crossbow rifle that fires cryogenic-coated bolts with devastating impact. On penetration, the bolts inflict deep frostburns, flash-freezing flesh and lacing wounds with cryptofreeze, drastically slowing movement and causing severe hypothermic damage over time.</description>
@@ -249,6 +272,9 @@
 			</skillRequirements>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workAmount>45000</workAmount>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
 		</recipeMaker>
 		<techLevel>Ultra</techLevel>
 		<weaponClasses>
@@ -260,6 +286,9 @@
 		<comps>
 			<li Class="CompProperties_GeneratedName">
 				<nameMaker>NamerWeaponCryptoNorse</nameMaker>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
 			</li>
 			<li Class="GraphicCustomization.CompProperties_GraphicCustomization">
 				<customizable>true</customizable>

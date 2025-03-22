@@ -34,6 +34,7 @@
 					</li>
 				</contents>
 				<deconstructSound>Building_Deconstructed</deconstructSound>
+				<gizmoText>VQE_LootChunk</gizmoText>
 			</li>
 		</modExtensions>
 		<building>
@@ -76,6 +77,7 @@
 					</li>
 				</contents>
 				<deconstructSound>Building_Deconstructed</deconstructSound>
+				<gizmoText>VQE_LootChunk</gizmoText>
 			</li>
 		</modExtensions>
 		<building>
@@ -118,6 +120,7 @@
 					</li>
 				</contents>
 				<deconstructSound>Building_Deconstructed</deconstructSound>
+				<gizmoText>VQE_LootChunk</gizmoText>
 			</li>
 		</modExtensions>
 		<building>
@@ -160,6 +163,7 @@
 					</li>
 				</contents>
 				<deconstructSound>Building_Deconstructed</deconstructSound>
+				<gizmoText>VQE_LootChunk</gizmoText>
 			</li>
 		</modExtensions>
 		<building>
@@ -202,6 +206,7 @@
 					</li>
 				</contents>
 				<deconstructSound>Building_Deconstructed</deconstructSound>
+				<gizmoText>VQE_LootChunk</gizmoText>
 			</li>
 		</modExtensions>
 		<building>
@@ -244,6 +249,7 @@
 					</li>
 				</contents>
 				<deconstructSound>Building_Deconstructed</deconstructSound>
+				<gizmoText>VQE_LootChunk</gizmoText>
 			</li>
 		</modExtensions>
 		<building>
@@ -286,6 +292,7 @@
 					</li>
 				</contents>
 				<deconstructSound>Building_Deconstructed</deconstructSound>
+				<gizmoText>VQE_LootChunk</gizmoText>
 			</li>
 		</modExtensions>
 		<building>
@@ -390,6 +397,7 @@
 				</contents>
 			
 				<buildingLeft>VQE_EmptyFrozenCrate</buildingLeft>
+				
 			</li>
 		</modExtensions>
 		<building>

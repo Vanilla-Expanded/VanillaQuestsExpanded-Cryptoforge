@@ -6,6 +6,7 @@ using UnityEngine;
 using Verse;
 using RimWorld;
 using Verse.Sound;
+using Verse.AI;
 
 
 
@@ -14,13 +15,14 @@ namespace VanillaQuestsExpandedCryptoforge
     public class Lootable : Building
     {
 
-
+        CryptoBuildingDetails contentDetails;
         MapComponent_CryptoBuildingsInMap comp;
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
             comp = Map.GetComponent<MapComponent_CryptoBuildingsInMap>();
+            contentDetails = this.def.GetModExtension<CryptoBuildingDetails>();
         }
 
         public override IEnumerable<Gizmo> GetGizmos()
@@ -99,7 +101,7 @@ namespace VanillaQuestsExpandedCryptoforge
 
         public void Open()
         {
-            CryptoBuildingDetails contentDetails = this.def.GetModExtension<CryptoBuildingDetails>();
+           
             if (contentDetails != null)
             {
                 foreach (ThingAndCount thingDefCount in contentDetails.contents)
@@ -132,6 +134,32 @@ namespace VanillaQuestsExpandedCryptoforge
             }
 
 
+        }
+
+        public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn selPawn)
+        {
+            foreach (FloatMenuOption floatMenuOption in base.GetFloatMenuOptions(selPawn))
+            {
+                yield return floatMenuOption;
+            }
+            if (selPawn.CanReserve(this) && selPawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation)
+                )
+            {
+                if (!selPawn.CanReach(this, PathEndMode.OnCell, Danger.Deadly))
+                {
+                    yield return new FloatMenuOption("CannotUseReason".Translate("NoPath".Translate().CapitalizeFirst()), null);
+                }
+                else
+                {
+                    yield return FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption(contentDetails.gizmoText.Translate().CapitalizeFirst(), delegate
+                    {
+                        selPawn.jobs.TryTakeOrderedJob(JobMaker.MakeJob(InternalDefOf.VQE_Loot, this), JobTag.Misc);
+                    }), selPawn, this);
+                }
+
+
+
+            }
         }
 
     }

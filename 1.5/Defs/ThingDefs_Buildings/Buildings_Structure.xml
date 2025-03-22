@@ -142,7 +142,7 @@
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase" Name="VQE_CryptoForgeBaseDoor" Abstract="True">
 		<thingClass>Building_Door</thingClass>
 		<altitudeLayer>DoorMoveable</altitudeLayer>
-		<fillPercent>0.75</fillPercent>
+		<fillPercent>1</fillPercent>
 		<useHitPoints>false</useHitPoints>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<selectable>true</selectable>

@@ -12,7 +12,7 @@
 	<VQE_RestartGenerator>Restart generator</VQE_RestartGenerator>
 	<VQE_RestartGeneratorDesc>Restart the cryptogenerator. It has enough fuel to run continuously for three days, after which it will critically meltdown. The strong energy signature is bound to attract the mechanoid hive.</VQE_RestartGeneratorDesc>
 	<VQE_RestartWarning>Restarting the cryptogenerator will cause continuous mechanoid attacks.</VQE_RestartWarning>
-
+	<VQE_LootChunk>Scavenge</VQE_LootChunk>
 
 	<VQE_Alert_CriticalCryptoGenerators>Cryptogenerator running low</VQE_Alert_CriticalCryptoGenerators>
 	<VQE_Alert_CriticalCryptoGenerators_Desc>A cryptogenerator only has enough fuel left for less than a day. When fuel runs out, it will meltdown, destroying everything in radius.</VQE_Alert_CriticalCryptoGenerators_Desc>
