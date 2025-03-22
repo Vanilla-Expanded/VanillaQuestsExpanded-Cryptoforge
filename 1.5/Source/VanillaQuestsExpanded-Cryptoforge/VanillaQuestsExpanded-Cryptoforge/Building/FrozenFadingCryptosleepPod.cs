@@ -61,6 +61,7 @@ namespace VanillaQuestsExpandedCryptoforge
             hero.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Wander_Sad, transitionSilently: true);
             hero.SetFaction(Faction.OfPlayer);
             hero.health.AddHediff(InternalDefOf.VQE_Guilt);
+            Find.LetterStack.ReceiveLetter("VQE_HeroJoins".Translate(hero.Named("PAWN")), "VQE_HeroJoinsDesc".Translate(hero.Named("PAWN")), LetterDefOf.PositiveEvent, hero);
             Thing.allowDestroyNonDestroyable = true;
             this.Destroy();
             Thing.allowDestroyNonDestroyable = false;
