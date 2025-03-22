@@ -2,14 +2,13 @@ using HarmonyLib;
 using RimWorld;
 using RimWorld.Planet;
 using Verse;
-using System.Collections.Generic;
 
 namespace VanillaQuestsExpandedCryptoforge
 {
-    [HarmonyPatch(typeof(Bill), "Notify_IterationCompleted")]
-    public static class Bill_Notify_IterationCompleted_Patch
+    [HarmonyPatch(typeof(Bill_Production), "Notify_IterationCompleted")]
+    public static class Bill_Production_Notify_IterationCompleted_Patch
     {
-        public static void Postfix(Bill __instance, Pawn billDoer, List<Thing> ingredients)
+        public static void Postfix(Bill __instance)
         {
             if (__instance.billStack.billGiver is Building_WorkTable worktable && worktable.def == InternalDefOf.VQE_AncientCryptoforge)
             {
