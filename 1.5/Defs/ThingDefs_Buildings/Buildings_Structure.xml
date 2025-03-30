@@ -186,7 +186,7 @@
 		<clearBuildingArea>true</clearBuildingArea>
 		<statBases>
 			<WorkToBuild>5000</WorkToBuild>
-			<DoorOpenSpeed>0.25</DoorOpenSpeed>
+			<DoorOpenSpeed>0.5</DoorOpenSpeed>
 			<Beauty>0</Beauty>
 			<Flammability>0</Flammability>
 		</statBases>
@@ -250,7 +250,7 @@
 				<!-- Interactable -->
 				<doorToConvertTo>VQE_AncientAirlock</doorToConvertTo>
 				<activeTicks>1</activeTicks>
-				<ticksToActivate>3600</ticksToActivate>
+				<ticksToActivate>1200</ticksToActivate>
 				<activateTexPath>UI/ForceOpenAirlock_Gizmo</activateTexPath>
 				<activateLabelString>Force open...</activateLabelString>
 				<activateDescString>Choose someone to force this ancient airlock open.</activateDescString>
@@ -301,7 +301,7 @@
 		<clearBuildingArea>true</clearBuildingArea>
 		<statBases>
 			<WorkToBuild>5000</WorkToBuild>
-			<DoorOpenSpeed>0.25</DoorOpenSpeed>
+			<DoorOpenSpeed>0.5</DoorOpenSpeed>
 			<Beauty>0</Beauty>
 			<Flammability>0</Flammability>
 		</statBases>
@@ -366,7 +366,7 @@
 				<!-- Interactable -->
 				<doorToConvertTo>VQE_AncientAirlock_Large</doorToConvertTo>
 				<activeTicks>1</activeTicks>
-				<ticksToActivate>4200</ticksToActivate>
+				<ticksToActivate>1800</ticksToActivate>
 				<activateTexPath>UI/ForceOpenAirlock_Gizmo</activateTexPath>
 				<activateLabelString>Force open...</activateLabelString>
 				<activateDescString>Choose someone to force this ancient large airlock open.</activateDescString>

@@ -33,6 +33,7 @@ namespace VanillaQuestsExpandedCryptoforge
                 yield return c;
             }
             Command_Action command_Action = new Command_Action();
+            Command_Action command_Cancel = new Command_Action();
 
             if (comp?.lootables_InMap.Contains(this) == false)
             {
@@ -45,6 +46,7 @@ namespace VanillaQuestsExpandedCryptoforge
                 {
                     Map.GetComponent<MapComponent_CryptoBuildingsInMap>()?.AddLootableToMap(this);
                 };
+         
             }
             else
             {
@@ -53,6 +55,18 @@ namespace VanillaQuestsExpandedCryptoforge
                 command_Action.defaultLabel = "VQE_Scavenge".Translate(this.LabelCap);
                 command_Action.icon = ContentFinder<Texture2D>.Get("UI/ScavengeJunk_Gizmo", true);
                 command_Action.Disabled = true;
+
+                command_Cancel.defaultDesc = "VQE_CancelScavengeDesc".Translate();
+
+                command_Cancel.defaultLabel = "VQE_CancelScavenge".Translate();
+                command_Cancel.icon = ContentFinder<Texture2D>.Get("UI/Designators/Cancel", true);
+                command_Cancel.hotKey = KeyBindingDefOf.Misc2;
+                command_Cancel.action = delegate
+                {
+                    Map.GetComponent<MapComponent_CryptoBuildingsInMap>()?.RemoveLootableFromMap(this);
+                };
+                yield return command_Cancel;
+
             }
 
             yield return command_Action;
@@ -151,10 +165,13 @@ namespace VanillaQuestsExpandedCryptoforge
                 }
                 else
                 {
-                    yield return FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption(contentDetails.gizmoText.Translate().CapitalizeFirst(), delegate
-                    {
-                        selPawn.jobs.TryTakeOrderedJob(JobMaker.MakeJob(InternalDefOf.VQE_Loot, this), JobTag.Misc);
-                    }), selPawn, this);
+                    if(comp?.lootables_InMap.Contains(this) == false) {
+                        yield return FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption(contentDetails.gizmoText.Translate().CapitalizeFirst(), delegate
+                        {
+                            selPawn.jobs.TryTakeOrderedJob(JobMaker.MakeJob(InternalDefOf.VQE_Loot, this), JobTag.Misc);
+                        }), selPawn, this);
+                    }
+                    
                 }
 
 

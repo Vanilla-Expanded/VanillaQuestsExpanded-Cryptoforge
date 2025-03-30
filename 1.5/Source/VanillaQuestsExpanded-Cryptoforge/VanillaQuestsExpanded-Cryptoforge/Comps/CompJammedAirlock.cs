@@ -93,17 +93,19 @@ namespace VanillaQuestsExpandedCryptoforge
             IntVec3 pos = this.parent.PositionHeld;
             Map map = this.parent.Map;
             Rot4 rot = this.parent.Rotation;
+            Faction faction = this.parent.Faction;
             if (this.parent.Spawned)
             {
 
                 this.parent.DeSpawn();
             }
 
-            GenSpawn.Spawn(ThingMaker.MakeThing(Props.doorToConvertTo), pos, map, rot);
+            Thing newDoor = GenSpawn.Spawn(ThingMaker.MakeThing(Props.doorToConvertTo), pos, map, rot);
+            newDoor.SetFaction(faction);
 
-           
 
-            
+
+
         }
 
         private void OrderActivation(Pawn pawn)

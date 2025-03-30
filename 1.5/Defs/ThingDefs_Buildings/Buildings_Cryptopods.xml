@@ -95,7 +95,7 @@
 			<paintable>false</paintable>
 			<claimable>false</claimable>
 			<neverBuildable>true</neverBuildable>
-			<deconstructible>false</deconstructible>
+			
 		</building>
 		<comps>
 			<li Class="CompProperties_Glower">

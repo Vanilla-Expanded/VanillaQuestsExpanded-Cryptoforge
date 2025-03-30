@@ -360,7 +360,9 @@
 		</building>
 		<fillPercent>0.4</fillPercent>
 		<pathCost>42</pathCost>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<costList>
+			<Steel>70</Steel>
+		</costList>
 		<staticSunShadowHeight>0.17</staticSunShadowHeight>
 		<techLevel>Medieval</techLevel>
 		<uiIconScale>0.90</uiIconScale>

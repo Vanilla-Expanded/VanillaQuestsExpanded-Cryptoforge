@@ -148,6 +148,7 @@ namespace VanillaQuestsExpandedCryptoforge
             {
                 comp.RemoveScannablesFromMap(this);
             }
+            Messages.Message("VQE_ScanStarted".Translate(), this, MessageTypeDefOf.NeutralEvent);
         }
 
         public void Notify_BegingMechRaid()
@@ -166,6 +167,7 @@ namespace VanillaQuestsExpandedCryptoforge
                 {
                     Notify_BegingMechRaid();
 
+
                 }
 
                 tickCounter++;
@@ -183,6 +185,8 @@ namespace VanillaQuestsExpandedCryptoforge
 
         public void Notify_EndScan()
         {
+            Messages.Message("VQE_ScanComplete".Translate(), this, MessageTypeDefOf.PositiveEvent);
+
             var site = Map.Parent;
             var signal = "Scanned_" + this.def.defName;
             Find.SignalManager.SendSignal(new Signal(signal, site.Named("SUBJECT")));

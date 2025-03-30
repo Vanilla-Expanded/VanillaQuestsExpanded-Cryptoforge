@@ -28,6 +28,7 @@
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Neck</li>
@@ -56,6 +57,7 @@
 			<useWornGraphicMask>True</useWornGraphicMask>
 			<tags Inherit="False">
 				<li>CryptoLight</li>
+				<li>PrestigeCombatGear</li>
 			</tags>
 		</apparel>
 		<costList>
@@ -107,6 +109,7 @@
 			<useWornGraphicMask>True</useWornGraphicMask>
 			<tags Inherit="False">
 				<li>CryptoHeavy</li>
+				<li>PrestigeCombatGear</li>
 			</tags>
 		</apparel>
 		<costList>
@@ -156,6 +159,7 @@
 		</statBases>
 		<useHitPoints>false</useHitPoints>
 		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
@@ -205,6 +209,7 @@
 			<useWornGraphicMask>True</useWornGraphicMask>
 			<tags Inherit="False">
 				<li>CryptoLight</li>
+				<li>PrestigeCombatGear</li>
 			</tags>
 		</apparel>
 		<comps>
@@ -255,6 +260,7 @@
 			<useWornGraphicMask>True</useWornGraphicMask>
 			<tags Inherit="False">
 				<li>CryptoHeavy</li>
+				<li>PrestigeCombatGear</li>
 			</tags>
 		</apparel>
 		<comps>

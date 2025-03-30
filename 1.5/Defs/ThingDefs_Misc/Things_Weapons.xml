@@ -41,10 +41,13 @@
 		<label>cryptoaxe</label>
 		<description>A heavy, high-tech axe with a cryogenic-coated edge that delivers crushing strikes. On impact, it inflicts deep frostburns, flash-freezing flesh and lacing wounds with cryptofreeze, slowing movement and dealing substantial hypothermic damage over time.</description>
 		<thingClass>ThingWithComps</thingClass>
+		<useHitPoints>false</useHitPoints>
 		<statBases>
 			<MarketValue>2650</MarketValue>
 			<Mass>2</Mass>
 			<WorkToMake>45000</WorkToMake>
+			<Flammability>0</Flammability>			
+			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<equippedAngleOffset>-45</equippedAngleOffset>
 		<soundInteract>VQE_Interact_Cryptoaxe</soundInteract>
@@ -78,6 +81,9 @@
 		<weaponClasses>
 			<li>Ultratech</li>
 		</weaponClasses>
+		 <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
 		<costList>
 			<Plasteel>55</Plasteel>
 			<ComponentSpacer>4</ComponentSpacer>
@@ -255,11 +261,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Equipment/CryptoBolter/CryptoBolter</texPath>
 		</graphicData>
+		<useHitPoints>false</useHitPoints>
 		<statBases>
 			<MarketValue>2650</MarketValue>
 			<Mass>3.6</Mass>
 			<WorkToMake>45000</WorkToMake>
 			<RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
+			<Flammability>0</Flammability>			
+			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<soundInteract>VQE_Interact_Cryptobolter</soundInteract>
 		<recipeMaker>
@@ -280,6 +289,7 @@
 		<weaponClasses>
 			<li>Ultratech</li>
 		</weaponClasses>
+	
 		<weaponTags>
 			<li>Cryptobolter</li>
 		</weaponTags>

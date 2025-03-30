@@ -140,44 +140,40 @@
 			</li>
 		</comps>
 	</HediffDef>
-	
-	  <HediffDef Name="VQE_CryptoBleedBase" Abstract="True">
-    <defaultLabelColor>(0, 0.71, 0.93)</defaultLabelColor>
-    <label>Cryptobleed</label>
-    <description>Experimental crypto tech from the armour slows down bleeding.</description>
-  </HediffDef>
-
-
-  <HediffDef ParentName="VQE_CryptoBleedBase">
-    <defName>VQE_BleedrateCrypto_5</defName>
-    <stages>
-      <li>
-        <label>Armour</label>
-        <totalBleedFactor>0.0</totalBleedFactor>
-        <painOffset>-0.1</painOffset>
-      </li>
-    </stages>
-  </HediffDef>
-
-  <HediffDef ParentName="VQE_CryptoBleedBase">
-    <defName>VQE_BleedrateCrypto_10</defName>
-    <stages>
-      <li>
-        <label>Armour</label>
-        <totalBleedFactor>0.0</totalBleedFactor>
-        <painOffset>-0.2</painOffset>
-      </li>
-    </stages>
-  </HediffDef>
-   <HediffDef ParentName="VQE_CryptoBleedBase">
-    <defName>VQE_BleedrateCrypto_20</defName>
-    <stages>
-      <li>
-        <label>Armour</label>
-        <totalBleedFactor>0.0</totalBleedFactor>
-        <painOffset>-0.3</painOffset>
-      </li>
-    </stages>
-  </HediffDef>
-
+	<HediffDef Name="VQE_CryptoBleedBase" Abstract="True">
+		<defaultLabelColor>(0, 0.71, 0.93)</defaultLabelColor>
+		<label>Cryptobleed</label>
+		<isBad>false</isBad>
+		<description>Experimental crypto tech from the armour slows down bleeding.</description>
+	</HediffDef>
+	<HediffDef ParentName="VQE_CryptoBleedBase">
+		<defName>VQE_BleedrateCrypto_5</defName>
+		<stages>
+			<li>
+				<label>Armour</label>
+				<totalBleedFactor>0.0</totalBleedFactor>
+				<painOffset>-0.1</painOffset>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="VQE_CryptoBleedBase">
+		<defName>VQE_BleedrateCrypto_10</defName>
+		<stages>
+			<li>
+				<label>Armour</label>
+				<totalBleedFactor>0.0</totalBleedFactor>
+				<painOffset>-0.2</painOffset>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="VQE_CryptoBleedBase">
+		<defName>VQE_BleedrateCrypto_20</defName>
+		<stages>
+			<li>
+				<label>Armour</label>
+				<totalBleedFactor>0.0</totalBleedFactor>
+				<painOffset>-0.3</painOffset>
+			</li>
+		</stages>
+	</HediffDef>
 </Defs>

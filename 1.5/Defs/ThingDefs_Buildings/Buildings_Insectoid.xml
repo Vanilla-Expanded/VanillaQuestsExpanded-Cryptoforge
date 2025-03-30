@@ -55,8 +55,8 @@
         </spawnablePawnKinds>
         <lordJob>LordJob_DefendAndExpandHive</lordJob>
         <spawnSound>Hive_Spawn</spawnSound>
-        <initialPawnsPoints>200</initialPawnsPoints>
-        <maxSpawnedPawnsPoints>500</maxSpawnedPawnsPoints>
+        <initialPawnsPoints>150</initialPawnsPoints>
+        <maxSpawnedPawnsPoints>250</maxSpawnedPawnsPoints>
       </li>
       <li Class="CompProperties_SelfhealHitpoints">
         <ticksPerHeal>6000</ticksPerHeal> <!-- 60k ticks = 1 day, 10 hp per day -->

@@ -61,7 +61,10 @@ namespace VanillaQuestsExpandedCryptoforge
             study.handlingFacing = true;
             study.AddFinishAction(delegate
             {
-                Building.Open();
+                if (totalTimer > totalTime)
+                {
+                    Building.Open();
+                }
             });
             yield return study;
 

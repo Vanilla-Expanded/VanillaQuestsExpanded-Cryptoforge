@@ -348,7 +348,7 @@
 		<thingClass>VanillaQuestsExpandedCryptoforge.Building_FrozenMechanoid</thingClass>
 		
 		
-		<specialDisplayRadius>3.9</specialDisplayRadius>
+		<specialDisplayRadius>5.9</specialDisplayRadius>
 		<modExtensions>
 			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
 				<frozenMechanoids><li>Mech_Lancer</li></frozenMechanoids>
@@ -371,7 +371,7 @@
 		<thingClass>VanillaQuestsExpandedCryptoforge.Building_FrozenMechanoid</thingClass>
 		
 		
-		<specialDisplayRadius>3.9</specialDisplayRadius>
+		<specialDisplayRadius>5.9</specialDisplayRadius>
 		<modExtensions>
 			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
 				<frozenMechanoids><li>Mech_CentipedeBlaster</li><li>Mech_CentipedeGunner</li><li>Mech_CentipedeBurner</li></frozenMechanoids>
@@ -394,7 +394,7 @@
 		<thingClass>VanillaQuestsExpandedCryptoforge.Building_FrozenMechanoid</thingClass>
 		
 		
-		<specialDisplayRadius>3.9</specialDisplayRadius>
+		<specialDisplayRadius>5.9</specialDisplayRadius>
 		<modExtensions>
 			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
 				<frozenMechanoids><li>Mech_Scyther</li></frozenMechanoids>

@@ -43,11 +43,6 @@ namespace VanillaQuestsExpandedCryptoforge
             }
 
 
-            if (t.Faction != pawn.Faction)
-            {
-                return false;
-            }
-
             if (t.IsForbidden(pawn))
             {
                 return false;

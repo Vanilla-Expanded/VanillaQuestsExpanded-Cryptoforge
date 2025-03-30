@@ -3,6 +3,8 @@
 	<VQE_AirlockJammed>Airlock jammed shut. Must be forced open.</VQE_AirlockJammed>
 	<VQE_ScavengeDesc>Clean up the {0} while searching for valuable materials.</VQE_ScavengeDesc>
 	<VQE_Scavenge>Scavenge {0}</VQE_Scavenge>
+	<VQE_CancelScavenge>Cancel</VQE_CancelScavenge>
+	<VQE_CancelScavengeDesc>Cancel scavenging this object.</VQE_CancelScavengeDesc>
 	<VQE_StudyBlueprints>Study ancient blueprints</VQE_StudyBlueprints>
 	<VQE_StudyBlueprintsDesc>Study the ancient blueprints and diagrams to gain inspiration for the next crafting project.</VQE_StudyBlueprintsDesc>
 	<VQE_StudyBlackBox>Study ancient black box</VQE_StudyBlackBox>
@@ -13,6 +15,8 @@
 	<VQE_RestartGeneratorDesc>Restart the cryptogenerator. It has enough fuel to run continuously for three days, after which it will critically meltdown. The strong energy signature is bound to attract the mechanoid hive.</VQE_RestartGeneratorDesc>
 	<VQE_RestartWarning>Restarting the cryptogenerator will cause continuous mechanoid attacks.</VQE_RestartWarning>
 	<VQE_LootChunk>Scavenge</VQE_LootChunk>
+	<VQE_ScanStarted>The scan will take some time to complete. Leaving the site will cancel the scan.</VQE_ScanStarted>
+	<VQE_ScanComplete>The scan has completed.</VQE_ScanComplete>
 
 	<VQE_Alert_CriticalCryptoGenerators>Cryptogenerator running low</VQE_Alert_CriticalCryptoGenerators>
 	<VQE_Alert_CriticalCryptoGenerators_Desc>A cryptogenerator only has enough fuel left for less than a day. When fuel runs out, it will meltdown, destroying everything in radius.</VQE_Alert_CriticalCryptoGenerators_Desc>

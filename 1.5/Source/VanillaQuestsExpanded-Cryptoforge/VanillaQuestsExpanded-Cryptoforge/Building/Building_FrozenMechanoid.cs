@@ -39,7 +39,7 @@ namespace VanillaQuestsExpandedCryptoforge
 
             if (this.IsHashIntervalTick(10))
             {
-                int numCells = GenRadial.NumCellsInRadius(3);
+                int numCells = GenRadial.NumCellsInRadius(6);
                 for (int i = 0; i < numCells; i++)
                 {
                     IntVec3 intVec = this.Position + GenRadial.RadialPattern[i];
@@ -61,6 +61,13 @@ namespace VanillaQuestsExpandedCryptoforge
 
         }
 
+        public override void PostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
+        {
+            base.PostApplyDamage(dinfo, totalDamageDealt);
+           
+            this.SpringSub(null);
+        }
+
 
         protected override void SpringSub(Pawn p)
         {
@@ -70,7 +77,7 @@ namespace VanillaQuestsExpandedCryptoforge
                 Map map = this.Map;
 
                 PopUpMechanoid(pos, map);
-                WakeUpOtherTraps(pos, map, 5, p);
+                WakeUpOtherTraps(pos, map, 6, p);
             }
             
 

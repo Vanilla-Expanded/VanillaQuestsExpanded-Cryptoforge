@@ -86,7 +86,7 @@ namespace VanillaQuestsExpandedCryptoforge
         {
             get
             {
-                float num = 150f - (fireSize - 1f) * 40f;
+                float num = 300f - (fireSize - 1f) * 40f;
                 if (num < 75f)
                 {
                     num = 75f;
