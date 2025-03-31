@@ -36,17 +36,7 @@ namespace VanillaQuestsExpandedCryptoforge
                 {
                     terrainGrid.SetTerrain(cell, defaultTerrain);
                 }
-                if (currentTerrain.passability == Traversability.Impassable && !currentTerrain.IsWater)
-                {
-                    map.terrainGrid.SetTerrain(cell, defaultTerrain);
-                }
             }
-
-            foreach (var cell in map.AllCells)
-            {
-                map.terrainGrid.SetTerrain(cell, map.terrainGrid.TerrainAt(cell).smoothedTerrain ?? map.terrainGrid.TerrainAt(cell));
-            }
-
             base.Generate(map, parms);
         }
     }

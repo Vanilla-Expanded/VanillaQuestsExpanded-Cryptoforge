@@ -24,7 +24,7 @@ namespace VanillaQuestsExpandedCryptoforge
             var site = GenerateSite(quest, slate, points, tile, hostileFaction,
             out string siteMapGeneratedSignal, failWhenMapRemoved: false);
             QuestPart_EndQuestOnScanSignals questPart_ScanSignalsCounter = new QuestPart_EndQuestOnScanSignals();
-            questPart_ScanSignalsCounter.site = site;
+            questPart_ScanSignalsCounter.mapParent = site;
             questPart_ScanSignalsCounter.inSignalEnable = siteMapGeneratedSignal;
             questPart_ScanSignalsCounter.scanningBuilding = InternalDefOf.VQE_FrozenScanningRelay;
             questPart_ScanSignalsCounter.maxSignalsCount = 2;

@@ -23,7 +23,7 @@ namespace VanillaQuestsExpandedCryptoforge
                 List<QuestPart> questParts = quest.PartsListForReading;
                 for (int i = 0; i < questParts.Count; i++)
                 {
-                    if (questParts[i] is QuestPart_CryptoforgeStern sternEnemiesPart && sternEnemiesPart.site == parms.sitePart.site)
+                    if (questParts[i] is QuestPart_CryptoforgeStern sternEnemiesPart && sternEnemiesPart.mapParent == parms.sitePart.site)
                     {
                         questPart = sternEnemiesPart;
                         break;

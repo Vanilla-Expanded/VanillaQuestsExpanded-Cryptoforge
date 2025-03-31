@@ -41,7 +41,7 @@ namespace VanillaQuestsExpandedCryptoforge
             }
 
             QuestPart_EndQuestOnScanSignals questPart_ScanSignalsCounter = new QuestPart_EndQuestOnScanSignals();
-            questPart_ScanSignalsCounter.site = site;
+            questPart_ScanSignalsCounter.mapParent = site;
             questPart_ScanSignalsCounter.inSignalEnable = siteMapGeneratedSignal;
             questPart_ScanSignalsCounter.scanningBuilding = InternalDefOf.VQE_AncientBlackBox;
             questPart_ScanSignalsCounter.maxSignalsCount = 1;

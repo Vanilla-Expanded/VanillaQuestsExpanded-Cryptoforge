@@ -25,13 +25,13 @@ namespace VanillaQuestsExpandedCryptoforge
             List<PawnKindDef> enemyUnitPawns = GeneratePawnKindList(hostileFaction, points, site);
             slate.Set("ListOfEnemies", FormatPawnListToString(enemyUnitPawns));
             QuestPart_CryptoforgeStern questPart = new QuestPart_CryptoforgeStern();
-            questPart.site = site;
+            questPart.mapParent = site;
             questPart.enemyUnitPawns = enemyUnitPawns;
             questPart.siteFaction = hostileFaction;
             quest.AddPart(questPart);
 
             QuestPart_EndQuestOnScanSignals questPart_ScanSignalsCounter = new QuestPart_EndQuestOnScanSignals();
-            questPart_ScanSignalsCounter.site = site;
+            questPart_ScanSignalsCounter.mapParent = site;
             questPart_ScanSignalsCounter.inSignalEnable = siteMapGeneratedSignal;
             questPart_ScanSignalsCounter.scanningBuilding = InternalDefOf.VQE_AncientBlackBox;
             questPart_ScanSignalsCounter.maxSignalsCount = 1;

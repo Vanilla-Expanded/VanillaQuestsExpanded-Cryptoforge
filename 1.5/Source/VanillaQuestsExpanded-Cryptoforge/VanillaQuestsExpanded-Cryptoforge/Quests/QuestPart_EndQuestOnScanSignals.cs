@@ -27,7 +27,7 @@ namespace VanillaQuestsExpandedCryptoforge
         {
             base.QuestPartTick();
             CheckMapSite();
-            if (site.Map != null)
+            if (siteMap != null)
             {
                 var count = siteMap.listerThings.ThingsOfDef(scanningBuilding).Count;
                 if (count < maxSignalsCount - scanSignalsCount)
@@ -53,12 +53,12 @@ namespace VanillaQuestsExpandedCryptoforge
 
         private void CheckMapSite()
         {
-            if (site.Map != null)
+            if (Map != null)
             {
-                if (siteMap == null || siteMap != site.Map)
+                if (siteMap == null || siteMap != Map)
                 {
                     scanSignalsCount = 0;
-                    siteMap = site.Map;
+                    siteMap = Map;
                 }
             }
             else if (siteMap != null)

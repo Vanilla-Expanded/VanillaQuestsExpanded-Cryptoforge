@@ -20,7 +20,7 @@ namespace VanillaQuestsExpandedCryptoforge
                     for (var i = 0; i < questParts.Count; i++)
                     {
                         if (questParts[i] is QuestPart_SiteKeepWhileQuestActive questSite
-                            && questSite.site == __instance)
+                            && questSite.mapParent == __instance)
                         {
                             alsoRemoveWorldObject = false;
                             break;

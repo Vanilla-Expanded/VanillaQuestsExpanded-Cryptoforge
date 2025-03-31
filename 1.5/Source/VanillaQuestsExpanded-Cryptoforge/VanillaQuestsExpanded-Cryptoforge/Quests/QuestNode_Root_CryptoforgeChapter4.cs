@@ -24,7 +24,7 @@ namespace VanillaQuestsExpandedCryptoforge
             }
             var site = GenerateSite(quest, slate, points, tile, Faction.OfPlayer, out string siteMapGeneratedSignal, failWhenMapRemoved: false);
             QuestPart_LegendaryCryptoforge cryptoforgeCraftingPart = new QuestPart_LegendaryCryptoforge();
-            cryptoforgeCraftingPart.site = site;
+            cryptoforgeCraftingPart.mapParent = site;
             cryptoforgeCraftingPart.inSignalEnable = siteMapGeneratedSignal;
             cryptoforgeCraftingPart.inSignal = QuestGenUtility.HardcodedSignalWithQuestID("site.CryptoforgeUsed");
             quest.AddPart(cryptoforgeCraftingPart);

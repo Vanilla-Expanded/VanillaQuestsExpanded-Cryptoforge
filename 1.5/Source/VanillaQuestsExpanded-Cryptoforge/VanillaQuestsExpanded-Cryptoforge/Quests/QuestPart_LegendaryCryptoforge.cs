@@ -10,11 +10,9 @@ namespace VanillaQuestsExpandedCryptoforge
     {
         [NoTranslate]
         public string inSignal;
-        public Map siteMap;
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_References.Look(ref siteMap, "siteMap");
             Scribe_Values.Look(ref inSignal, "inSignal");
         }
 
@@ -28,7 +26,7 @@ namespace VanillaQuestsExpandedCryptoforge
                 var key = "LetterQuestCompletedSuccess".Translate(quest.name.CapitalizeFirst()) + "\n\n" + "VQE_QuestCompletedMessage".Translate();
                 var textLetterDef = LetterDefOf.PositiveEvent;
                 SoundDefOf.Quest_Succeded.PlayOneShotOnCamera();
-                Find.LetterStack.ReceiveLetter(key2.Translate(), key, textLetterDef, null, null, 
+                Find.LetterStack.ReceiveLetter(key2.Translate(), key, textLetterDef, null, null,
                 quest, null, null, 0, true);
             }
         }
@@ -36,30 +34,7 @@ namespace VanillaQuestsExpandedCryptoforge
         public override void QuestPartTick()
         {
             base.QuestPartTick();
-            CheckMapSite();
-            if (site.Map != null)
-            {
-                if (siteMap.listerThings.ThingsOfDef(InternalDefOf.VQE_FrozenCryptogenerator_Off).Any() is false
-                    && siteMap.listerThings.ThingsOfDef(InternalDefOf.VQE_FrozenCryptogenerator).Any() is false)
-                {
-                    this.quest.End(QuestEndOutcome.Fail);
-                }
-            }
-        }
-
-        private void CheckMapSite()
-        {
-            if (site.Map != null)
-            {
-                if (siteMap == null || siteMap != site.Map)
-                {
-                    siteMap = site.Map;
-                }
-            }
-            else if (siteMap != null)
-            {
-                siteMap = null;
-            }
+            Log.Message(inSignal + " - " + Map?.Parent?.questTags.ToStringSafeEnumerable());
         }
     }
 }
