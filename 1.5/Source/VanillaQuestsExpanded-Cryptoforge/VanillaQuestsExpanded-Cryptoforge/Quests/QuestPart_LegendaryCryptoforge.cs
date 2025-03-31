@@ -30,11 +30,5 @@ namespace VanillaQuestsExpandedCryptoforge
                 quest, null, null, 0, true);
             }
         }
-
-        public override void QuestPartTick()
-        {
-            base.QuestPartTick();
-            Log.Message(inSignal + " - " + Map?.Parent?.questTags.ToStringSafeEnumerable());
-        }
     }
 }
