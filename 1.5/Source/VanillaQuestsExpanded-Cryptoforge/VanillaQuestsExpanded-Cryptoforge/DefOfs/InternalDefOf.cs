@@ -55,8 +55,9 @@ namespace VanillaQuestsExpandedCryptoforge
 		public static HediffDef VQE_Guilt;
 		public static PawnKindDef VQE_Hero;
 		public static ThingDef VQE_FrozenEmptyCryptosleepPod;
+		public static ThingDef VQE_AncientLandmine;
 		public static RulePackDef VQE_HeroMaleNames, VQE_HeroFemaleNames, VQE_HeroLastNames;
 		public static ThingDef VQE_Apparel_CryptoHeavyHelmet;
 		public static ThingDef VQE_CryptoHeavyArmor;
-    }
+	}
 }
