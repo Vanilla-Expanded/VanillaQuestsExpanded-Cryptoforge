@@ -2,6 +2,7 @@ using RimWorld;
 using RimWorld.Planet;
 using Verse;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace VanillaQuestsExpandedCryptoforge
 {
@@ -31,9 +32,9 @@ namespace VanillaQuestsExpandedCryptoforge
         public override void QuestPartTick()
         {
             base.QuestPartTick();
-
             if (mapParent == null || mapParent.Destroyed)
             {
+                var oldMapParent = mapParent;
                 if (lastTileChecked != -1)
                 {
                     var newMapParent = Find.WorldObjects.MapParentAt(lastTileChecked);
@@ -49,6 +50,11 @@ namespace VanillaQuestsExpandedCryptoforge
                 else
                 {
                     mapParent = null;
+                }
+                if (oldMapParent != null && oldMapParent != mapParent && oldMapParent.Destroyed)
+                {
+                    mapParent.questTags ??= new List<string>();
+                    mapParent.questTags.AddRange(oldMapParent.questTags);
                 }
             }
             else if (lastTileChecked == -1)
