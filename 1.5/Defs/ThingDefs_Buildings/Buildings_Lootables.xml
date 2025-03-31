@@ -21,6 +21,7 @@
 		<statBases>
 			<Flammability>0</Flammability>
 			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
 		</statBases>
 		<costList>
 			<ChunkSlagSteel>2</ChunkSlagSteel>
@@ -64,6 +65,7 @@
 		<statBases>
 			<Flammability>0</Flammability>
 			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
 		</statBases>
 		<costList>
 			<ChunkSlagSteel>6</ChunkSlagSteel>
@@ -107,6 +109,7 @@
 		<statBases>
 			<Flammability>0</Flammability>
 			<MaxHitPoints>750</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
 		</statBases>
 		<costList>
 			<ChunkSlagSteel>10</ChunkSlagSteel>
@@ -150,6 +153,7 @@
 		<statBases>
 			<Flammability>0</Flammability>
 			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
 		</statBases>
 		<costList>
 			<ChunkSlagSteel>2</ChunkSlagSteel>
@@ -193,6 +197,7 @@
 		<statBases>
 			<Flammability>0</Flammability>
 			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
 		</statBases>
 		<costList>
 			<ChunkSlagSteel>2</ChunkSlagSteel>
@@ -236,6 +241,7 @@
 		<statBases>
 			<Flammability>0</Flammability>
 			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
 		</statBases>
 		<costList>
 			<ChunkSlagSteel>2</ChunkSlagSteel>
@@ -279,6 +285,7 @@
 		<statBases>
 			<Flammability>0</Flammability>
 			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
 		</statBases>
 		<costList>
 			<Gold>70</Gold>
@@ -301,7 +308,6 @@
 			<neverBuildable>true</neverBuildable>
 		</building>
 	</ThingDef>
-	
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
 		<defName>VQE_EmptyFrozenCrate</defName>
 		<label>empty frozen crate</label>
@@ -319,6 +325,7 @@
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Flammability>0.5</Flammability>
+			<WorkToBuild>300</WorkToBuild>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Misc/LargeFrozenCrate_Open</texPath>
@@ -331,7 +338,6 @@
 			<neverBuildable>true</neverBuildable>
 		</building>
 	</ThingDef>
-	
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
 		<defName>VQE_EmptyFrozenCrate_Small</defName>
 		<label>frozen box</label>
@@ -349,6 +355,7 @@
 		<statBases>
 			<MaxHitPoints>70</MaxHitPoints>
 			<Flammability>0.5</Flammability>
+			<WorkToBuild>100</WorkToBuild>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Ruins/FrozenSpacerCrate</texPath>
@@ -361,7 +368,6 @@
 			<neverBuildable>true</neverBuildable>
 		</building>
 	</ThingDef>
-	
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
 		<label>frozen crate of medicine</label>
 		<defName>VQE_FrozenCrateOfMedicine</defName>
@@ -376,13 +382,12 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-	
 		<rotatable>false</rotatable>
-	
 		<size>(2, 2)</size>
 		<statBases>
 			<Flammability>0.5</Flammability>
 			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
 		</statBases>
 		<costList>
 			<ChunkSlagSteel>2</ChunkSlagSteel>
@@ -395,9 +400,7 @@
 						<count>7</count>
 					</li>
 				</contents>
-			
 				<buildingLeft>VQE_EmptyFrozenCrate</buildingLeft>
-				
 			</li>
 		</modExtensions>
 		<building>
@@ -420,13 +423,12 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-	
 		<rotatable>false</rotatable>
-	
 		<size>(2, 2)</size>
 		<statBases>
 			<Flammability>0.5</Flammability>
 			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
 		</statBases>
 		<costList>
 			<ChunkSlagSteel>2</ChunkSlagSteel>
@@ -439,7 +441,6 @@
 						<count>12</count>
 					</li>
 				</contents>
-			
 				<buildingLeft>VQE_EmptyFrozenCrate</buildingLeft>
 			</li>
 		</modExtensions>
@@ -466,6 +467,7 @@
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Flammability>0.5</Flammability>
+			<WorkToBuild>1000</WorkToBuild>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Misc/AncientBlueprintBenchUsed</texPath>
@@ -492,13 +494,12 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1,2)</drawSize>
 		</graphicData>
-	
 		<rotatable>true</rotatable>
-	
 		<size>(1, 2)</size>
 		<statBases>
 			<Flammability>0.5</Flammability>
 			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
 		</statBases>
 		<costList>
 			<ChunkSlagSteel>4</ChunkSlagSteel>

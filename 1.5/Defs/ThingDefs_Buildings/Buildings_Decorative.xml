@@ -30,6 +30,7 @@
 			<paintable>false</paintable>
 			<claimable>false</claimable>
 			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
 		</building>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 	</ThingDef>
@@ -62,6 +63,7 @@
 			<paintable>false</paintable>
 			<claimable>false</claimable>
 			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
 		</building>
 	</ThingDef>
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
@@ -93,6 +95,7 @@
 			<paintable>false</paintable>
 			<claimable>false</claimable>
 			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
 		</building>
 	</ThingDef>
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
@@ -124,6 +127,7 @@
 			<paintable>false</paintable>
 			<claimable>false</claimable>
 			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
 		</building>
 	</ThingDef>
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
@@ -155,6 +159,7 @@
 			<paintable>false</paintable>
 			<claimable>false</claimable>
 			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
 		</building>
 	</ThingDef>
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
@@ -182,6 +187,7 @@
 			<paintable>false</paintable>
 			<claimable>false</claimable>
 			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
 		</building>
 	</ThingDef>
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
@@ -210,6 +216,7 @@
 		<building>
 			<paintable>false</paintable>
 			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
 			<neverBuildable>true</neverBuildable>
 		</building>
 	</ThingDef>
@@ -240,6 +247,7 @@
 			<paintable>false</paintable>
 			<claimable>false</claimable>
 			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
 		</building>
 	</ThingDef>
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
@@ -269,6 +277,7 @@
 			<paintable>false</paintable>
 			<claimable>false</claimable>
 			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
 		</building>
 	</ThingDef>
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
@@ -297,6 +306,7 @@
 		<building>
 			<paintable>false</paintable>
 			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
 			<neverBuildable>true</neverBuildable>
 		</building>
 	</ThingDef>
@@ -398,6 +408,7 @@
 			<paintable>false</paintable>
 			<claimable>false</claimable>
 			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
 		</building>
 	</ThingDef>
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
@@ -429,6 +440,7 @@
 			<paintable>false</paintable>
 			<claimable>false</claimable>
 			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
 		</building>
 	</ThingDef>
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
@@ -459,6 +471,7 @@
 		<building>
 			<paintable>false</paintable>
 			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
 			<neverBuildable>true</neverBuildable>
 		</building>
 	</ThingDef>
@@ -489,6 +502,7 @@
 		<building>
 			<paintable>false</paintable>
 			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
 			<neverBuildable>true</neverBuildable>
 		</building>
 	</ThingDef>
@@ -519,6 +533,7 @@
 		<building>
 			<paintable>false</paintable>
 			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
 			<neverBuildable>true</neverBuildable>
 		</building>
 	</ThingDef>
@@ -550,6 +565,7 @@
 		<building>
 			<paintable>false</paintable>
 			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
 			<neverBuildable>true</neverBuildable>
 		</building>
 	</ThingDef>
@@ -631,6 +647,7 @@
 			<paintable>false</paintable>
 			<claimable>false</claimable>
 			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
 		</building>
 	</ThingDef>
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
@@ -660,6 +677,7 @@
 		<building>
 			<paintable>false</paintable>
 			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
 			<neverBuildable>true</neverBuildable>
 		</building>
 	</ThingDef>
@@ -688,6 +706,7 @@
 		</costList>
 		<building>
 			<paintable>false</paintable>
+			<deconstructible>false</deconstructible>
 			<claimable>false</claimable>
 			<neverBuildable>true</neverBuildable>
 		</building>
@@ -718,6 +737,7 @@
 		<building>
 			<paintable>false</paintable>
 			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
 			<neverBuildable>true</neverBuildable>
 		</building>
 	</ThingDef>
@@ -749,6 +769,7 @@
 		<building>
 			<paintable>false</paintable>
 			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
 			<neverBuildable>true</neverBuildable>
 		</building>
 		<comps>

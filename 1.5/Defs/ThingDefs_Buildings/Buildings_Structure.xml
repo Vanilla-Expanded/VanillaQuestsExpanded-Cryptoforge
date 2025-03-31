@@ -62,6 +62,7 @@
 			<blueprintGraphicData>
 				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
+			<deconstructible>false</deconstructible>
 		</building>
 		<designationHotKey>Misc3</designationHotKey>
 	</ThingDef>

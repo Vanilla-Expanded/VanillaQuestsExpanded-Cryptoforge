@@ -283,12 +283,11 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>false</rotatable>
 		<tickerType>Normal</tickerType>
-		<stealable>false</stealable>	
+		<stealable>false</stealable>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		
-		<uiOrder>40</uiOrder>	
-		<statBases>			
-			<MaxHitPoints>40</MaxHitPoints>			
+		<uiOrder>40</uiOrder>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
 			<Flammability>1</Flammability>
 			<Beauty>-4</Beauty>
 			<TrapSpringChance>1.0</TrapSpringChance>
@@ -299,6 +298,7 @@
 			<expandHomeArea>false</expandHomeArea>
 			<ai_chillDestination>false</ai_chillDestination>
 			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
 		</building>
 		<placeWorkers>
 			<li>PlaceWorker_NeverAdjacentTrap</li>
@@ -330,7 +330,7 @@
 			</li>
 		</comps>
 		<building>
-		<trapPeacefulWildAnimalsSpringChanceFactor>0.25</trapPeacefulWildAnimalsSpringChanceFactor>
+			<trapPeacefulWildAnimalsSpringChanceFactor>0.25</trapPeacefulWildAnimalsSpringChanceFactor>
 		</building>
 		<specialDisplayRadius>3.9</specialDisplayRadius>
 	</ThingDef>
@@ -344,19 +344,16 @@
 		</graphicData>
 		<uiIconScale>0.75</uiIconScale>
 		<drawerType>MapMeshAndRealTime</drawerType>
-	
 		<thingClass>VanillaQuestsExpandedCryptoforge.Building_FrozenMechanoid</thingClass>
-		
-		
 		<specialDisplayRadius>5.9</specialDisplayRadius>
 		<modExtensions>
 			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
-				<frozenMechanoids><li>Mech_Lancer</li></frozenMechanoids>
-			
+				<frozenMechanoids>
+					<li>Mech_Lancer</li>
+				</frozenMechanoids>
 			</li>
 		</modExtensions>
 	</ThingDef>
-	
 	<ThingDef ParentName="VQE_TrapIEDBase">
 		<defName>VQE_FrozenCentipede</defName>
 		<label>frozen centipede</label>
@@ -367,19 +364,18 @@
 		</graphicData>
 		<uiIconScale>0.5</uiIconScale>
 		<drawerType>MapMeshAndRealTime</drawerType>
-	
 		<thingClass>VanillaQuestsExpandedCryptoforge.Building_FrozenMechanoid</thingClass>
-		
-		
 		<specialDisplayRadius>5.9</specialDisplayRadius>
 		<modExtensions>
 			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
-				<frozenMechanoids><li>Mech_CentipedeBlaster</li><li>Mech_CentipedeGunner</li><li>Mech_CentipedeBurner</li></frozenMechanoids>
-			
+				<frozenMechanoids>
+					<li>Mech_CentipedeBlaster</li>
+					<li>Mech_CentipedeGunner</li>
+					<li>Mech_CentipedeBurner</li>
+				</frozenMechanoids>
 			</li>
 		</modExtensions>
 	</ThingDef>
-	
 	<ThingDef ParentName="VQE_TrapIEDBase">
 		<defName>VQE_FrozenScyther</defName>
 		<label>frozen scyther</label>
@@ -390,15 +386,13 @@
 		</graphicData>
 		<uiIconScale>0.75</uiIconScale>
 		<drawerType>MapMeshAndRealTime</drawerType>
-	
 		<thingClass>VanillaQuestsExpandedCryptoforge.Building_FrozenMechanoid</thingClass>
-		
-		
 		<specialDisplayRadius>5.9</specialDisplayRadius>
 		<modExtensions>
 			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
-				<frozenMechanoids><li>Mech_Scyther</li></frozenMechanoids>
-			
+				<frozenMechanoids>
+					<li>Mech_Scyther</li>
+				</frozenMechanoids>
 			</li>
 		</modExtensions>
 	</ThingDef>

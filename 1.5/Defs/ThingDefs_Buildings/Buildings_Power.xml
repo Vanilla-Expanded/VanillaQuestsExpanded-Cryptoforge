@@ -31,6 +31,7 @@
 			<paintable>false</paintable>
 			<claimable>false</claimable>
 			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
 		</building>
 		<comps>
 			<li Class="CompProperties_Power">
@@ -51,7 +52,7 @@
 		<defName>VQE_FrozenCryptogenerator</defName>
 		<label>frozen cryptogenerator</label>
 		
-		<description>todo.</description>
+		<description>A frozen cryptogenerator.</description>
 		<size>(5,5)</size>
 		<passability>PassThroughOnly</passability>
 		<drawerType>MapMeshAndRealTime</drawerType>
@@ -73,6 +74,7 @@
 		<building>
 			<paintable>false</paintable>
 			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
 			<neverBuildable>true</neverBuildable>
 		</building>
 		<comps>
@@ -127,6 +129,7 @@
 			<paintable>false</paintable>
 			<claimable>false</claimable>
 			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
 		</building>
 		<comps>
 			<li Class="CompProperties_Glower">
