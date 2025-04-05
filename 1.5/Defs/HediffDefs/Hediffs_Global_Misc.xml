@@ -144,7 +144,7 @@
 		<defaultLabelColor>(0, 0.71, 0.93)</defaultLabelColor>
 		<label>Cryptobleed</label>
 		<isBad>false</isBad>
-		<description>Experimental crypto tech from the armour slows down bleeding.</description>
+		<description>Experimental crypto-technology woven into the armor slows biological trauma response by infusing cryptoparticles directly into the bloodstream. These particles rapidly bind to open wounds on a microscopic level, sealing them instantly and preventing any bleeding from occurring, no matter the severity.</description>
 	</HediffDef>
 	<HediffDef ParentName="VQE_CryptoBleedBase">
 		<defName>VQE_BleedrateCrypto_5</defName>

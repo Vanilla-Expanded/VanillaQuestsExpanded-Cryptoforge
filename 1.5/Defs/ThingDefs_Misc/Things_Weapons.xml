@@ -65,7 +65,7 @@
 				</capacities>
 				<power>12</power>
 				<armorPenetration>0.18</armorPenetration>
-				<cooldownTime>2.0</cooldownTime>
+				<cooldownTime>1.8</cooldownTime>
 			</li>
 			<li>
 				<label>edge</label>
@@ -74,7 +74,7 @@
 				</capacities>
 				<power>16</power>
 				<armorPenetration>0.32</armorPenetration>
-				<cooldownTime>2.6</cooldownTime>
+				<cooldownTime>2.0</cooldownTime>
 			</li>
 		</tools>
 		<techLevel>Ultra</techLevel>
