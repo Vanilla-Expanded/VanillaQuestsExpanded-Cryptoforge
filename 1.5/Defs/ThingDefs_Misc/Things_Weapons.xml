@@ -108,6 +108,9 @@
 			<li Class="CompProperties_GeneratedName">
 				<nameMaker>NamerWeaponCryptoNorse</nameMaker>
 			</li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
 			<li Class="GraphicCustomization.CompProperties_GraphicCustomization">
 				<customizable>true</customizable>
 				<customizationTitle>Cryptoaxe Customization</customizationTitle>
