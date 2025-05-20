@@ -65,7 +65,7 @@
 		<canBeDoneWhileDrafted>true</canBeDoneWhileDrafted>
 		<autoTakeablePriorityDrafted>20</autoTakeablePriorityDrafted>
 		<forceFleck>FeedbackExtinguish</forceFleck>
-		<directOrderable>false</directOrderable>
+		<directOrderable>true</directOrderable>
 	</WorkGiverDef>
 	<WorkGiverDef>
 		<defName>VQE_DoBillsCryptoforge</defName>
