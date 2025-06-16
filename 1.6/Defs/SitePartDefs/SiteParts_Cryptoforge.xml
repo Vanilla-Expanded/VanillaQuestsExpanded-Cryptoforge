@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <SitePartDef>
+        <defName>VQE_CryptoforgeChapter1Site</defName>
+        <label>cryptoforge scanning site</label>
+        <description>An ancient scanning site used to locate the Cryptoforge.</description>
+        <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+        <expandingIconTexture>UI/MapIcons/AncientRadarInstallation</expandingIconTexture>
+        <tags>
+            <li>VQE_CryptoforgeChapter1Site</li>
+        </tags>
+    </SitePartDef>
+    <GenStepDef>
+        <defName>VQE_CryptoforgeChapter1Site</defName>
+        <linkWithSite>VQE_CryptoforgeChapter1Site</linkWithSite>
+        <order>450</order>
+        <genStep Class="VanillaQuestsExpandedCryptoforge.GenStep_CryptoforgeScanningSite">
+            <settlementLayoutDefs>
+                <li>VQE_Cryptoforge_ScanningLocation</li>
+            </settlementLayoutDefs>
+        </genStep>
+    </GenStepDef>
+
+    <SitePartDef>
+        <defName>VQE_CryptoforgeChapter2Site</defName>
+        <label>cryptoforge stern wreckage</label>
+        <description>The crash site of the Cryptoforge stern, containing the ship's black box.</description>
+        <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+        <expandingIconTexture>UI/MapIcons/Cryptoforge_Stern</expandingIconTexture>
+        <tags>
+            <li>VQE_CryptoforgeChapter2Site</li>
+        </tags>
+    </SitePartDef>
+    <GenStepDef>
+        <defName>VQE_CryptoforgeChapter2Site</defName>
+        <linkWithSite>VQE_CryptoforgeChapter2Site</linkWithSite>
+        <order>450</order>
+        <genStep Class="VanillaQuestsExpandedCryptoforge.GenStep_CryptoforgeStern">
+        </genStep>
+    </GenStepDef>
+
+    <SitePartDef>
+        <defName>VQE_CryptoforgeChapter3Site</defName>
+        <label>cryptoforge bow wreckage</label>
+        <description>The crash site of the Cryptoforge bow, containing the ship's black box.</description>
+        <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+        <expandingIconTexture>UI/MapIcons/Cryptoforge_Bow</expandingIconTexture>
+        <tags>
+            <li>VQE_CryptoforgeChapter3Site</li>
+        </tags>
+    </SitePartDef>
+    <GenStepDef>
+        <defName>VQE_CryptoforgeChapter3Site</defName>
+        <linkWithSite>VQE_CryptoforgeChapter3Site</linkWithSite>
+        <order>450</order>
+        <genStep Class="VanillaQuestsExpandedCryptoforge.GenStep_CryptoforgeBow">
+        </genStep>
+    </GenStepDef>
+
+    <SitePartDef>
+        <defName>VQE_CryptoforgeChapter4Site</defName>
+        <label>legendary cryptoforge</label>
+        <description>The crash site of the legendary cryptoforge, an ancient ultratech workshop.</description>
+        <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+        <expandingIconTexture>UI/MapIcons/Cryptoforge_Middle</expandingIconTexture>
+        <tags>
+            <li>VQE_CryptoforgeChapter4Site</li>
+        </tags>
+    </SitePartDef>
+    <GenStepDef>
+        <defName>VQE_CryptoforgeChapter4Site</defName>
+        <linkWithSite>VQE_CryptoforgeChapter4Site</linkWithSite>
+        <order>450</order>
+        <genStep Class="VanillaQuestsExpandedCryptoforge.GenStep_LegendaryCryptoforge">
+        </genStep>
+    </GenStepDef>
+</Defs>

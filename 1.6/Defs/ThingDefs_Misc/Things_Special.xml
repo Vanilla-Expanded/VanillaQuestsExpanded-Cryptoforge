@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  <ThingDef>
+    <defName>VQE_Cryptofreeze</defName>
+    <label>cryptofreeze</label>
+    <thingClass>VanillaQuestsExpandedCryptoforge.Cryptofreeze</thingClass>
+    <category>Attachment</category>
+    <tickerType>Normal</tickerType>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
+    <graphicData>
+      <texPath>Cryptofreeze</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData> 
+    <altitudeLayer>PawnState</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>4</glowRadius>
+        <glowColor>(235, 235, 235,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef>
+    <defName>VQE_CryptoSpark</defName>
+    <label>cryptospark</label>
+    <category>Projectile</category>
+    <thingClass>VanillaQuestsExpandedCryptoforge.CryptoSpark</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/VQE_CryptoSpark</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <neverMultiSelect>true</neverMultiSelect>
+    <projectile>
+      <alwaysFreeIntercept>true</alwaysFreeIntercept>
+      <speed>1.5</speed>
+    </projectile>
+  </ThingDef>
+
+ 
+</Defs>

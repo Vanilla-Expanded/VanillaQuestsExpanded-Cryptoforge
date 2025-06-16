@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <VEF.Storyteller.QuestChainDef>
+        <defName>VQE_CryptoforgeQuestChain</defName>
+        <iconPath>UI/QuestChainIcon</iconPath>
+        <label>The Cryptoforge</label>
+        <description>This quest chain will have you travel to the arctic regions to find the location of a legendary cryptoforge - an ancient space ship with a workshop capable of developing the cryptogear. Given enough time and skill, you may be able to craft the legendary ultratech gear of the nomadic space warriors.</description>
+    </VEF.Storyteller.QuestChainDef>
+
+</Defs>

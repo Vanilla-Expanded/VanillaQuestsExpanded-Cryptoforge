@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <PawnKindDef>
+        <defName>VQE_Hero</defName>
+        <race>Human</race>
+        <fixedChildBackstories>
+            <li>VQE_ChildhoodLegendaryBlacksmith</li>
+        </fixedChildBackstories>
+        <fixedAdultBackstories>
+            <li>VQE_LegendaryBlacksmithAdulthood</li>
+        </fixedAdultBackstories>
+        <combatPower>100</combatPower>
+        <initialResistanceRange>25~35</initialResistanceRange>
+        <initialWillRange>1~1.5</initialWillRange>
+    </PawnKindDef>
+</Defs>

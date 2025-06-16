@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<defName>VQE_CryptofusionCoil</defName>
+		<label>cryptofusion coil</label>
+		<description>A small coil that converts cryptofuel into power. Despite its age, it still operates at minimal capacity.</description>
+		<size>(1,1)</size>
+		<passability>PassThroughOnly</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<fillPercent>0.05</fillPercent>
+		<pathCost>20</pathCost>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-20</Beauty>
+			<MarketValue>600</MarketValue>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Power/CryptofusionCoil_On</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.6, 0.4, 0.6)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.2, 0.2, 0.6, 0.6)</rect>
+			</damageData>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-250</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusher</compClass>
+				<heatPerSecond>-6</heatPerSecond>
+			</li>
+		</comps>
+		<costList>
+			<Steel>60</Steel>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<defName>VQE_FrozenCryptogenerator</defName>
+		<label>frozen cryptogenerator</label>
+		
+		<description>A frozen cryptogenerator.</description>
+		<size>(5,5)</size>
+		<passability>PassThroughOnly</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<fillPercent>0.75</fillPercent>
+		<pathCost>50</pathCost>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>950</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-20</Beauty>
+			<MarketValue>2400</MarketValue>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Power/FrozenCryptogenerator_On</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
+			<neverBuildable>true</neverBuildable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6.49</glowRadius>
+				<glowColor>(0, 235, 31,0)</glowColor>
+			</li>
+			<li Class="VanillaQuestsExpandedCryptoforge.CompProperties_NonRefuelable">
+				<fuelConsumptionRate>10.0</fuelConsumptionRate>
+				<fuelCapacity>30.0</fuelCapacity>
+				<initialFuelPercent>1</initialFuelPercent>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusher</compClass>
+				<heatPerSecond>-32</heatPerSecond>
+			</li>
+			 <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-12500</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+       
+      </li>
+		</comps>
+		<costList>
+			<Steel>60</Steel>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<defName>VQE_FrozenCryptogenerator_Off</defName>
+		<label>frozen cryptogenerator</label>
+		<description>An advanced generator that once powered cryptotech devices. Now, it hums faintly with dying energy. It can be restarted to once again provide power to the various subsystems, but the permanent damage to the critical component will cause the generator to become more and more unstable, eventually detonating in a devastating cryptoexplosion.</description>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Restartable</thingClass>
+		<size>(5,5)</size>
+		<passability>PassThroughOnly</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<fillPercent>0.75</fillPercent>
+		<pathCost>50</pathCost>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>950</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-20</Beauty>
+			<MarketValue>2400</MarketValue>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Power/FrozenCryptogenerator_Off</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
+		</building>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6.49</glowRadius>
+				<glowColor>(235, 31, 31,0)</glowColor>
+			</li>
+			<li>
+				<compClass>VEF.Buildings.CompBouncingArrow</compClass>
+			</li>
+		</comps>
+		<costList>
+			<Steel>60</Steel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+				<gizmoTexture>UI/EnableGenerator_Gizmo</gizmoTexture>
+				<gizmoText>VQE_RestartGenerator</gizmoText>
+				<gizmoDesc>VQE_RestartGeneratorDesc</gizmoDesc>
+				<buildingLeft>VQE_FrozenCryptogenerator</buildingLeft>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

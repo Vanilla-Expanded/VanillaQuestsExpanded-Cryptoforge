@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Abstract="True" ParentName="AnimalThingBase" Name="VQE_BaseCryptoInsect">
+		<statBases>
+			<ToxicResistance>1</ToxicResistance>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
+		</statBases>
+		<race>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<meatColor>(160,168,139)</meatColor>
+			<meatMarketValue>0.5</meatMarketValue>
+			<foodType>OmnivoreAnimal, AnimalProduct</foodType>
+			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+			<soundEating>Insectoid_Eat</soundEating>
+		</race>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+	</ThingDef>
+	<!-- ====================================================== -->
+	<ThingDef ParentName="VQE_BaseCryptoInsect">
+		<defName>VQE_IceCrawler</defName>
+		<label>ice crawler</label>
+		<description>A medium-sized bioengineered insectoid adapted for extreme cold. In frigid temperatures, razor-sharp blades emerge from its limbs, turning it into a swift and deadly predator. However, when exposed to warmth, the blades retract, and the creature becomes sluggish, its movements slow and cumbersome. Highly dangerous in icy environments but far less threatening when overheated.</description>
+		<statBases>
+			<MoveSpeed>3.05</MoveSpeed>
+			<ComfyTemperatureMin>-160</ComfyTemperatureMin>
+			<MarketValue>260</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.18</ArmorRating_Sharp>
+			<Wildness>0.3</Wildness>
+		</statBases>
+		<uiIconScale>1.1</uiIconScale>
+		<tools>
+			<li>
+				<label>head claw</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<renderTree>VQE_IceCrawler</renderTree>
+			<body>BeetleLikeWithClaw</body>
+			<baseHungerRate>0.4</baseHungerRate>
+			<baseBodySize>0.8</baseBodySize>
+			<baseHealthScale>1.7</baseHealthScale>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<lifeExpectancy>6</lifeExpectancy>
+			
+			<trainability>Advanced</trainability>
+			<lifeStageAges>
+				<li>
+					<def>EusocialInsectLarva</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectJuvenile</def>
+					<minAge>0.03</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectAdult</def>
+					<minAge>0.2</minAge>
+					<soundWounded>Pawn_Spelopede_Pain</soundWounded>
+					<soundDeath>Pawn_Spelopede_Death</soundDeath>
+					<soundCall>Pawn_Spelopede_Call</soundCall>
+					<soundAngry>Pawn_Spelopede_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<headPosPerRotation>
+				<li>(0.0, 0, 0.14)</li>
+				<li>(0.07, 0, 0.08)</li>
+				<li>(0.0, 0, -0.12)</li>
+				<li>(-0.07, 0, 0.08)</li>
+			</headPosPerRotation>
+		</race>
+		<tradeTags>
+			<li>AnimalInsect</li>
+		</tradeTags>
+		<comps>
+			<li Class="VEF.AnimalBehaviours.CompProperties_HediffByTemperature">
+				<doTemperatureBelow>true</doTemperatureBelow>
+				<temperatureBelow>0</temperatureBelow>
+				<tickInterval>60</tickInterval>
+				<hediffBelow>VQE_IceCrawlerHediff</hediffBelow>
+				<severity>1</severity>
+			</li>
+		</comps>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>VQE_IceCrawler</defName>
+		<label>ice crawler</label>
+		<race>VQE_IceCrawler</race>
+		<combatPower>75</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.35</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Pawn/Insectoid/IceCrawler</texPath>
+					<drawSize>1</drawSize>
+				
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Pawn/Insectoid/Dessicated_IceCrawler</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Pawn/Insectoid/IceCrawler</texPath>
+					<drawSize>1.25</drawSize>
+					
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Pawn/Insectoid/Dessicated_IceCrawler</texPath>
+					<drawSize>1.25</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Pawn/Insectoid/IceCrawler</texPath>
+					<drawSize>1.65</drawSize>
+					
+					<shadowData>
+						<volume>(0.4, 0.5, 0.37)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Pawn/Insectoid/Dessicated_IceCrawler</texPath>
+					<drawSize>1.65</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<ThingDef ParentName="VQE_BaseCryptoInsect">
+		<defName>VQE_Megamidge</defName>
+		<label>megamidge</label>
+		<description>Not actually a midge, the megamidge is a genetically-engineered giant insectoid adapted for extreme cold. In freezing temperatures, deadly cryogenic blades extend from its limbs, allowing it to deliver devastating slashes that inflict deep wounds and crippling crypto slowdown. However, when exposed to warmth, its blades retract, and it becomes sluggish and far less dangerous. Agile and lethal in the cold, but vulnerable in heat.</description>
+		<statBases>
+			<MoveSpeed>3.3</MoveSpeed>
+			<ComfyTemperatureMin>-160</ComfyTemperatureMin>
+			<MarketValue>550</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.27</ArmorRating_Sharp>
+			<Wildness>0.4</Wildness>
+		</statBases>
+		<uiIconScale>1.15</uiIconScale>
+		<tools>
+			
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+		<renderTree>VQE_Megamidge</renderTree>
+			<body>BeetleLikeWithClaw</body>
+			<baseHungerRate>0.56</baseHungerRate>
+			<baseBodySize>1.2</baseBodySize>
+			<baseHealthScale>2.5</baseHealthScale>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<lifeExpectancy>6</lifeExpectancy>
+			
+			<trainability>Advanced</trainability>
+			<lifeStageAges>
+				<li>
+					<def>EusocialInsectLarva</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectJuvenile</def>
+					<minAge>0.03</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectAdult</def>
+					<minAge>0.2</minAge>
+					<soundWounded>Pawn_BigInsect_Pain</soundWounded>
+					<soundDeath>Pawn_BigInsect_Death</soundDeath>
+					<soundCall>Pawn_BigInsect_Call</soundCall>
+					<soundAngry>Pawn_BigInsect_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalInsect</li>
+		</tradeTags>
+		<comps>
+			<li Class="VEF.AnimalBehaviours.CompProperties_HediffByTemperature">
+				<doTemperatureBelow>true</doTemperatureBelow>
+				<temperatureBelow>0</temperatureBelow>
+				<tickInterval>60</tickInterval>
+				<hediffBelow>VQE_MegamidgeHediff</hediffBelow>
+				<severity>1</severity>
+			</li>
+		</comps>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>VQE_Megamidge</defName>
+		<label>megamidge</label>
+		<race>VQE_Megamidge</race>
+		<combatPower>150</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.50</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Pawn/Insectoid/Megamidge</texPath>
+					<drawSize>1.2</drawSize>
+				
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Pawn/Insectoid/Dessicated_Megamidge</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Pawn/Insectoid/Megamidge</texPath>
+					<drawSize>1.6</drawSize>
+					
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Pawn/Insectoid/Dessicated_Megamidge</texPath>
+					<drawSize>1.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Pawn/Insectoid/Megamidge</texPath>
+					<drawSize>2.5</drawSize>
+					
+					<shadowData>
+						<volume>(0.5, 0.7, 0.43)</volume>
+						<offset>(0,0,-0.1)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Pawn/Insectoid/Dessicated_Megamidge</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

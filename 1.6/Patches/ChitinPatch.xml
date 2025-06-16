@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Insectoids 2</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Adding Fruits to Dessert Recipes -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="VQE_IceCrawler"]/race</xpath>
+					<value>
+						<leatherDef>VFEI2_Chitin</leatherDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="VQE_Megamidge"]/race</xpath>
+					<value>
+						<leatherDef>VFEI2_Chitin</leatherDef>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VQE_IceCrawler"]/statBases/LeatherAmount</xpath>
+					<value>
+						<LeatherAmount>23</LeatherAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VQE_Megamidge"]/statBases/LeatherAmount</xpath>
+					<value>
+						<LeatherAmount>29</LeatherAmount>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

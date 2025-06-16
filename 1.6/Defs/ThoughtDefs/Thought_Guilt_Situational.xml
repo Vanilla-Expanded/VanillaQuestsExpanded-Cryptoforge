@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThoughtDef>
+        <defName>VQE_Guilt</defName>
+        <workerClass>VanillaQuestsExpandedCryptoforge.ThoughtWorker_GuiltHediff</workerClass>
+        <hediff>VQE_Guilt</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>lingering guilt</label>
+                <description>I keep thinking about what happened. Maybe I could have done something differently.</description>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+            <li>
+                <label>growing remorse</label>
+                <description>The weight of my past decisions is sinking in. I feel uneasy, like I failed those who counted on me.</description>
+                <baseMoodEffect>-16</baseMoodEffect>
+            </li>
+            <li>
+                <label>deep regret</label>
+                <description>I should have done more. Their voices echo in my mind, reminding me of what I’ve lost.</description>
+                <baseMoodEffect>-28</baseMoodEffect>
+            </li>
+            <li>
+                <label>crushing guilt</label>
+                <description>Every moment, I feel the burden of my failure. It’s like a sickness, gnawing away at me.</description>
+                <baseMoodEffect>-44</baseMoodEffect>
+            </li>
+            <li>
+                <label>tormenting sorrow</label>
+                <description>I can barely function under the weight of my grief. I see their faces in every shadow.</description>
+                <baseMoodEffect>-60</baseMoodEffect>
+            </li>
+            <li>
+                <label>despairing isolation</label>
+                <description>There’s no escape from this agony. I am the last, and I don't deserve to be.</description>
+                <baseMoodEffect>-80</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

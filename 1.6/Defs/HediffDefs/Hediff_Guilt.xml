@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef>
+        <defName>VQE_Guilt</defName>
+        <label>guilt</label>
+        <description>A deep psychological burden stemming from overwhelming remorse and sorrow caused by being the last remaining member of one's faction. This condition gradually consumes the mind with grief and despair, leading to worsening depression over time.</description>
+        <hediffClass>VanillaQuestsExpandedCryptoforge.Hediff_Guilt</hediffClass>
+        <isBad>False</isBad>
+        <everCurableByItem>false</everCurableByItem>
+        <initialSeverity>0.01</initialSeverity>
+        <stages>
+            <li>
+                <minSeverity>0.01</minSeverity>
+                <label>lingering guilt</label>
+                <statOffsets>
+                    <GlobalLearningFactor>0.10</GlobalLearningFactor>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.2</minSeverity>
+                <label>growing remorse</label>
+                <statOffsets>
+                    <GlobalLearningFactor>0.20</GlobalLearningFactor>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.35</minSeverity>
+                <label>deep regret</label>
+                <statOffsets>
+                    <GlobalLearningFactor>0.40</GlobalLearningFactor>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.57</minSeverity>
+                <label>crushing guilt</label>
+                <statOffsets>
+                    <GlobalLearningFactor>0.60</GlobalLearningFactor>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.75</minSeverity>
+                <label>tormenting sorrow</label>
+                <statOffsets>
+                    <GlobalLearningFactor>0.80</GlobalLearningFactor>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.95</minSeverity>
+                <label>despairing isolation</label>
+                <statOffsets>
+                    <GlobalLearningFactor>1.00</GlobalLearningFactor>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>1.0</minSeverity>
+                <label>guilt (acceptance)</label>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

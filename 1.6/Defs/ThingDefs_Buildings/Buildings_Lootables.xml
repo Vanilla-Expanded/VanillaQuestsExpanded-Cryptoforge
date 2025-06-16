@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<label>twisted metal</label>
+		<defName>VQE_TwistedMetal</defName>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Lootable</thingClass>
+		<description>A mangled piece of metal, twisted from the sheer force of the cryptoforge spaceship crash. Some steel can still be salvaged.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.3</fillPercent>
+		<graphicData>
+			<texPath>Things/Junk/TwistedMetalSmall</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconScale>0.75</uiIconScale>
+		<rotatable>true</rotatable>
+		<pathCost>102</pathCost>
+		<size>(1, 1)</size>
+		<statBases>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+				<contents>
+					<li>
+						<thing>Steel</thing>
+						<count>15</count>
+					</li>
+				</contents>
+				<deconstructSound>Building_Deconstructed</deconstructSound>
+				<gizmoText>VQE_LootChunk</gizmoText>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<label>large twisted metal</label>
+		<defName>VQE_LargeTwistedMetal</defName>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Lootable</thingClass>
+		<description>A large mangled piece of metal, twisted from the sheer force of the cryptoforge spaceship crash. Some steel can still be salvaged.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.3</fillPercent>
+		<graphicData>
+			<texPath>Things/Junk/TwistedMetalMedium</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<uiIconScale>0.75</uiIconScale>
+		<rotatable>true</rotatable>
+		<pathCost>102</pathCost>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>6</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+				<contents>
+					<li>
+						<thing>Steel</thing>
+						<count>35</count>
+					</li>
+				</contents>
+				<deconstructSound>Building_Deconstructed</deconstructSound>
+				<gizmoText>VQE_LootChunk</gizmoText>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<label>huge twisted metal</label>
+		<defName>VQE_HugeTwistedMetal</defName>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Lootable</thingClass>
+		<description>A huge mangled piece of metal, twisted from the sheer force of the cryptoforge spaceship crash. Some steel can still be salvaged.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.3</fillPercent>
+		<uiIconScale>0.75</uiIconScale>
+		<graphicData>
+			<texPath>Things/Junk/TwistedMetalLarge</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<rotatable>true</rotatable>
+		<pathCost>102</pathCost>
+		<size>(3, 3)</size>
+		<statBases>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>750</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>10</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+				<contents>
+					<li>
+						<thing>Steel</thing>
+						<count>75</count>
+					</li>
+				</contents>
+				<deconstructSound>Building_Deconstructed</deconstructSound>
+				<gizmoText>VQE_LootChunk</gizmoText>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<label>twisted components</label>
+		<defName>VQE_TwistedComponents</defName>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Lootable</thingClass>
+		<description>A warped collection of machinery and circuits. While the original function is lost, some usable components can still be extracted.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<uiIconScale>0.75</uiIconScale>
+		<fillPercent>0.3</fillPercent>
+		<graphicData>
+			<texPath>Things/Junk/TwistedMetalComponents</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>true</rotatable>
+		<pathCost>102</pathCost>
+		<size>(1, 1)</size>
+		<statBases>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+				<contents>
+					<li>
+						<thing>ComponentIndustrial</thing>
+						<count>2</count>
+					</li>
+				</contents>
+				<deconstructSound>Building_Deconstructed</deconstructSound>
+				<gizmoText>VQE_LootChunk</gizmoText>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<label>twisted advanced components</label>
+		<defName>VQE_TwistedAdvancedComponents</defName>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Lootable</thingClass>
+		<description>A pile of severely damaged high-tech components. While the original function is lost, some usable advanced components can still be extracted.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<uiIconScale>0.75</uiIconScale>
+		<fillPercent>0.3</fillPercent>
+		<graphicData>
+			<texPath>Things/Junk/TwistedMetalAdvancedComponents</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>true</rotatable>
+		<pathCost>102</pathCost>
+		<size>(1, 1)</size>
+		<statBases>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+				<contents>
+					<li>
+						<thing>ComponentSpacer</thing>
+						<count>1</count>
+					</li>
+				</contents>
+				<deconstructSound>Building_Deconstructed</deconstructSound>
+				<gizmoText>VQE_LootChunk</gizmoText>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<label>twisted plasteel</label>
+		<defName>VQE_TwistedPlasteel</defName>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Lootable</thingClass>
+		<description>A crumpled sheet of plasteel, scorched and bent beyond recognition. With enough effort, some of it could be salvaged.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<uiIconScale>0.75</uiIconScale>
+		<fillPercent>0.3</fillPercent>
+		<graphicData>
+			<texPath>Things/Junk/TwistedMetalPlasteel</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>true</rotatable>
+		<pathCost>102</pathCost>
+		<size>(1, 1)</size>
+		<statBases>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+				<contents>
+					<li>
+						<thing>Plasteel</thing>
+						<count>20</count>
+					</li>
+				</contents>
+				<deconstructSound>Building_Deconstructed</deconstructSound>
+				<gizmoText>VQE_LootChunk</gizmoText>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<label>gold pile</label>
+		<defName>VQE_GoldPile</defName>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Lootable</thingClass>
+		<description>A scattered pile of ancient gold coins, each stamped with cryptic serial codes. Their value is entirely theoretical - until someone decides otherwise.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<uiIconScale>0.75</uiIconScale>
+		<fillPercent>0.3</fillPercent>
+		<graphicData>
+			<texPath>Things/Junk/GoldPile</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>true</rotatable>
+		<pathCost>102</pathCost>
+		<size>(1, 1)</size>
+		<statBases>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+		</statBases>
+		<costList>
+			<Gold>70</Gold>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+				<contents>
+					<li>
+						<thing>Gold</thing>
+						<count>150</count>
+					</li>
+				</contents>
+				<deconstructSound>Building_Deconstructed</deconstructSound>
+				<gizmoText>VQE_LootChunk</gizmoText>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<defName>VQE_EmptyFrozenCrate</defName>
+		<label>empty frozen crate</label>
+		<description>An empty crate, rusted and frozen solid. Its contents are long gone.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(2,2)</size>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<WorkToBuild>300</WorkToBuild>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Misc/LargeFrozenCrate_Open</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<defName>VQE_EmptyFrozenCrate_Small</defName>
+		<label>frozen box</label>
+		<description>A frost-covered box that once contained something valuable. Now, it’s just junk.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.3</fillPercent>
+		<size>(1,1)</size>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>70</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<WorkToBuild>100</WorkToBuild>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Ruins/FrozenSpacerCrate</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<label>frozen crate of medicine</label>
+		<defName>VQE_FrozenCrateOfMedicine</defName>
+		<thingClass>VanillaQuestsExpandedCryptoforge.LootableStandard</thingClass>
+		<description>A frozen crate containing medical supplies. The subzero temperatures have kept them well-preserved.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Misc/LargeFrozenCrate_Medicine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+				<contents>
+					<li>
+						<thing>MedicineIndustrial</thing>
+						<count>7</count>
+					</li>
+				</contents>
+				<buildingLeft>VQE_EmptyFrozenCrate</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<label>frozen crate of rations</label>
+		<defName>VQE_FrozenCrateOfRations</defName>
+		<thingClass>VanillaQuestsExpandedCryptoforge.LootableStandard</thingClass>
+		<description>A supply crate filled with survival rations, flash-frozen in the wreckage. The food inside should still be edible.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Misc/LargeFrozenCrate_SurvivalMeals</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(2, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+				<contents>
+					<li>
+						<thing>MealSurvivalPack</thing>
+						<count>12</count>
+					</li>
+				</contents>
+				<buildingLeft>VQE_EmptyFrozenCrate</buildingLeft>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<defName>VQE_EmptyBlueprintsBench</defName>
+		<label>useless blueprints bench</label>
+		<description>A pile of faded and illegible blueprints. Whatever knowledge they once held has long since faded away.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(1,2)</size>
+		<costList>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+		</costList>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<WorkToBuild>1000</WorkToBuild>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Misc/AncientBlueprintBenchUsed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<label>ancient blueprints bench</label>
+		<defName>VQE_BlueprintsBench</defName>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Studiable</thingClass>
+		<description>An old bench covered in pristine blueprints. Studying them could provide a rare burst of crafting inspiration.</description>
+		<clearBuildingArea>true</clearBuildingArea>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<graphicData>
+			<texPath>Things/Misc/AncientBlueprintBench</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+		<rotatable>true</rotatable>
+		<size>(1, 2)</size>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+		</statBases>
+		<costList>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+		</costList>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+				<gizmoTexture>UI/StudyAncientBlueprints_Gizmo</gizmoTexture>
+				<gizmoText>VQE_StudyBlueprints</gizmoText>
+				<gizmoDesc>VQE_StudyBlueprintsDesc</gizmoDesc>
+				<buildingLeft>VQE_EmptyBlueprintsBench</buildingLeft>
+				<craftingInspiration>true</craftingInspiration>
+				<skillForStudying>Crafting</skillForStudying>
+			</li>
+		</modExtensions>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+</Defs>

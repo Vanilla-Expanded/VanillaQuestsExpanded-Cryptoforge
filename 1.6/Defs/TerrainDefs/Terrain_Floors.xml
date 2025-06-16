@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TerrainDef Name="VQE_CryptoFloorBase" Abstract="True">
+		<layerable>true</layerable>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+		</affordances>
+		<tags>
+			<li>Floor</li>
+		</tags>
+		<fertility>0</fertility>
+		<constructEffect>ConstructDirt</constructEffect>
+	</TerrainDef>
+	<!-- ================= Misc ================= -->
+	<TerrainDef ParentName="VQE_CryptoFloorBase">
+		<defName>VQE_AncientHullTile</defName>
+		<label>ancient hull tile</label>
+		<description>An ancient hull tile of a colossal spacecraft.</description>
+		<texturePath>Terrain/AncientHullTile</texturePath>
+		<edgeType>Hard</edgeType>
+		<renderPrecedence>71</renderPrecedence>
+		<statBases>
+			<Beauty>-1</Beauty>
+			<Flammability>0</Flammability>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="VQE_CryptoFloorBase">
+		<defName>VQE_AncientFrozenHullTile</defName>
+		<label>ancient frozen hull tile</label>
+		<description>An ancient frozen hull tile of a colossal spacecraft.</description>
+		<texturePath>Terrain/AncientFrozenHullTile</texturePath>
+		<edgeType>Hard</edgeType>
+		<renderPrecedence>72</renderPrecedence>
+		<statBases>
+			<Beauty>-1</Beauty>
+			<Flammability>0</Flammability>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="VQE_CryptoFloorBase">
+		<defName>VQE_AncientCarpet</defName>
+		<label>ancient carpet</label>
+		<description>An ancient, ripped carpet.</description>
+		<texturePath>Terrain/AncientCarpet</texturePath>
+		<edgeType>Hard</edgeType>
+		<renderPrecedence>73</renderPrecedence>
+		<burnedDef>BurnedCarpet</burnedDef>
+		<statBases>
+			<Beauty>-1</Beauty>
+			<Flammability>0.32</Flammability>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+	</TerrainDef>
+</Defs>

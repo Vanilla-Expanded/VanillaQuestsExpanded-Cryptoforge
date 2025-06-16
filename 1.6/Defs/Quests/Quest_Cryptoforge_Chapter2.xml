@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <QuestScriptDef>
+        <defName>VQE_Cryptoforge_Chapter2</defName>
+        <autoAccept>True</autoAccept>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->Cryptoforge stern</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription->Data retrieved from the ancient relay station confirms the crash site of the cryptoforge ship’s stern, located not far from the scanning facility. While this section does not contain the legendary cryptoforge itself, it holds a crucial black box. To pinpoint the final cryptoforge fragment, we must retrieve its data and pair it with the bow’s black box records. \n\nThe wreckage scan reveals a high concentration of dormant mechanoids aboard, making conflict likely. The ship’s hull is built from near-indestructible material, limiting possible entry points. Ancient airlocks might still be operational, though forcing them open will require effort. Some external turrets remain active, further complicating the approach. Inside, automated floor freezers keep the corridors at dangerously low temperatures, serving as a defensive measure against intruders. \n\nDespite these challenges, the wreckage contains valuable resources. Extracting as much salvage as possible will be essential for reactivating the cryptoforge and crafting the legendary cryptogear.\n\nAccording to the scan, the ship is protected by at least:\n[ListOfEnemies]</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="VanillaQuestsExpandedCryptoforge.QuestNode_Root_CryptoforgeChapter2"></root>
+        <modExtensions>
+            <li Class="VEF.Storyteller.QuestChainExtension">
+                <questChainDef>VQE_CryptoforgeQuestChain</questChainDef>
+                <conditionSucceedQuests>
+                    <li>VQE_Cryptoforge_Chapter1</li>
+                </conditionSucceedQuests>
+                <isRepeatable>false</isRepeatable>
+                <grantAgainOnFailure>True</grantAgainOnFailure>
+                <daysUntilGrantAgainOnFailure>7</daysUntilGrantAgainOnFailure>
+            </li>
+        </modExtensions>
+    </QuestScriptDef>
+</Defs>

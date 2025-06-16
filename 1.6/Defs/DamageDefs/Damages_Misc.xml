@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  <DamageDef>
+    <defName>VQE_ExtinguishCryptofreeze</defName>
+    <label>extinguish</label>
+    <workerClass>VanillaQuestsExpandedCryptoforge.DamageWorker_ExtinguishCryptofreeze</workerClass>
+    <canInterruptJobs>false</canInterruptJobs>
+    <makesBlood>false</makesBlood>
+    <defaultDamage>999999</defaultDamage>
+    <hediff>CoveredInFirefoam</hediff>
+    <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+    <explosionColorEdge>(1, 1, 1, 0.05)</explosionColorEdge>
+    <soundExplosion>Explosion_Stun</soundExplosion>
+    <harmsHealth>false</harmsHealth>
+    <combatLogRules>Damage_Extinguish</combatLogRules>
+    <consideredHelpful>true</consideredHelpful>
+  </DamageDef>
+  
+  <DamageDef ParentName="CutBase">
+		<defName>VQE_CryptoCut</defName>
+		<label>crypto cut</label>
+	
+		<additionalHediffs>
+			<li>
+				<hediff>VQE_CryptoSlowdown</hediff>
+				<severityPerDamageDealt>0.0025</severityPerDamageDealt>
+				<victimSeverityScaling>ArmorRating_Heat</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+ 
+  
+</Defs>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+
+  <SoundDef>
+    <defName>VQE_MeleeHit_Cryptoaxe</defName>  
+    <context>MapOnly</context> 
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Impact/Cryptoaxe</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>17~20</volumeRange>      
+        <pitchRange>0.9152174~1.169566</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>VQE_Interact_Cryptoaxe</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Interact/Interact_Cryptoaxe_01</clipPath>
+          </li>
+        </grains>
+        <volumeRange>34~34</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>VQE_Interact_Cryptobolter</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Interact/Interact_Cryptobolter_01</clipPath>
+          </li>
+        </grains>
+        <volumeRange>34~34</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>VQE_Shot_Cryptobolter</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <name>Shot</name>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/CryptobolterShot</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>40</volumeRange>
+        <pitchRange>0.75~0.80</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <!-- Hero -->
+
+<BackstoryDef ParentName="Solid">
+    <defName>VQE_ChildhoodLegendaryBlacksmith</defName>
+    <identifier>VQE_ChildhoodLegendaryBlacksmith</identifier>
+    <slot>Childhood</slot>
+    <title>child of the forge</title>
+    <titleShort>forgeborn</titleShort>
+    <description>Born beneath the towering chimneys of the Grand Forge, [PAWN_nameDef] grew up with fire and steel as [PAWN_possessive] only companions. While others played, [PAWN_pronoun] watched the master smiths shape metal into weapons of legend. By the time [PAWN_pronoun] could walk, [PAWN_pronoun] had learned the weight of a hammer. By the time [PAWN_pronoun] could read, [PAWN_pronoun] had memorized the blueprints of masterwork armor. Elders whispered that [PAWN_nameDef] was destined to craft wonders beyond imagination, a future shaped by the ringing of steel on anvil.</description>
+    <skillGains>
+        <Crafting>4</Crafting>
+        <Melee>3</Melee>
+        <Intellectual>2</Intellectual>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>Crafting</requiredWorkTags>
+    <spawnCategories>
+        <li>VQE_LegendaryHero</li>
+    </spawnCategories>
+    <shuffleable>False</shuffleable>
+</BackstoryDef>
+
+<BackstoryDef ParentName="Solid">
+    <defName>VQE_LegendaryBlacksmithAdulthood</defName>
+    <identifier>VQE_LegendaryBlacksmith</identifier>
+    <slot>Adulthood</slot>
+    <title>legendary blacksmith</title>
+    <titleShort>legendary smith</titleShort>
+    <description>[PAWN_nameDef] was the last of [PAWN_possessive] kind, the final master of an art lost to time. In a world where steel had become obsolete, [PAWN_pronoun] forged weapons that could cut through plasteel and armor that could withstand railgun fire. Every strike of [PAWN_possessive] hammer wrote history in tempered alloys, cryptofused plating, and weapons that defied physics itself. But when [PAWN_possessive] ship fell, the forges cooled and the secrets of the craft faded into legend. Now, wandering among the ruins of [PAWN_possessive] past, [PAWN_pronoun] carries the weight of a lost age, the guilt of being the last one.</description>
+    <skillGains>
+        <Crafting>7</Crafting>
+        <Melee>4</Melee>
+        <Shooting>2</Shooting>
+        <Intellectual>3</Intellectual>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>Crafting</requiredWorkTags>
+    <spawnCategories>
+        <li>VQE_LegendaryHero</li>
+    </spawnCategories>
+    <forcedTraits>
+        <Industriousness>1</Industriousness>
+        <Tough />
+    </forcedTraits>
+    <shuffleable>False</shuffleable>
+</BackstoryDef>
+
+</Defs>

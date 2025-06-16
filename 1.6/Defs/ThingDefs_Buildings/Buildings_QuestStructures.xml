@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<defName>VQE_AncientBlackBox</defName>
+		<label>ancient black box</label>
+		<description>A ship's black box recorder, filled with encrypted data. Given enough time, a skilled hacker may be able to extract critical information about what transpired.</description>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Studiable</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(3,1)</size>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<rotatable>true</rotatable>
+		<pathCost>30</pathCost>
+		<graphicData>
+			<texPath>Things/Misc/AncientBlackBoxOn</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5,1.5)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
+		</building>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2.68</glowRadius>
+				<glowColor>(0, 235, 31,0)</glowColor>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+				<gizmoTexture>UI/StudyAncientBlackBox_Gizmo</gizmoTexture>
+				<gizmoText>VQE_StudyBlackBox</gizmoText>
+				<gizmoDesc>VQE_StudyBlackBoxDesc</gizmoDesc>
+				<buildingLeft>VQE_AncientBlackBox_Off</buildingLeft>
+				<skillForStudying>Intellectual</skillForStudying>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<defName>VQE_AncientBlackBox_Off</defName>
+		<label>disabled ancient black box</label>
+		<description>A ship's black box recorder. Any important information has already been downloaded, and the black box is nothing but junk.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(3,1)</size>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<pathCost>30</pathCost>
+		<graphicData>
+			<texPath>Things/Misc/AncientBlackBoxOff</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5,1.5)</drawSize>
+		</graphicData>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+	
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<defName>VQE_FrozenScanningRelay</defName>
+		<label>frozen scanning relay</label>
+		<description>A long-range scanning relay with some old alerts about an important event. If one was to initiate a scan, the location of a ship crash will be revealed. Initiating the scan will generate a strong enough power signature to attract a mechanoid hive.</description>
+		<thingClass>VanillaQuestsExpandedCryptoforge.Scannable</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(3,3)</size>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<pathCost>30</pathCost>
+		<graphicData>
+			<texPath>Things/Misc/ScanningRelay_On</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
+		</building>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2.68</glowRadius>
+				<glowColor>(214, 46, 31,0)</glowColor>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+				<gizmoTexture>UI/InitiateScan_Gizmo</gizmoTexture>
+				<gizmoText>VQE_InitiateScan</gizmoText>
+				<gizmoDesc>VQE_InitiateScanDesc</gizmoDesc>
+				<buildingLeft>VQE_FrozenScanningRelay_Off</buildingLeft>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
+		<defName>VQE_FrozenScanningRelay_Off</defName>
+		<label>disabled frozen scanning relay</label>
+		<description>A long-range scanning relay. Any notifications and data has been removed, and it’s nothing but a big hunk of junk.</description>
+		<thingClass>Building</thingClass>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.4</fillPercent>
+		<size>(3,3)</size>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<pathCost>30</pathCost>
+		<graphicData>
+			<texPath>Things/Misc/ScanningRelay_Off</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<costList>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</costList>
+		<building>
+			<paintable>false</paintable>
+			<claimable>false</claimable>
+			<neverBuildable>true</neverBuildable>
+		</building>
+	</ThingDef>
+</Defs>
