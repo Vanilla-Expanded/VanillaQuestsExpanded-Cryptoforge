@@ -3,7 +3,7 @@
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
 		<label>twisted metal</label>
 		<defName>VQE_TwistedMetal</defName>
-		<thingClass>VanillaQuestsExpandedCryptoforge.Lootable</thingClass>
+		<thingClass>VEF.Buildings.LootableBuilding_Custom</thingClass>
 		<description>A mangled piece of metal, twisted from the sheer force of the cryptoforge spaceship crash. Some steel can still be salvaged.</description>
 		<clearBuildingArea>true</clearBuildingArea>
 		<drawerType>MapMeshAndRealTime</drawerType>
@@ -27,7 +27,7 @@
 			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<modExtensions>
-			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+			<li Class="VEF.Buildings.LootableBuildingDetails">
 				<contents>
 					<li>
 						<thing>Steel</thing>
@@ -47,7 +47,7 @@
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
 		<label>large twisted metal</label>
 		<defName>VQE_LargeTwistedMetal</defName>
-		<thingClass>VanillaQuestsExpandedCryptoforge.Lootable</thingClass>
+		<thingClass>VEF.Buildings.LootableBuilding_Custom</thingClass>
 		<description>A large mangled piece of metal, twisted from the sheer force of the cryptoforge spaceship crash. Some steel can still be salvaged.</description>
 		<clearBuildingArea>true</clearBuildingArea>
 		<drawerType>MapMeshAndRealTime</drawerType>
@@ -71,7 +71,7 @@
 			<ChunkSlagSteel>6</ChunkSlagSteel>
 		</costList>
 		<modExtensions>
-			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+			<li Class="VEF.Buildings.LootableBuildingDetails">
 				<contents>
 					<li>
 						<thing>Steel</thing>
@@ -91,7 +91,7 @@
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
 		<label>huge twisted metal</label>
 		<defName>VQE_HugeTwistedMetal</defName>
-		<thingClass>VanillaQuestsExpandedCryptoforge.Lootable</thingClass>
+		<thingClass>VEF.Buildings.LootableBuilding_Custom</thingClass>
 		<description>A huge mangled piece of metal, twisted from the sheer force of the cryptoforge spaceship crash. Some steel can still be salvaged.</description>
 		<clearBuildingArea>true</clearBuildingArea>
 		<drawerType>MapMeshAndRealTime</drawerType>
@@ -115,7 +115,7 @@
 			<ChunkSlagSteel>10</ChunkSlagSteel>
 		</costList>
 		<modExtensions>
-			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+			<li Class="VEF.Buildings.LootableBuildingDetails">
 				<contents>
 					<li>
 						<thing>Steel</thing>
@@ -135,7 +135,7 @@
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
 		<label>twisted components</label>
 		<defName>VQE_TwistedComponents</defName>
-		<thingClass>VanillaQuestsExpandedCryptoforge.Lootable</thingClass>
+		<thingClass>VEF.Buildings.LootableBuilding_Custom</thingClass>
 		<description>A warped collection of machinery and circuits. While the original function is lost, some usable components can still be extracted.</description>
 		<clearBuildingArea>true</clearBuildingArea>
 		<drawerType>MapMeshAndRealTime</drawerType>
@@ -159,7 +159,7 @@
 			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<modExtensions>
-			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+			<li Class="VEF.Buildings.LootableBuildingDetails">
 				<contents>
 					<li>
 						<thing>ComponentIndustrial</thing>
@@ -179,7 +179,7 @@
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
 		<label>twisted advanced components</label>
 		<defName>VQE_TwistedAdvancedComponents</defName>
-		<thingClass>VanillaQuestsExpandedCryptoforge.Lootable</thingClass>
+		<thingClass>VEF.Buildings.LootableBuilding_Custom</thingClass>
 		<description>A pile of severely damaged high-tech components. While the original function is lost, some usable advanced components can still be extracted.</description>
 		<clearBuildingArea>true</clearBuildingArea>
 		<drawerType>MapMeshAndRealTime</drawerType>
@@ -203,7 +203,7 @@
 			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<modExtensions>
-			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+			<li Class="VEF.Buildings.LootableBuildingDetails">
 				<contents>
 					<li>
 						<thing>ComponentSpacer</thing>
@@ -223,7 +223,7 @@
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
 		<label>twisted plasteel</label>
 		<defName>VQE_TwistedPlasteel</defName>
-		<thingClass>VanillaQuestsExpandedCryptoforge.Lootable</thingClass>
+		<thingClass>VEF.Buildings.LootableBuilding_Custom</thingClass>
 		<description>A crumpled sheet of plasteel, scorched and bent beyond recognition. With enough effort, some of it could be salvaged.</description>
 		<clearBuildingArea>true</clearBuildingArea>
 		<drawerType>MapMeshAndRealTime</drawerType>
@@ -247,7 +247,7 @@
 			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<modExtensions>
-			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+			<li Class="VEF.Buildings.LootableBuildingDetails">
 				<contents>
 					<li>
 						<thing>Plasteel</thing>
@@ -267,7 +267,7 @@
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
 		<label>gold pile</label>
 		<defName>VQE_GoldPile</defName>
-		<thingClass>VanillaQuestsExpandedCryptoforge.Lootable</thingClass>
+		<thingClass>VEF.Buildings.LootableBuilding_Custom</thingClass>
 		<description>A scattered pile of ancient gold coins, each stamped with cryptic serial codes. Their value is entirely theoretical - until someone decides otherwise.</description>
 		<clearBuildingArea>true</clearBuildingArea>
 		<drawerType>MapMeshAndRealTime</drawerType>
@@ -291,7 +291,7 @@
 			<Gold>70</Gold>
 		</costList>
 		<modExtensions>
-			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+			<li Class="VEF.Buildings.LootableBuildingDetails">
 				<contents>
 					<li>
 						<thing>Gold</thing>
@@ -371,7 +371,7 @@
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
 		<label>frozen crate of medicine</label>
 		<defName>VQE_FrozenCrateOfMedicine</defName>
-		<thingClass>VanillaQuestsExpandedCryptoforge.LootableStandard</thingClass>
+		<thingClass>VEF.Buildings.LootableBuilding</thingClass>
 		<description>A frozen crate containing medical supplies. The subzero temperatures have kept them well-preserved.</description>
 		<clearBuildingArea>true</clearBuildingArea>
 		<drawerType>MapMeshAndRealTime</drawerType>
@@ -393,7 +393,7 @@
 			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<modExtensions>
-			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+			<li Class="VEF.Buildings.LootableBuildingDetails">
 				<contents>
 					<li>
 						<thing>MedicineIndustrial</thing>
@@ -412,7 +412,7 @@
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
 		<label>frozen crate of rations</label>
 		<defName>VQE_FrozenCrateOfRations</defName>
-		<thingClass>VanillaQuestsExpandedCryptoforge.LootableStandard</thingClass>
+		<thingClass>VEF.Buildings.LootableBuilding</thingClass>
 		<description>A supply crate filled with survival rations, flash-frozen in the wreckage. The food inside should still be edible.</description>
 		<clearBuildingArea>true</clearBuildingArea>
 		<drawerType>MapMeshAndRealTime</drawerType>
@@ -434,7 +434,7 @@
 			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<modExtensions>
-			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+			<li Class="VEF.Buildings.LootableBuildingDetails">
 				<contents>
 					<li>
 						<thing>MealSurvivalPack</thing>
@@ -483,7 +483,7 @@
 	<ThingDef ParentName="VQE_CryptoForgeBuildingBase">
 		<label>ancient blueprints bench</label>
 		<defName>VQE_BlueprintsBench</defName>
-		<thingClass>VanillaQuestsExpandedCryptoforge.Studiable</thingClass>
+		<thingClass>VEF.Buildings.StudiableBuilding</thingClass>
 		<description>An old bench covered in pristine blueprints. Studying them could provide a rare burst of crafting inspiration.</description>
 		<clearBuildingArea>true</clearBuildingArea>
 		<drawerType>MapMeshAndRealTime</drawerType>
@@ -505,7 +505,7 @@
 			<ChunkSlagSteel>4</ChunkSlagSteel>
 		</costList>
 		<modExtensions>
-			<li Class="VanillaQuestsExpandedCryptoforge.CryptoBuildingDetails">
+			<li Class="VEF.Buildings.StudiableBuildingDetails">
 				<gizmoTexture>UI/StudyAncientBlueprints_Gizmo</gizmoTexture>
 				<gizmoText>VQE_StudyBlueprints</gizmoText>
 				<gizmoDesc>VQE_StudyBlueprintsDesc</gizmoDesc>

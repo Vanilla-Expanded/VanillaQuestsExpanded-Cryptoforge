@@ -247,7 +247,7 @@
 			<neverBuildable>true</neverBuildable>
 		</building>
 		<comps>
-			<li Class="VanillaQuestsExpandedCryptoforge.CompProperties_JammedAirlock">
+			<li Class="VEF.Buildings.CompProperties_JammedAirlock">
 				<!-- Interactable -->
 				<doorToConvertTo>VQE_AncientAirlock</doorToConvertTo>
 				<activeTicks>1</activeTicks>
@@ -363,7 +363,7 @@
 			<neverBuildable>true</neverBuildable>
 		</building>
 		<comps>
-			<li Class="VanillaQuestsExpandedCryptoforge.CompProperties_JammedAirlock">
+			<li Class="VEF.Buildings.CompProperties_JammedAirlock">
 				<!-- Interactable -->
 				<doorToConvertTo>VQE_AncientAirlock_Large</doorToConvertTo>
 				<activeTicks>1</activeTicks>

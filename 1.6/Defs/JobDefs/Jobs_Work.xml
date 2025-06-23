@@ -1,17 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<JobDef>
-		<defName>VQE_Loot</defName>
-		<driverClass>VanillaQuestsExpandedCryptoforge.JobDriver_Loot</driverClass>
-		<reportString>scavenging TargetA.</reportString>
-		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
-	</JobDef>
-	<JobDef>
-		<defName>VQE_StudyBlueprints</defName>
-		<driverClass>VanillaQuestsExpandedCryptoforge.JobDriver_StudyBuilding</driverClass>
-		<reportString>studying TargetA.</reportString>
-		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
-	</JobDef>
+	
 	<JobDef>
 		<defName>VQE_InitiateScan</defName>
 		<driverClass>VanillaQuestsExpandedCryptoforge.JobDriver_InitiateScan</driverClass>

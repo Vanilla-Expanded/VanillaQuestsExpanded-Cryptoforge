@@ -27,8 +27,7 @@ namespace VanillaQuestsExpandedCryptoforge
 
 		public static DamageDef VQE_ExtinguishCryptofreeze;
 
-		public static JobDef VQE_Loot;
-		public static JobDef VQE_StudyBlueprints;
+		
 		public static JobDef VQE_InitiateScan;
 		public static JobDef VQE_BeatCryptofreeze;
 		public static JobDef VQE_RestartGenerator;
