@@ -35,7 +35,12 @@
 					</li>
 				</contents>
 				<deconstructSound>Building_Deconstructed</deconstructSound>
-				<gizmoText>VQE_LootChunk</gizmoText>
+				<gizmoText>VQE_Scavenge</gizmoText>
+				<gizmoTexture>UI/ScavengeJunk_Gizmo</gizmoTexture>
+				<gizmoDesc>VQE_ScavengeDesc</gizmoDesc>
+				<cancelLootinggizmoDesc>VQE_CancelScavengeDesc</cancelLootinggizmoDesc>
+				<cancelLootinggizmoText>VQE_CancelScavenge</cancelLootinggizmoText>
+				<cancelLootingGizmoTexture>UI/Designators/Cancel</cancelLootingGizmoTexture>
 			</li>
 		</modExtensions>
 		<building>
@@ -79,7 +84,12 @@
 					</li>
 				</contents>
 				<deconstructSound>Building_Deconstructed</deconstructSound>
-				<gizmoText>VQE_LootChunk</gizmoText>
+				<gizmoText>VQE_Scavenge</gizmoText>
+				<gizmoTexture>UI/ScavengeJunk_Gizmo</gizmoTexture>
+				<gizmoDesc>VQE_ScavengeDesc</gizmoDesc>
+				<cancelLootinggizmoDesc>VQE_CancelScavengeDesc</cancelLootinggizmoDesc>
+				<cancelLootinggizmoText>VQE_CancelScavenge</cancelLootinggizmoText>
+				<cancelLootingGizmoTexture>UI/Designators/Cancel</cancelLootingGizmoTexture>
 			</li>
 		</modExtensions>
 		<building>
@@ -123,7 +133,12 @@
 					</li>
 				</contents>
 				<deconstructSound>Building_Deconstructed</deconstructSound>
-				<gizmoText>VQE_LootChunk</gizmoText>
+				<gizmoText>VQE_Scavenge</gizmoText>
+				<gizmoTexture>UI/ScavengeJunk_Gizmo</gizmoTexture>
+				<gizmoDesc>VQE_ScavengeDesc</gizmoDesc>
+				<cancelLootinggizmoDesc>VQE_CancelScavengeDesc</cancelLootinggizmoDesc>
+				<cancelLootinggizmoText>VQE_CancelScavenge</cancelLootinggizmoText>
+				<cancelLootingGizmoTexture>UI/Designators/Cancel</cancelLootingGizmoTexture>
 			</li>
 		</modExtensions>
 		<building>
@@ -167,7 +182,12 @@
 					</li>
 				</contents>
 				<deconstructSound>Building_Deconstructed</deconstructSound>
-				<gizmoText>VQE_LootChunk</gizmoText>
+				<gizmoText>VQE_Scavenge</gizmoText>
+				<gizmoTexture>UI/ScavengeJunk_Gizmo</gizmoTexture>
+				<gizmoDesc>VQE_ScavengeDesc</gizmoDesc>
+				<cancelLootinggizmoDesc>VQE_CancelScavengeDesc</cancelLootinggizmoDesc>
+				<cancelLootinggizmoText>VQE_CancelScavenge</cancelLootinggizmoText>
+				<cancelLootingGizmoTexture>UI/Designators/Cancel</cancelLootingGizmoTexture>
 			</li>
 		</modExtensions>
 		<building>
@@ -211,7 +231,12 @@
 					</li>
 				</contents>
 				<deconstructSound>Building_Deconstructed</deconstructSound>
-				<gizmoText>VQE_LootChunk</gizmoText>
+				<gizmoText>VQE_Scavenge</gizmoText>
+				<gizmoTexture>UI/ScavengeJunk_Gizmo</gizmoTexture>
+				<gizmoDesc>VQE_ScavengeDesc</gizmoDesc>
+				<cancelLootinggizmoDesc>VQE_CancelScavengeDesc</cancelLootinggizmoDesc>
+				<cancelLootinggizmoText>VQE_CancelScavenge</cancelLootinggizmoText>
+				<cancelLootingGizmoTexture>UI/Designators/Cancel</cancelLootingGizmoTexture>
 			</li>
 		</modExtensions>
 		<building>
@@ -255,7 +280,12 @@
 					</li>
 				</contents>
 				<deconstructSound>Building_Deconstructed</deconstructSound>
-				<gizmoText>VQE_LootChunk</gizmoText>
+				<gizmoText>VQE_Scavenge</gizmoText>
+				<gizmoTexture>UI/ScavengeJunk_Gizmo</gizmoTexture>
+				<gizmoDesc>VQE_ScavengeDesc</gizmoDesc>
+				<cancelLootinggizmoDesc>VQE_CancelScavengeDesc</cancelLootinggizmoDesc>
+				<cancelLootinggizmoText>VQE_CancelScavenge</cancelLootinggizmoText>
+				<cancelLootingGizmoTexture>UI/Designators/Cancel</cancelLootingGizmoTexture>
 			</li>
 		</modExtensions>
 		<building>
@@ -299,7 +329,12 @@
 					</li>
 				</contents>
 				<deconstructSound>Building_Deconstructed</deconstructSound>
-				<gizmoText>VQE_LootChunk</gizmoText>
+				<gizmoText>VQE_Scavenge</gizmoText>
+				<gizmoTexture>UI/ScavengeJunk_Gizmo</gizmoTexture>
+				<gizmoDesc>VQE_ScavengeDesc</gizmoDesc>
+				<cancelLootinggizmoDesc>VQE_CancelScavengeDesc</cancelLootinggizmoDesc>
+				<cancelLootinggizmoText>VQE_CancelScavenge</cancelLootinggizmoText>
+				<cancelLootingGizmoTexture>UI/Designators/Cancel</cancelLootingGizmoTexture>
 			</li>
 		</modExtensions>
 		<building>
