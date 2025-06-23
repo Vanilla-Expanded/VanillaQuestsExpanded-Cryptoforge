@@ -266,6 +266,7 @@
 					<canTargetMechs>false</canTargetMechs>
 					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
 				</targetingParameters>
+				<stringExtra>VQE_AirlockJammed</stringExtra>
 			</li>
 		</comps>
 	</ThingDef>
@@ -382,6 +383,7 @@
 					<canTargetMechs>false</canTargetMechs>
 					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
 				</targetingParameters>
+				<stringExtra>VQE_AirlockJammed</stringExtra>
 			</li>
 		</comps>
 	</ThingDef>

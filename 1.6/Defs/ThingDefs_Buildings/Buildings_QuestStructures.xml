@@ -4,7 +4,7 @@
 		<defName>VQE_AncientBlackBox</defName>
 		<label>ancient black box</label>
 		<description>A ship's black box recorder, filled with encrypted data. Given enough time, a skilled hacker may be able to extract critical information about what transpired.</description>
-		<thingClass>VEF.Buildings.StudiableBuilding</thingClass>
+		<thingClass>VanillaQuestsExpandedCryptoforge.StudiableBuilding_Cryptoforge</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<drawerType>MapMeshAndRealTime</drawerType>
@@ -39,6 +39,7 @@
 				<gizmoDesc>VQE_StudyBlackBoxDesc</gizmoDesc>
 				<buildingLeft>VQE_AncientBlackBox_Off</buildingLeft>
 				<skillForStudying>Intellectual</skillForStudying>
+				<overlayTexture>UI/Study_Overlay</overlayTexture>
 			</li>
 		</modExtensions>
 	</ThingDef>
