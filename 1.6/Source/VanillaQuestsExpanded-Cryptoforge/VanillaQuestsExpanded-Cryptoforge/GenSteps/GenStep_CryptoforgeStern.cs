@@ -45,7 +45,7 @@ namespace VanillaQuestsExpandedCryptoforge
                         GenSpawn.Spawn(enemyPawn, spawnCell, map);
                     }
                 }
-                LordMaker.MakeNewLord(questPart.siteFaction, new LordJob_DefendBaseNoEat(questPart.siteFaction, centerRect.CenterCell), map, enemyPawns);
+                LordMaker.MakeNewLord(questPart.siteFaction, new LordJob_DefendBaseNoEat(questPart.siteFaction, centerRect.CenterCell, 180000), map, enemyPawns);
             }
 
         }
