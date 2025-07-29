@@ -109,12 +109,12 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<PawnKindDef ParentName="AnimalKindBase">
+	<PawnKindDef ParentName="InsectKindBase">
 		<defName>VQE_IceCrawler</defName>
 		<label>ice crawler</label>
 		<race>VQE_IceCrawler</race>
 		<combatPower>75</combatPower>
-		<canArriveManhunter>false</canArriveManhunter>
+		<defaultFactionDef IsNull="False" /> <!-- Insect didn't have default faction before, but inheriting from InsectKindBase sets it to insect. Set to null. -->
 		<ecoSystemWeight>0.35</ecoSystemWeight>
 		<lifeStages>
 			<li>
@@ -229,12 +229,12 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<PawnKindDef ParentName="AnimalKindBase">
+	<PawnKindDef ParentName="InsectKindBase">
 		<defName>VQE_Megamidge</defName>
 		<label>megamidge</label>
 		<race>VQE_Megamidge</race>
 		<combatPower>150</combatPower>
-		<canArriveManhunter>false</canArriveManhunter>
+		<defaultFactionDef IsNull="False" /> <!-- Insect didn't have default faction before, but inheriting from InsectKindBase sets it to insect. Set to null. -->
 		<ecoSystemWeight>0.50</ecoSystemWeight>
 		<lifeStages>
 			<li>
