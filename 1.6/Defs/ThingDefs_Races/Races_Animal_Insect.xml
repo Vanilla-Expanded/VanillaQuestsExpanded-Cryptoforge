@@ -4,7 +4,7 @@
 		<statBases>
 			<ToxicResistance>1</ToxicResistance>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
-			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
+			<ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
 		</statBases>
 		<race>
 			<fleshType>Insectoid</fleshType>
