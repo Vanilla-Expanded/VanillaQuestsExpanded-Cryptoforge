@@ -21,6 +21,20 @@
 		<casualInterruptible>false</casualInterruptible>
 	</JobDef>
 	<JobDef>
+		<defName>VGE_ExtinguishCryptofreezeNearby</defName>
+		<driverClass>VanillaQuestsExpandedCryptoforge.JobDriver_ExtinguishCryptofreezeNearby</driverClass>
+		<reportString>extinguishing cryptofreeze nearby.</reportString>
+		<neverShowWeapon>true</neverShowWeapon>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+	<JobDef>
+		<defName>VGE_ExtinguishSelfCryptofreeze</defName>
+		<driverClass>VanillaQuestsExpandedCryptoforge.JobDriver_ExtinguishSelfCryptofreeze</driverClass>
+		<reportString>extinguishing self.</reportString>
+		<neverShowWeapon>true</neverShowWeapon>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+	<JobDef>
 		<defName>VQE_Play_WargamingTable</defName>
 		<driverClass>VanillaQuestsExpandedCryptoforge.JobDriver_PlayWargamingTable</driverClass>
 		<reportString>playing at wargaming table.</reportString>

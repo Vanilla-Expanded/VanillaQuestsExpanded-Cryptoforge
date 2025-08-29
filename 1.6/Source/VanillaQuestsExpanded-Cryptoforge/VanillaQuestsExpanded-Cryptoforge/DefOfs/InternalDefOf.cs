@@ -31,7 +31,9 @@ namespace VanillaQuestsExpandedCryptoforge
 		public static JobDef VQE_InitiateScan;
 		public static JobDef VQE_BeatCryptofreeze;
 		public static JobDef VQE_RestartGenerator;
-		public static SoundDef VQE_BlaringSiren;
+        public static JobDef VGE_ExtinguishSelfCryptofreeze;
+        public static JobDef VGE_ExtinguishCryptofreezeNearby;
+        public static SoundDef VQE_BlaringSiren;
 		public static SoundDef VQE_MeltdownExplosion_Cryo;
 		public static SoundDef VQE_Freezing;
 		public static SoundDef VQE_Freezing_Single;

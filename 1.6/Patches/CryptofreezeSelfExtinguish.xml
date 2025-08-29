@@ -1,0 +1,8 @@
+<Patch>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/ThinkTreeDef[defName="BurningResponse"]/thinkRoot/subNodes/li/subNodes/li[@Class="JobGiver_RunRandom"]</xpath>
+		<value>
+			<li Class="VanillaQuestsExpandedCryptoforge.JobGiver_ExtinguishSelfCryptofreeze"/>
+		</value>
+	</Operation>
+</Patch>
