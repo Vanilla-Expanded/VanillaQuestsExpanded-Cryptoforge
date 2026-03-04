@@ -44,7 +44,7 @@
 		<defName>VQE_DoBillsCryptoforge</defName>
 		<label>work at cryptoforge</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
+		<workType>Smithing</workType>
 		<priorityInType>100</priorityInType>
 		<fixedBillGiverDefs>
 			<li>VQE_AncientCryptoforge</li>
